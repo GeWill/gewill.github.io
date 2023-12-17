@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">189</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">192</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">189</span>
+          <span class="site-state-item-count">192</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,330 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/19/GeekBand-iOS-Design-Patterns-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/08/19/GeekBand-iOS-Design-Patterns-2/" class="post-title-link" itemprop="url">极客班 iOS 设计模式（二）</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-08-19 11:30:24" itemprop="dateCreated datePublished" datetime="2015-08-19T11:30:24+08:00">2015-08-19</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>重点在通知模式流程图，大致了解几种通知模式的用途的区别。都是理论的东西，还是希望实际写代码时联系理论，仔细考虑选择。</p>
+<p>课件下载：<a target="_blank" rel="noopener" href="https://github.com/gewill/GeekBand-iOS-Demo/tree/master/Design%20Patterns">https://github.com/gewill/GeekBand-iOS-Demo/tree/master/Design%20Patterns</a></p>
+<h2 id="6-委托模式"><a href="#6-委托模式" class="headerlink" title="6. 委托模式"></a>6. 委托模式</h2><ul>
+<li>复杂的模型,scrollView,tableView,collectionView</li>
+<li>单⼀一个类无法表现复杂的设计</li>
+<li>设计拆分</li>
+<li>方便重⽤</li>
+<li>delegate 独立对象 </li>
+<li>清晰定义功能,变化行为&#x2F;自定义界⾯面 </li>
+<li>松散耦合,容易扩展</li>
+</ul>
+<p>以 Master-Detail Application 模板详细介绍了委托模式。孔老师喜欢直接看类的定义。</p>
+<p><img src="http://i.imgur.com/ijupTTB.png" alt="UITableView delegation"><br><img src="http://i.imgur.com/QPtgCFl.png" alt="Jump to Definition"><br><img src="http://i.imgur.com/eUzOn9O.png" alt="UITableViewDataSource"></p>
+<h2 id="7-观察者和消息通知"><a href="#7-观察者和消息通知" class="headerlink" title="7. 观察者和消息通知"></a>7. 观察者和消息通知</h2><p><img src="http://i.imgur.com/i8HTac7.png" alt="MVC"><br><img src="http://cdn.cocimg.com/cms/uploads/allimg/130506/4196_130506095606_1.png" alt="Observer pattern"></p>
+<ul>
+<li>定义对象间一种⼀对多的依赖关系,使得每当一个对象改变状态,则所有依赖于他的对象都会得到通知并被自动更新。</li>
+<li>Subject被观察者：定义被观察者必须实现的职责,它必须能够动态的增加、取消 观察者。它一般是抽象类或者是实现类,仅仅完成作为被观察者必须实现的职责<br>：管理观察者并通知观察者</li>
+<li>Observer观察者：观察者接收到消息后,即进行update(更新方法)操作,对接收到的信息进行处理。</li>
+<li>具体的被观察者：定义被观察者自己的业务逻辑,同时定义对哪些事件进行通知。</li>
+<li>具体的观察者：每个观察者在接收到消息后的处理反应是不同的,各个观察者有自己的处理逻辑。</li>
+</ul>
+<h3 id="通知"><a href="#通知" class="headerlink" title="通知"></a>通知</h3><p><img src="http://i.imgur.com/18qyxxi.png" alt="Notification pattern"></p>
+<p><strong>应用场景：</strong></p>
+<ul>
+<li>窗口变化通知 </li>
+<li>系统键盘的出现和消失&#x2F;位置⼤小变化</li>
+<li>UITextField 字符变化通知(可以用来限制输入长度)</li>
+<li>MPMoviePlayerController 播放器的⾏为变化(开始结束等事件) </li>
+<li>自定义Class使用</li>
+</ul>
+<p>代码实现参看李久寧的文章：<a target="_blank" rel="noopener" href="http://www.cnblogs.com/limlee/archive/2012/06/21/2547582.html">iOS 设计模式之四：观察者模式</a></p>
+<h3 id="Key-Value-Coding-and-Key-Value-Observing"><a href="#Key-Value-Coding-and-Key-Value-Observing" class="headerlink" title="Key-Value-Coding and Key-Value-Observing"></a>Key-Value-Coding and Key-Value-Observing</h3><p>可在 Xcode 中 Open Quickly(⇧⌘O)，查看<code>NSKeyValueCoding.h</code>协议的内容。</p>
+<p>典型的例子 NSOperation and NSOperationQueue</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line"><span class="comment">/*	NSOperation.h</span></span><br><span class="line"><span class="comment">	Copyright (c) 2006-2014, Apple Inc. All rights reserved.</span></span><br><span class="line"><span class="comment">*/</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">NSOperation</span> : <span class="title">NSObject</span> </span>&#123;</span><br><span class="line"><span class="keyword">@private</span></span><br><span class="line">    <span class="type">id</span> _private;</span><br><span class="line">    int32_t _private1;</span><br><span class="line"><span class="meta">#<span class="keyword">if</span> __LP64__</span></span><br><span class="line">    int32_t _private1b;</span><br><span class="line"><span class="meta">#<span class="keyword">endif</span></span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)start;</span><br><span class="line">- (<span class="type">void</span>)main;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>, <span class="keyword">getter</span>=isCancelled) <span class="type">BOOL</span> cancelled;</span><br><span class="line">- (<span class="type">void</span>)cancel;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>, <span class="keyword">getter</span>=isExecuting) <span class="type">BOOL</span> executing;</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>, <span class="keyword">getter</span>=isFinished) <span class="type">BOOL</span> finished;</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>, <span class="keyword">getter</span>=isConcurrent) <span class="type">BOOL</span> concurrent; <span class="comment">// To be deprecated; use and override &#x27;asynchronous&#x27; below</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>, <span class="keyword">getter</span>=isAsynchronous) <span class="type">BOOL</span> asynchronous <span class="built_in">NS_AVAILABLE</span>(<span class="number">10</span>_8, <span class="number">7</span>_0);</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">readonly</span>, <span class="keyword">getter</span>=isReady) <span class="type">BOOL</span> ready;</span><br></pre></td></tr></table></figure>
+<p><img src="http://upload-images.jianshu.io/upload_images/42743-6dd68172ae4cbf64.jpg?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="NSOperationQueue"></p>
+<p>###延伸阅读：</p>
+<ul>
+<li>Apple <a target="_blank" rel="noopener" href="https://developer.apple.com/library/mac/documentation/Cocoa/Conceptual/KeyValueCoding/Articles/KeyValueCoding.html#//apple_ref/doc/uid/10000107-SW1">Key-Value Coding Programming Guide</a><blockquote>
+<p>This document describes the NSKeyValueCoding informal protocol, which defines a mechanism allowing applications to access the properties of an object indirectly by name (or key), rather than directly through invocation of an accessor method or as instance variables.</p>
+</blockquote>
+<blockquote>
+<p>Dot Syntax and Key-Value Coding: Objective-C’s dot syntax and key-value coding are orthogonal technologies. You can use key-value coding whether or not you use the dot syntax, and you can use the dot syntax whether or not you use KVC. Both, though, make use of a “dot syntax.” In the case of key-value coding, the syntax is used to delimit elements in a key path. Remember that when you access a property using the dot syntax, you invoke the receiver’s standard accessor methods.</p>
+</blockquote>
+</li>
+<li><a target="_blank" rel="noopener" href="http://objccn.io/issue-7-3/">KVC 和 KVO</a></li>
+<li><a target="_blank" rel="noopener" href="http://objccn.io/issue-7-4/">消息传递机制</a><blockquote>
+<p>我们会常常提及“接收者”和“发送者”。它们在消息传递中的意思可以通过以下的例子解释：一个 table view 是发送者，它的 delegate 就是接收者。Core Data managed object context 是它所发出的 notification 的发送者，获取 notification 的就是接收者。一个滑块 (slider) 是 action 消息的发送者，而实现这个 action （方法）的是它的接收者。任何修改一个支持 KVO 的对象的对象是发送者，这个 KVO 对象的观察者就是接收者。明白精髓了吗？<br>基于不同消息传递机制的特点的流程图<br><img src="http://img.objccn.io/issue-7/communication-patterns-flow-chart.png" alt="communication-patterns-flow-chart"></p>
+</blockquote>
+</li>
+</ul>
+<h2 id="9-归档和解档"><a href="#9-归档和解档" class="headerlink" title="9. 归档和解档"></a>9. 归档和解档</h2><p>###NSCoding </p>
+<p>是一个简单的协议，有两个方法： -initWithCoder: 和 encodeWithCoder:。遵循NSCoding协议的类可以被序列化和反序列化，这样可以归档到磁盘上或分发到网络上。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br></pre></td><td class="code"><pre><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">Book</span> : <span class="title">NSObject</span> &lt;<span class="title">NSCoding</span>&gt;</span></span><br><span class="line"><span class="keyword">@property</span> <span class="built_in">NSString</span> *title;</span><br><span class="line"><span class="keyword">@property</span> <span class="built_in">NSString</span> *author;</span><br><span class="line"><span class="keyword">@property</span> <span class="built_in">NSUInteger</span> pageCount;</span><br><span class="line"><span class="keyword">@property</span> <span class="built_in">NSSet</span> *categories;</span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">getter</span> = isAvailable) <span class="type">BOOL</span> available;</span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">Book</span></span></span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> mark - NSCoding</span></span><br><span class="line"></span><br><span class="line">- (<span class="type">id</span>)initWithCoder:(<span class="built_in">NSCoder</span> *)decoder &#123;</span><br><span class="line">    <span class="keyword">self</span> = [<span class="variable language_">super</span> init];</span><br><span class="line">    <span class="keyword">if</span> (!<span class="keyword">self</span>) &#123;</span><br><span class="line">        <span class="keyword">return</span> <span class="literal">nil</span>;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">self</span>.title = [decoder decodeObjectForKey:<span class="string">@&quot;title&quot;</span>];</span><br><span class="line">    <span class="keyword">self</span>.author = [decoder decodeObjectForKey:<span class="string">@&quot;author&quot;</span>];</span><br><span class="line">    <span class="keyword">self</span>.pageCount = [decoder decodeIntegerForKey:<span class="string">@&quot;pageCount&quot;</span>];</span><br><span class="line">    <span class="keyword">self</span>.categories = [decoder decodeObjectForKey:<span class="string">@&quot;categories&quot;</span>];</span><br><span class="line">    <span class="keyword">self</span>.available = [decoder decodeBoolForKey:<span class="string">@&quot;available&quot;</span>];</span><br><span class="line"></span><br><span class="line">    <span class="keyword">return</span> <span class="keyword">self</span>;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)encodeWithCoder:(<span class="built_in">NSCoder</span> *)encoder &#123;</span><br><span class="line">    [encoder encodeObject:<span class="keyword">self</span>.title forKey:<span class="string">@&quot;title&quot;</span>];</span><br><span class="line">    [encoder encodeObject:<span class="keyword">self</span>.author forKey:<span class="string">@&quot;author&quot;</span>];</span><br><span class="line">    [encoder encodeInteger:<span class="keyword">self</span>.pageCount forKey:<span class="string">@&quot;pageCount&quot;</span>];</span><br><span class="line">    [encoder encodeObject:<span class="keyword">self</span>.categories forKey:<span class="string">@&quot;categories&quot;</span>];</span><br><span class="line">    [encoder encodeBool:[<span class="keyword">self</span> isAvailable] forKey:<span class="string">@&quot;available&quot;</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br></pre></td></tr></table></figure>
+
+
+<h3 id="NSKeyedArchiver-和-NSKeyedUnarchiver"><a href="#NSKeyedArchiver-和-NSKeyedUnarchiver" class="headerlink" title="NSKeyedArchiver 和 NSKeyedUnarchiver"></a>NSKeyedArchiver 和 NSKeyedUnarchiver</h3><p>提供了很方便的API把对象读取&#x2F;写入磁盘。一个基于NSCoding的table view controller可以通过file manager设置它的属性集合。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">[<span class="built_in">NSKeyedArchiver</span> archiveRootObject:books toFile:<span class="string">@&quot;/path/to/archive&quot;</span>];</span><br><span class="line"></span><br><span class="line">[<span class="built_in">NSKeyedUnarchiver</span> unarchiveObjectWithFile:<span class="string">@&quot;/path/to/archive&quot;</span>];</span><br></pre></td></tr></table></figure>
+
+<h3 id="NSUserDefaults"><a href="#NSUserDefaults" class="headerlink" title="NSUserDefaults"></a>NSUserDefaults</h3><p>每个应用程序都有自己的user preferences，它可以存储和检索遵循NSCoding协议的对象或者是C类型数据。</p>
+<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">NSData</span> *data = [<span class="built_in">NSKeyedArchiver</span> archivedDataWithRootObject:books];</span><br><span class="line">[[<span class="built_in">NSUserDefaults</span> standardUserDefaults] setObject:data forKey:<span class="string">@&quot;books&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSData</span> *data = [[<span class="built_in">NSUserDefaults</span> standardUserDefaults] objectForKey:<span class="string">@&quot;books&quot;</span>];</span><br><span class="line"><span class="built_in">NSArray</span> *books = [<span class="built_in">NSKeyedUnarchiver</span> unarchiveObjectWithData:data];</span><br></pre></td></tr></table></figure>
+
+<p>###延伸阅读：</p>
+<ul>
+<li><a target="_blank" rel="noopener" href="http://nshipster.cn/nscoding/">NSCoding &#x2F; NSKeyed​Archiver</a></li>
+<li><a target="_blank" rel="noopener" href="http://nshipster.cn/nsfilemanager/">NSFile​Manager</a></li>
+</ul>
+<h2 id="10-复制模式"><a href="#10-复制模式" class="headerlink" title="10. 复制模式"></a>10. 复制模式</h2><ul>
+<li>创建一个对象的新副本</li>
+<li>复制一个复杂对象时,保护一个一样的对象,还是包含原来对象的副本</li>
+<li>用户界面上的复制&#x2F;粘贴 有些对象封装了独一无⼆的资源,复制没有意义</li>
+<li>浅复制和深复制。顾名思义,浅复制,并不拷⻉对象本⾝,仅仅是拷贝指向对象的指针;深复制是直接拷贝整个对象内存到另⼀块内存中</li>
+</ul>
+<p><code>- initWithDictionary:copyItems</code> 就是个典型例子，可深可浅。</p>
+<p>参看 MicroCai 的文章：<a target="_blank" rel="noopener" href="https://www.zybuluo.com/MicroCai/note/50592">iOS 集合的深复制与浅复制 </a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/18/ICF-12-Core-Data-Primer/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/08/18/ICF-12-Core-Data-Primer/" class="post-title-link" itemprop="url">ICF 12章 Core Data 简介</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-08-18 20:53:18" itemprop="dateCreated datePublished" datetime="2015-08-18T20:53:18+08:00">2015-08-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>Core Data 有点复杂，明明一个数据库，被苹果整的这么复杂。结果了还是看翻译的书才明白，太多新的概念需要消化。</p>
+<p><a target="_blank" rel="noopener" href="http://book.douban.com/subject/26284107/">《iOS 组件与框架》</a> </p>
+<p>Core Data 提供了直接使用 SQLite 的大部分大部分灵活性，同时无需关心关系数据库使用机制。</p>
+<ul>
+<li><p>托管对象（Managed object）是 NSManagedObject 实例，应用主要与之交互。可视为字典。包含一组键值对。托管对象之间可以建立关系。</p>
+</li>
+<li><p>托管对象是在托管对象模型（NSManagedObjectModel）中定义的。托管对象模型包含一系列实体、实体的特性、特性和实体的有效性约束以及实体之间的关系。通常在 Xcode 中可视化模型编辑器创建的。</p>
+</li>
+<li><p>托管对象只能存在于托管对象上下文中（NSManagedObjectContext），即 Core Data 的工作区。托管对象只能在托管对象上下文中创建或获取。</p>
+</li>
+<li><p>Core Data 需要指定托管对象对应的实体，可使用 NSEntityDescription </p>
+</li>
+<li><p>对象的检索：直接使用 objectID；编写检索请求</p>
+</li>
+<li><p>检索请求可包含：排序描述符（NSSortDescriptor）、谓词（NSPredicate）、返回聚合函数（如 sum 和 count）的结果。</p>
+</li>
+<li><p>检索结果控制器（fetched results controller）可以讲检索请求与 UITableView 关联起来。使用委托方法可以更新表视图。</p>
+</li>
+<li><p>Core Data 环境</p>
+<p> <img src="https://developer.apple.com/library/mac/documentation/DataManagement/Devpedia-CoreData/Art/single_persistent_stack.jpg" alt="Core Data stack"></p>
+</li>
+</ul>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/18/Functions-and-Methods/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/08/18/Functions-and-Methods/" class="post-title-link" itemprop="url">Functions and Methods</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-08-18 10:55:21" itemprop="dateCreated datePublished" datetime="2015-08-18T10:55:21+08:00">2015-08-18</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>函数（Functions）是用来完成特地任务的独立的代码块；方法（Methods）是与某些特定类型相关联的函数。所以 Swift 中都用的 func 关键词。 结构体和枚举能够定义方法是 Swift 与 C&#x2F;Objective-C 的主要区别之一。</p>
+<p>Functions are self-contained chunks of code that perform a specific task.</p>
+<p>Methods are functions that are associated with a particular type: classes, structures, and enumerations.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -853,318 +1177,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/13/fastlane/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/08/13/fastlane/" class="post-title-link" itemprop="url">fastlane 自动化 App 提交流程工具</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-08-13 06:14:23" itemprop="dateCreated datePublished" datetime="2015-08-13T06:14:23+08:00">2015-08-13</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://fastlane.tools/assets/img/logo-desktop-large.png" alt="fastlane"></p>
-<blockquote>
-<p>fastlane lets you define and run your deployment pipelines for different environments. It helps you unify your app’s release process and automate the whole process. fastlane connects all fastlane tools and third party tools, like CocoaPods and xctool.</p>
-</blockquote>
-<p>fastlane 是一款自动化 App 提交流程工具，也拆分了开了每一个工具，也可以直接按照下面的工作流一步提交 App Store。</p>
-<ul>
-<li><p>snapshot<br>把你的iOS应用程序的本地化语言自动截屏</p>
-</li>
-<li><p>deliver<br>一行命令上传截图，元数据和应用程序到 App Store</p>
-</li>
-<li><p>frameit<br>快速把你的截图到正确的设备框架</p>
-</li>
-<li><p>gym<br>快速打包 iOS 应用程序成 ipa</p>
-</li>
-</ul>
-<p>感兴趣的话，赶紧去官网 <a target="_blank" rel="noopener" href="https://fastlane.tools/#">https://fastlane.tools/#</a>  或  <a target="_blank" rel="noopener" href="https://github.com/KrauseFx/fastlane">https://github.com/KrauseFx/fastlane</a>  试一试。希望能够节约到你宝贵的时间。</p>
-<p><img src="https://fastlane.tools/assets/img/diagram.png" alt="fastlane workflow"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/12/Show-and-Hide-Bottom-Toolbar-in-Swift-Xcode-6-iOS-8-Tutorial/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/08/12/Show-and-Hide-Bottom-Toolbar-in-Swift-Xcode-6-iOS-8-Tutorial/" class="post-title-link" itemprop="url">Show and Hide Bottom Toolbar in Swift - Xcode 6 iOS 8 Tutorial</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-08-12 12:20:06" itemprop="dateCreated datePublished" datetime="2015-08-12T12:20:06+08:00">2015-08-12</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <iframe width="700" height="393" src="https://www.youtube.com/embed/zlZLjQN-kTc?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<h2 id="Video-Tutorial"><a href="#Video-Tutorial" class="headerlink" title="Video Tutorial"></a>Video Tutorial</h2><ol>
-<li>Add first View Controller Segue to new View Controller</li>
-<li>Add Bar Button Item on first View Controller and set target-action</li>
-<li>code in <code>action:</code>method add <code>self.porformSegueWithIdentifier</code></li>
-<li><code>setToolbarHidden(_ hidden: Bool, animated animated: Bool)</code> </li>
-<li>Or set in interface builder</li>
-</ol>
-<p><img src="http://i.imgur.com/4BnA20B.jpg" alt="Show and Hide Bottom by code"><br><img src="http://i.imgur.com/YLFy79G.jpg" alt="Show and Hide Bottom set in interface builder"></p>
-<p>Demo Project on <a target="_blank" rel="noopener" href="https://github.com/gewill/test-projects/tree/master/test%20Show%20Toobar">GitHub</a></p>
-<h2 id="More-in-Segue"><a href="#More-in-Segue" class="headerlink" title="More in Segue"></a>More in Segue</h2><p>Simpler way：</p>
-<p><a target="_blank" rel="noopener" href="https://developer.apple.com/library/ios/recipes/xcode_help-IB_storyboard/chapters/StoryboardSegue.html">Adding a Segue Between Scenes in a Storyboard</a></p>
-<p>Another way：View Controller segue to View Controller,<br>your can something more in target-action method.</p>
-<p><a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/21205485/ios7-segue-and-storyboards-how-to-create-without-a-button">IOS7, Segue and storyboards - How to create without a button?</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/11/GeekBand-iOS-Design-Patterns-1/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/08/11/GeekBand-iOS-Design-Patterns-1/" class="post-title-link" itemprop="url">极客班 iOS 设计模式（一）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-08-11 11:42:01" itemprop="dateCreated datePublished" datetime="2015-08-11T11:42:01+08:00">2015-08-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOSCh/Art/design_patterns_2x.png" alt="design_patterns"></p>
-<p>总体感觉设计模式课程偏理论，操作起来可能要反复实践后，才会知道项目用哪个设计模式比较合适。</p>
-<p>我目前还是学习了解的还是六大基本设计模式，希望以后开发过程中能够思考设计模式的选择。</p>
-<blockquote>
-<p>@李建忠：设计模式是程序员从初阶往中阶迈进很重要的素养。关键在于要去思考设计的方案，为什么这么做？还有哪些设计方法？彼此的优劣？而不是功能跑通就了事。 在这样日积月累的思考和反复实践中，设计功力就会提高。</p>
-</blockquote>
-<h2 id="1-设计模式简介和-MVC"><a href="#1-设计模式简介和-MVC" class="headerlink" title="1. 设计模式简介和 MVC"></a>1. 设计模式简介和 MVC</h2><p>简单介绍了设计模式的含义，和一些常用的 iOS 设计模式。</p>
-<p>xdrt81y 的 <a target="_blank" rel="noopener" href="http://blog.csdn.net/xdrt81y/article/details/12128721">关于iOS六大基本设计模式</a>，文章简单明了可以参考一下。</p>
-<p><a target="_blank" rel="noopener" href="http://www.raywenderlich.com/86477/introducing-ios-design-patterns-in-swift-part-1">Introducing iOS Design Patterns in Swift – Part 1&#x2F;2</a> 结合项目介绍了 Swift 中的设计模式。</p>
-<p><a target="_blank" rel="noopener" href="https://developer.apple.com/library/ios/referencelibrary/GettingStarted/RoadMapiOSCh/DesignPatterns.html">使用设计模式</a>，苹果文档介绍。</p>
-<p>Wikipedia:</p>
-<blockquote>
-<p>In software engineering, a design pattern is a general reusable solution to a commonly occurring problem within a given context in software design.<br>It is a description or template for how to solve a problem that can be used in many different situations.<br>Patterns are formalized best practices that the programmer can use to solve common problems when designing an application or system.  </p>
-</blockquote>
-<h2 id="2-Target-Action、selector-和-Nib"><a href="#2-Target-Action、selector-和-Nib" class="headerlink" title="2. Target-Action、selector 和 Nib"></a>2. Target-Action、selector 和 Nib</h2><p>详细介绍了 Nib 加载</p>
-<h2 id="3-Storyboard-和原型设计"><a href="#3-Storyboard-和原型设计" class="headerlink" title="3. Storyboard 和原型设计"></a>3. Storyboard 和原型设计</h2><h3 id="Storyboard"><a href="#Storyboard" class="headerlink" title="Storyboard"></a>Storyboard</h3><p>我还是很喜欢 Storyboard，比代码直观高效，方便看到原型图和交互关系。</p>
-<p>拆分 Storyboard，避免多人同时修改。</p>
-<p>推荐：WWDC15 215 <a target="_blank" rel="noopener" href="https://developer.apple.com/videos/wwdc/2015/?id=215">What’s New in Storyboards</a></p>
-<p>参考：<a target="_blank" rel="noopener" href="http://code.tutsplus.com/tutorials/ios-9-staying-organized-with-storyboard-references--cms-24226">iOS 9: Staying Organized with Storyboard References</a>：</p>
-<ul>
-<li>instantiateInitialViewController()</li>
-<li>destination of a segue</li>
-</ul>
-<blockquote>
-<p>Storyboard references are powerful. Not only do they make storyboards manageable and modular, they make it very easy to reuse storyboards and even hook into storyboards at arbitrary places.</p>
-<p>Storyboard references are only available in iOS 9.</p>
-</blockquote>
-<p>代码见 <a target="_blank" rel="noopener" href="https://github.com/gewill/test-projects/tree/master/test%20Storyboard%20References">GitHub</a></p>
-<h2 id="4-两步创建和模板方法"><a href="#4-两步创建和模板方法" class="headerlink" title="4. 两步创建和模板方法"></a>4. 两步创建和模板方法</h2><blockquote class="blockquote-center">The best way to predict your future is to create it.
-
-<p>― Abraham Lincoln</blockquote></p>
-<h3 id="两步创建"><a href="#两步创建" class="headerlink" title="两步创建"></a>两步创建</h3><p>对象两步创建：alloc init</p>
-<p>工厂方法：+ (instancetype)dateWithTimeIntervalSinceNow:(NSTimeInterval)seconds</p>
-<p>内省（Introspection）</p>
-<h3 id="模板方法"><a href="#模板方法" class="headerlink" title="模板方法"></a>模板方法</h3><p>参考：lichwei1983 的文章 <a target="_blank" rel="noopener" href="http://blog.csdn.net/lichwei1983/article/details/8435644">模板方法–行为型模式之四</a></p>
-<p><strong>模板方法应用于下列情况:</strong></p>
-<ul>
-<li>一次性实现一个算法的不变的部分,并将可变的行为留给子类来实现。</li>
-<li>各子类中公共的行为应被提取出来并集中到一个公共父类中以避免代码重复。这是 Opdyke 和 Johnson 所描述过的“重分解以一般化”的一个很好的例子。首先识别现有代码中的不同之处,并且将不同之处分离为新的操作。最后,用一个调用这些新的操作的模板方法来替换这些不同的代码。</li>
-<li>控制子类扩展。模板方法只在特定点调用“ h o o k”操作(参见效果一节),这样就只允许在这些点进行扩展。</li>
-</ul>
-<p>模板方法是一种代码复用的基本技术。它们在类库中尤为重要,它们提取了类库中的公共行为。模板方法导致一种反向的控制结构,这种结构有时被称为“好莱坞法则”,即“别找我们,我们找你”。这指的是一个父类调用一个子类的操作,而不是相反。</p>
-<h2 id="5-单例模式"><a href="#5-单例模式" class="headerlink" title="5. 单例模式"></a>5. 单例模式</h2><ul>
-<li>UIApplication</li>
-<li>NSNotificationCenter</li>
-<li>NSUserDefaults</li>
-<li>NSFileManager</li>
-<li>UIAccelerometer</li>
-<li>NSURLSession</li>
-</ul>
-<p>参考：刚刚在线的 <a target="_blank" rel="noopener" href="http://www.superqq.com/blog/2015/06/13/ios-she-ji-mo-shi-xi-lie-:singleton-dan-li-mo-shi/">iOS 设计模式系列：Singleton – 单例模式</a></p>
-<p>单例设计模式确切的说就是一个类只有一个实例，有一个全局的接口来访问这个实例。当第一次载入的时候，它通常使用延时加载的方法创建单一实例。</p>
-<p>在一些情况下，一个类只有一个实例是有意义的。例如，这里没有必要有多个登录实例，除非你一次想写入多个日志文件。或者，一个全局的配置类文件：它可以很容易的很安全的执行一个公共资源，这样的一个配置文件，要比同时修改多个配置类文件好很多。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/14/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/12/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/12/">12</a><span class="page-number current">13</span><a class="page-number" href="/page/14/">14</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/14/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

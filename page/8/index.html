@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">189</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">192</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">189</span>
+          <span class="site-state-item-count">192</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,243 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2016/03/04/Swift-2-Nested-Types/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2016/03/04/Swift-2-Nested-Types/" class="post-title-link" itemprop="url">Swift Examples - Nested Types</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2016-03-04 23:11:52" itemprop="dateCreated datePublished" datetime="2016-03-04T23:11:52+08:00">2016-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>The Swift Programming Language  Examples</p>
+<p>源码在 GitHub：<a target="_blank" rel="noopener" href="https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples">https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples</a></p>
+<p>Playground -&gt;</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// : Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 嵌套类型（Nested Types）</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//嵌套让我们可以为常数生成一个命名空间（namespace）。例如：我们可以使用Constants.FoursquareApi.BaseUrl来访问Foursquare的BaseUrl常数，这样会使得数据可读性更高，并为相关的常数提供一系列封装。</span></span><br><span class="line"><span class="comment">//http://geek.csdn.net/news/detail/58593</span></span><br><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Constants</span> &#123;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">FoursquareApi</span> &#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">let</span> <span class="type">BaseUrl</span> <span class="operator">=</span> <span class="string">&quot;https://api.foursquare.com/v2/&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">TwitterApi</span> &#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">let</span> <span class="type">BaseUrl</span> <span class="operator">=</span> <span class="string">&quot;https://api.twitter.com/1.1/&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">struct</span> <span class="title class_">Configuration</span> &#123;</span><br><span class="line">        <span class="keyword">static</span> <span class="keyword">let</span> <span class="type">UseWorkaround</span> <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//上面的嵌套是不错的实践，当然扑克牌作为例子是非常合适的。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">BlackjackCard</span> &#123;</span><br><span class="line">    <span class="comment">// 嵌套的 Suit 枚举</span></span><br><span class="line">    <span class="keyword">enum</span> <span class="title class_">Suit</span>: <span class="title class_">Character</span> &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="type">Spades</span> <span class="operator">=</span> <span class="string">&quot;♠&quot;</span>, <span class="type">Hearts</span> <span class="operator">=</span> <span class="string">&quot;♡&quot;</span>, <span class="type">Diamonds</span> <span class="operator">=</span> <span class="string">&quot;♢&quot;</span>, <span class="type">Clubs</span> <span class="operator">=</span> <span class="string">&quot;♣&quot;</span></span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 嵌套的 Rank 枚举</span></span><br><span class="line">    <span class="keyword">enum</span> <span class="title class_">Rank</span>: <span class="title class_">Int</span> &#123;</span><br><span class="line">        <span class="keyword">case</span> <span class="type">Two</span> <span class="operator">=</span> <span class="number">2</span>, <span class="type">Three</span>, <span class="type">Four</span>, <span class="type">Five</span>, <span class="type">Six</span>, <span class="type">Seven</span>, <span class="type">Eight</span>, <span class="type">Nine</span>, <span class="type">Ten</span></span><br><span class="line">        <span class="keyword">case</span> <span class="type">Jack</span>, <span class="type">Queen</span>, <span class="type">King</span>, <span class="type">Ace</span></span><br><span class="line">        <span class="keyword">struct</span> <span class="title class_">Values</span> &#123;</span><br><span class="line">            <span class="keyword">let</span> first: <span class="type">Int</span>, second: <span class="type">Int</span>?</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> values: <span class="type">Values</span> &#123;</span><br><span class="line">            <span class="keyword">switch</span> <span class="keyword">self</span> &#123;</span><br><span class="line">            <span class="keyword">case</span> .<span class="type">Ace</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="type">Values</span>(first: <span class="number">1</span>, second: <span class="number">11</span>)</span><br><span class="line">            <span class="keyword">case</span> .<span class="type">Jack</span>, .<span class="type">Queen</span>, .<span class="type">King</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="type">Values</span>(first: <span class="number">10</span>, second: <span class="literal">nil</span>)</span><br><span class="line">            <span class="keyword">default</span>:</span><br><span class="line">                <span class="keyword">return</span> <span class="type">Values</span>(first: <span class="keyword">self</span>.rawValue, second: <span class="literal">nil</span>)</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// BlackjackCard 的属性和方法</span></span><br><span class="line">    <span class="keyword">let</span> rank: <span class="type">Rank</span>, suit: <span class="type">Suit</span></span><br><span class="line">    <span class="keyword">var</span> description: <span class="type">String</span> &#123;</span><br><span class="line">        <span class="keyword">var</span> output <span class="operator">=</span> <span class="string">&quot;suit is <span class="subst">\(suit.rawValue)</span>,&quot;</span></span><br><span class="line">        output <span class="operator">+=</span> <span class="string">&quot; value is <span class="subst">\(rank.values.first)</span>&quot;</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">let</span> second <span class="operator">=</span> rank.values.second &#123;</span><br><span class="line">            output <span class="operator">+=</span> <span class="string">&quot; or <span class="subst">\(second)</span>&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">return</span> output</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="type">BlackjackCard</span>(rank: .<span class="type">Ace</span>, suit: .<span class="type">Spades</span>).description</span><br><span class="line"><span class="keyword">let</span> heartsSymbol <span class="operator">=</span> <span class="type">BlackjackCard</span>.<span class="type">Suit</span>.<span class="type">Hearts</span>.rawValue</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2016/03/04/Swift-2-Error-Handling/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2016/03/04/Swift-2-Error-Handling/" class="post-title-link" itemprop="url">Swift Examples - Error Handling</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2016-03-04 22:54:37" itemprop="dateCreated datePublished" datetime="2016-03-04T22:54:37+08:00">2016-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>The Swift Programming Language  Examples</p>
+<p>源码在 GitHub：<a target="_blank" rel="noopener" href="https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples">https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples</a></p>
+<p>Playground -&gt;</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// : Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 错误处理（Error Handling）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//说实话错误处理这里，习惯了 AFNetworking 方式的闭包或者 block。因为闭包可以返回更过参数如：错误类型/错误内容/其他参数</span></span><br><span class="line"><span class="comment">//这里学会三种调用方法即可，try? 最方便，如不打算考虑处理错误信息</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">enum</span> <span class="title class_">VendingMachineError</span>: <span class="title class_">ErrorType</span> &#123;</span><br><span class="line">    <span class="keyword">case</span> <span class="type">InvalidSelection</span>                    <span class="comment">//选择无效</span></span><br><span class="line">    <span class="keyword">case</span> <span class="type">InsufficientFunds</span>(coinsNeeded: <span class="type">Int</span>) <span class="comment">//金额不足</span></span><br><span class="line">    <span class="keyword">case</span> <span class="type">OutOfStock</span>                          <span class="comment">//缺货</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">Item</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> price: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">var</span> count: <span class="type">Int</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">VendingMachine</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> inventory <span class="operator">=</span> [</span><br><span class="line">        <span class="string">&quot;Candy Bar&quot;</span>: <span class="type">Item</span>(price: <span class="number">12</span>, count: <span class="number">7</span>),</span><br><span class="line">        <span class="string">&quot;Chips&quot;</span>: <span class="type">Item</span>(price: <span class="number">10</span>, count: <span class="number">4</span>),</span><br><span class="line">        <span class="string">&quot;Pretzels&quot;</span>: <span class="type">Item</span>(price: <span class="number">7</span>, count: <span class="number">11</span>)</span><br><span class="line">    ]</span><br><span class="line">    <span class="keyword">var</span> coinsDeposited <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">dispenseSnack</span>(<span class="params">snack</span>: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;Dispensing <span class="subst">\(snack)</span>&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">vend</span>(<span class="params">itemNamed</span> <span class="params">name</span>: <span class="type">String</span>) <span class="keyword">throws</span> &#123;</span><br><span class="line">        <span class="keyword">guard</span> <span class="keyword">var</span> item <span class="operator">=</span> inventory[name] <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="type">VendingMachineError</span>.<span class="type">InvalidSelection</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">guard</span> item.count <span class="operator">&gt;</span> <span class="number">0</span> <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="type">VendingMachineError</span>.<span class="type">OutOfStock</span></span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">guard</span> item.price <span class="operator">&lt;=</span> coinsDeposited <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">throw</span> <span class="type">VendingMachineError</span>.<span class="type">InsufficientFunds</span>(coinsNeeded: item.price <span class="operator">-</span> coinsDeposited)</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        coinsDeposited <span class="operator">-=</span> item.price</span><br><span class="line">        <span class="operator">--</span>item.count</span><br><span class="line">        inventory[name] <span class="operator">=</span> item</span><br><span class="line">        dispenseSnack(name)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> favoriteSnacks <span class="operator">=</span> [</span><br><span class="line">    <span class="string">&quot;Alice&quot;</span>: <span class="string">&quot;Chips&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Bob&quot;</span>: <span class="string">&quot;Licorice&quot;</span>,</span><br><span class="line">    <span class="string">&quot;Eve&quot;</span>: <span class="string">&quot;Pretzels&quot;</span>,</span><br><span class="line">]</span><br><span class="line"><span class="keyword">func</span> <span class="title function_">buyFavoriteSnack</span>(<span class="params">person</span>: <span class="type">String</span>, <span class="params">vendingMachine</span>: <span class="type">VendingMachine</span>) <span class="keyword">throws</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> snackName <span class="operator">=</span> favoriteSnacks[person] <span class="operator">??</span> <span class="string">&quot;Candy Bar&quot;</span></span><br><span class="line">    <span class="keyword">try</span> vendingMachine.vend(itemNamed: snackName)</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 用 Do-Catch 处理错误</span></span><br><span class="line"><span class="keyword">var</span> vendingMachine <span class="operator">=</span> <span class="type">VendingMachine</span>()</span><br><span class="line">vendingMachine.coinsDeposited <span class="operator">=</span> <span class="number">8</span></span><br><span class="line"><span class="keyword">do</span> &#123;</span><br><span class="line">    <span class="keyword">try</span> buyFavoriteSnack(<span class="string">&quot;Alice&quot;</span>, vendingMachine: vendingMachine)</span><br><span class="line">&#125; <span class="keyword">catch</span> <span class="type">VendingMachineError</span>.<span class="type">InvalidSelection</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Invalid Selection.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">catch</span> <span class="type">VendingMachineError</span>.<span class="type">OutOfStock</span> &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Out of Stock.&quot;</span>)</span><br><span class="line">&#125; <span class="keyword">catch</span> <span class="type">VendingMachineError</span>.<span class="type">InsufficientFunds</span>(<span class="keyword">let</span> coinsNeeded) &#123;</span><br><span class="line">    <span class="built_in">print</span>(<span class="string">&quot;Insufficient funds. Please insert an additional <span class="subst">\(coinsNeeded)</span> coins.&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line"><span class="comment">// 打印 “Insufficient funds. Please insert an additional 2 coins.”</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"><span class="comment">//: 将错误转换成可选值</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> <span class="title function_">fetchData</span>() -&gt; <span class="type">Data</span>? &#123;</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">let</span> data <span class="operator">=</span> <span class="keyword">try?</span> fetchDataFromDisk() &#123; <span class="keyword">return</span> data &#125;</span><br><span class="line">    <span class="keyword">if</span> <span class="keyword">let</span> data <span class="operator">=</span> <span class="keyword">try?</span> fetchDataFromServer() &#123; <span class="keyword">return</span> data &#125;</span><br><span class="line">    <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 禁用错误传递</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//有时你知道某个 throwing 函数实际上在运行时是不会抛出错误的，在这种情况下，你可以在表达式前面写try!来禁用错误传递，这会把调用包装在一个断言不会有错误抛出的运行时断言中。如果实际上抛出了错误，你会得到一个运行时错误。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//例如，下面的代码使用了loadImage(_:)函数，该函数从给定的路径加载图片资源，如果图片无法载入则抛出一个错误。在这种情况下，因为图片是和应用绑定的，运行时不会有错误抛出，所以适合禁用错误传递：</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> photo <span class="operator">=</span> <span class="keyword">try!</span> loadImage(<span class="string">&quot;./Resources/John Appleseed.jpg&quot;</span>)</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 指定清理操作</span></span><br><span class="line"><span class="comment">//可以使用defer语句在即将离开当前代码块时执行一系列语句。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">func</span> <span class="title function_">processFile</span>(<span class="params">filename</span>: <span class="type">String</span>) <span class="keyword">throws</span> &#123;</span><br><span class="line">    <span class="keyword">if</span> exists(filename) &#123;</span><br><span class="line">        <span class="keyword">let</span> file <span class="operator">=</span> <span class="keyword">open</span>(filename)</span><br><span class="line">        <span class="keyword">defer</span> &#123;</span><br><span class="line">            close(file)</span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">while</span> <span class="keyword">let</span> line <span class="operator">=</span> <span class="keyword">try</span> file.readline() &#123;</span><br><span class="line">            <span class="comment">// 处理文件。</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="comment">// close(file) 会在这里被调用，即作用域的最后。</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2016/03/04/Swift-2-Optional-Chaining/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2016/03/04/Swift-2-Optional-Chaining/" class="post-title-link" itemprop="url">Swift Examples - Optional Chaining</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2016-03-04 22:32:13" itemprop="dateCreated datePublished" datetime="2016-03-04T22:32:13+08:00">2016-03-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>The Swift Programming Language  Examples</p>
+<p>源码在 GitHub：<a target="_blank" rel="noopener" href="https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples">https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples</a></p>
+<p>Playground -&gt;</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br><span class="line">138</span><br><span class="line">139</span><br><span class="line">140</span><br><span class="line">141</span><br><span class="line">142</span><br><span class="line">143</span><br><span class="line">144</span><br><span class="line">145</span><br><span class="line">146</span><br><span class="line">147</span><br><span class="line">148</span><br><span class="line">149</span><br><span class="line">150</span><br><span class="line">151</span><br><span class="line">152</span><br><span class="line">153</span><br><span class="line">154</span><br><span class="line">155</span><br><span class="line">156</span><br><span class="line">157</span><br><span class="line">158</span><br><span class="line">159</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// : Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 自动引用计数（Automatic Reference Counting）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//自动引用计数实践</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person0</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name <span class="operator">=</span> name</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(name)</span> is being initialized&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">deinit</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(name)</span> is being deinitialized&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> reference1: <span class="type">Person0</span>?</span><br><span class="line"><span class="keyword">var</span> reference2: <span class="type">Person0</span>?</span><br><span class="line"><span class="keyword">var</span> reference3: <span class="type">Person0</span>?</span><br><span class="line"></span><br><span class="line">reference1 <span class="operator">=</span> <span class="type">Person0</span>(name: <span class="string">&quot;John Appleseed&quot;</span>)</span><br><span class="line"></span><br><span class="line">reference2 <span class="operator">=</span> reference1</span><br><span class="line">reference3 <span class="operator">=</span> reference1</span><br><span class="line"></span><br><span class="line">reference1 <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">reference2 <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line">reference3 <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//: 解决实例之间的循环强引用</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//Swift 提供了两种办法用来解决你在使用类的属性时所遇到的循环强引用问题：弱引用（weak reference）和无主引用（unowned reference）。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//弱引用和无主引用允许循环引用中的一个实例引用另外一个实例而不保持强引用。这样实例能够互相引用而不产生循环强引用。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//对于生命周期中会变为nil的实例使用弱引用。相反地，对于初始化赋值后再也不会被赋值为nil的实例，使用无主引用。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//和弱引用类似，无主引用不会牢牢保持住引用的实例。和弱引用不同的是，无主引用是永远有值的。因此，无主引用总是被定义为非可选类型（non-optional type）。你可以在声明属性或者变量时，在前面加上关键字unowned表示这是一个无主引用。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//: 1 - Person和Apartment的例子展示了两个属性的值都允许为nil，并会潜在的产生循环强引用。这种场景最适合用弱引用来解决。</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Person</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>) &#123; <span class="keyword">self</span>.name <span class="operator">=</span> name &#125;</span><br><span class="line">    <span class="keyword">var</span> apartment: <span class="type">Apartment</span>?</span><br><span class="line">    <span class="keyword">deinit</span> &#123; <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(name)</span> is being deinitialized&quot;</span>) &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Apartment</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> unit: <span class="type">String</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">unit</span>: <span class="type">String</span>) &#123; <span class="keyword">self</span>.unit <span class="operator">=</span> unit &#125;</span><br><span class="line">    <span class="keyword">weak</span> <span class="keyword">var</span> tenant: <span class="type">Person</span>?</span><br><span class="line">    <span class="keyword">deinit</span> &#123; <span class="built_in">print</span>(<span class="string">&quot;Apartment <span class="subst">\(unit)</span> is being deinitialized&quot;</span>) &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> john: <span class="type">Person</span>?</span><br><span class="line"><span class="keyword">var</span> unit4A: <span class="type">Apartment</span>?</span><br><span class="line"></span><br><span class="line">john <span class="operator">=</span> <span class="type">Person</span>(name: <span class="string">&quot;John Appleseed&quot;</span>)</span><br><span class="line">unit4A <span class="operator">=</span> <span class="type">Apartment</span>(unit: <span class="string">&quot;4A&quot;</span>)</span><br><span class="line"></span><br><span class="line">john<span class="operator">!</span>.apartment <span class="operator">=</span> unit4A</span><br><span class="line">unit4A<span class="operator">!</span>.tenant <span class="operator">=</span> john</span><br><span class="line"></span><br><span class="line">john <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">unit4A <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//: 2 - Customer和CreditCard的例子展示了一个属性的值允许为nil，而另一个属性的值不允许为nil，这也可能会产生循环强引用。这种场景最适合通过无主引用来解决。</span></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Customer</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">var</span> card: <span class="type">CreditCard</span>?</span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name <span class="operator">=</span> name</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">deinit</span> &#123; <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(name)</span> is being deinitialized&quot;</span>) &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">CreditCard</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> number: <span class="type">UInt64</span></span><br><span class="line">    <span class="keyword">unowned</span> <span class="keyword">let</span> customer: <span class="type">Customer</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">number</span>: <span class="type">UInt64</span>, <span class="params">customer</span>: <span class="type">Customer</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.number <span class="operator">=</span> number</span><br><span class="line">        <span class="keyword">self</span>.customer <span class="operator">=</span> customer</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">deinit</span> &#123; <span class="built_in">print</span>(<span class="string">&quot;Card #<span class="subst">\(number)</span> is being deinitialized&quot;</span>) &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> lee: <span class="type">Customer</span>?</span><br><span class="line">lee <span class="operator">=</span> <span class="type">Customer</span>(name: <span class="string">&quot;Brunce Lee&quot;</span>)</span><br><span class="line"><span class="keyword">let</span> card <span class="operator">=</span> <span class="type">CreditCard</span>(number: <span class="number">1234567890123456</span>, customer: lee<span class="operator">!</span>)</span><br><span class="line">lee <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">card</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 3 - 两个属性都必须有值，并且初始化完成后永远不会为nil。在这种场景中，需要一个类使用无主属性，而另外一个类使用隐式解析可选属性。</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Country</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">var</span> capitalCity: <span class="type">City</span>!</span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>, <span class="params">capitalName</span>: <span class="type">String</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name <span class="operator">=</span> name</span><br><span class="line">        <span class="keyword">self</span>.capitalCity <span class="operator">=</span> <span class="type">City</span>(name: capitalName, country: <span class="keyword">self</span>)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"><span class="keyword">class</span> <span class="title class_">City</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">unowned</span> <span class="keyword">let</span> country: <span class="type">Country</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>, <span class="params">country</span>: <span class="type">Country</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name <span class="operator">=</span> name</span><br><span class="line">        <span class="keyword">self</span>.country <span class="operator">=</span> country</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> country: <span class="type">Country</span>?</span><br><span class="line">country <span class="operator">=</span> <span class="type">Country</span>(name: <span class="string">&quot;Canada&quot;</span>, capitalName: <span class="string">&quot;Ottawa&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(country<span class="operator">!</span>.name)</span>&#x27;s capital city is called <span class="subst">\(country<span class="operator">!</span>.capitalCity.name)</span>&quot;</span>)</span><br><span class="line">country <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//: 解决闭包引起的循环强引用</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//在定义闭包时同时定义捕获列表作为闭包的一部分，通过这种方式可以解决闭包和类实例之间的循环强引用。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">/*</span></span><br><span class="line"><span class="comment"> lazy var someClosure: (Int, String) -&gt; String = &#123;</span></span><br><span class="line"><span class="comment"> [unowned self, weak delegate = self.delegate!] (index: Int, stringToProcess: String) -&gt; String in</span></span><br><span class="line"><span class="comment"> // 这里是闭包的函数体</span></span><br><span class="line"><span class="comment"> &#125;</span></span><br><span class="line"><span class="comment"> */</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">HTMLElement</span> &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">let</span> text: <span class="type">String</span>?</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">lazy</span> <span class="keyword">var</span> asHTML: <span class="type">Void</span> -&gt; <span class="type">String</span> <span class="operator">=</span> &#123;</span><br><span class="line">        [<span class="keyword">unowned</span> <span class="keyword">self</span>] <span class="keyword">in</span></span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">let</span> text <span class="operator">=</span> <span class="keyword">self</span>.text &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&lt;<span class="subst">\(<span class="keyword">self</span>.name)</span>&gt;<span class="subst">\(text)</span>&lt;/<span class="subst">\(<span class="keyword">self</span>.name)</span>&gt;&quot;</span></span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="string">&quot;&lt;<span class="subst">\(<span class="keyword">self</span>.name)</span> /&gt;&quot;</span></span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">init</span>(<span class="params">name</span>: <span class="type">String</span>, <span class="params">text</span>: <span class="type">String</span>? <span class="operator">=</span> <span class="literal">nil</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.name <span class="operator">=</span> name</span><br><span class="line">        <span class="keyword">self</span>.text <span class="operator">=</span> text</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">deinit</span> &#123;</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(name)</span> is being deinitialized&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> paragraph: <span class="type">HTMLElement</span>? <span class="operator">=</span> <span class="type">HTMLElement</span>(name: <span class="string">&quot;p&quot;</span>, text: <span class="string">&quot;hello, world&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(paragraph<span class="operator">!</span>.asHTML())</span><br><span class="line">paragraph <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -819,252 +1056,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2016/02/15/Before-Sunrise-Review/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2016/02/15/Before-Sunrise-Review/" class="post-title-link" itemprop="url">Before Sunrise - Review</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2016-02-15 12:10:46" itemprop="dateCreated datePublished" datetime="2016-02-15T12:10:46+08:00">2016-02-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>几乎都是两个人的对话，从双方羞涩的看向对方，到因为一对德国夫妻吵架而对视。男主鼓起勇气就此打开话题，聊天聊地，就此很愉快的旅程开始了。不管现实生活和情感是否顺利，但是两人总有新的话题和趣闻。当 Jesse 邀请下车游玩时候故事才真正开始。</p>
-<p>开始的找有趣的地方，到后来随意的逛街道，酒吧，看手相，看日落，餐厅里互打电话，晚上草地聊天，次日火车道别。两人不太想落入俗套的留电话地址的偶遇，固执的开始时声明不留电话。因此格外珍惜相遇的这一天，玩的尽兴，聊得深入心灵。酒吧里算是爱情观的吐槽：人总是寻求被爱的多一点。也都是害怕重新承受之前恋爱分手之痛。看手相部分引起了一些争执，Jesse 理性的戳穿手相师和填词诗人的把戏，Céline 的满足和感动都搅合了。餐厅里的打电话很有意思，感觉 Céline 的很多时候也是主动地吐露情愫。</p>
-<p>最后火车送别明明很不舍，但双方还是很坚持之前的想法不把这次邂逅变成俗套的艳遇。不过最后也做了妥协，约定六个月后此地在相见，还因为从今天还是昨天算起而争执了一番。说明内心是多么的喜欢对方，却又害怕伤害的顾忌而妥协。</p>
-<p>电影里面男女主角都是普通的人的性格特点和际遇，但因为相互吸引和聚到一起，一天虽短，但却异常有趣。或者这样的爱情很奢侈，但是或者这就是不讲婚姻时纯粹的爱情。</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2016/01/21/Auto-Layout-Guide-Notes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2016/01/21/Auto-Layout-Guide-Notes/" class="post-title-link" itemprop="url">Auto Layout Guide - Notes</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2016-01-21 14:56:03" itemprop="dateCreated datePublished" datetime="2016-01-21T14:56:03+08:00">2016-01-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Auto Layout Guide: <a target="_blank" rel="noopener" href="https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref/doc/uid/TP40010853-CH7-SW1">https://developer.apple.com/library/ios/documentation/UserExperience/Conceptual/AutolayoutPG/index.html#//apple_ref&#x2F;doc&#x2F;uid&#x2F;TP40010853-CH7-SW1</a></p>
-<ul>
-<li>优先使用 stack view，可简化设置（个人认为还是有时候还是非常复杂的布局还是不用，增加复杂度）</li>
-<li>Constraint等式表示相等，而非赋值，表示两个 view 的关系</li>
-<li>From the view’s intrinsic content size, it’s  easy to understand: Compression Resistance &amp; Content Hugging. </li>
-<li>尽量和最邻居的 view 建立 Constraint</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/12/25/Auto-Layout-Cell-Height/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/12/25/Auto-Layout-Cell-Height/" class="post-title-link" itemprop="url">Auto Layout Cell Height</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-12-25 12:40:30" itemprop="dateCreated datePublished" datetime="2015-12-25T12:40:30+08:00">2015-12-25</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>参考文章 <a target="_blank" rel="noopener" href="http://mp.weixin.qq.com/s?__biz=MzA3NzM0NzkxMQ==&mid=402970654&idx=2&sn=cd5a79255f4aafe79c6daf0ea7f6c593&scene=0#wechat_redirect">iOS开发 - 处理不等高TableViewCell的小花招</a>，实践出真知，也是费了一番力气才把文章 Cell 使用 Auto Layout自动算高。眼高手低总是有的，所以以后不仅要学习开发的思路方法论，重要是在实践一遍。</p>
-<p>Auto Layout设置好高度约束。不要实现<code>- (CGFloat)tableView:(UITableView *)tableView estimatedHeightForRowAtIndexPath:(NSIndexPath *)indexPath</code></p>
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">(<span class="type">void</span>)viewDidLoad &#123;</span><br><span class="line">  [<span class="variable language_">super</span> viewDidLoad];</span><br><span class="line"></span><br><span class="line"><span class="keyword">self</span>.tableView.estimatedRowHeight = <span class="number">100</span>;  <span class="comment">//  随便设个不那么离谱的值</span></span><br><span class="line">  <span class="keyword">self</span>.tableView.rowHeight = <span class="built_in">UITableViewAutomaticDimension</span>;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br></pre></td><td class="code"><pre><span class="line">- (TableViewCell *)tableView:(<span class="built_in">UITableView</span> *)tableView</span><br><span class="line">       cellForRowAtIndexPath:(<span class="built_in">NSIndexPath</span> *)indexPath &#123;</span><br><span class="line">  TableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<span class="string">@&quot;cell&quot;</span></span><br><span class="line">                                                        forIndexPath:indexPath];</span><br><span class="line">  cell.avatar.image = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@&quot;avatar&quot;</span>];</span><br><span class="line">  cell.name.text = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@&quot;%ld&quot;</span>, indexPath.row % <span class="number">2</span>];</span><br><span class="line">  cell.time.text = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@&quot;%@&quot;</span>, [<span class="built_in">NSDate</span> date]];</span><br><span class="line">  cell.source.text = <span class="string">@&quot;Weibo.com&quot;</span>;</span><br><span class="line"></span><br><span class="line">  <span class="built_in">NSMutableString</span> *str = [<span class="built_in">NSMutableString</span> new];</span><br><span class="line">  <span class="keyword">for</span> (<span class="type">long</span> i = <span class="number">1</span>; i &lt; indexPath.row; i++) &#123;</span><br><span class="line">    [str appendString:<span class="string">@&quot;The 1989 World Tour (Live)&quot;</span>];</span><br><span class="line">  &#125;</span><br><span class="line">  [str appendString:<span class="string">@&quot;END!!!&quot;</span>];</span><br><span class="line">  cell.text.text = str;</span><br><span class="line"></span><br><span class="line">  <span class="comment">//移除多余边框，如果是图片是 Aspect Fill 或者 Aspect Fit</span></span><br><span class="line">  cell.pic.layer.borderColor = [<span class="built_in">UIColor</span> clearColor].CGColor;</span><br><span class="line">  cell.pic.layer.borderWidth = <span class="number">0.1</span>;</span><br><span class="line">  cell.pic.layer.masksToBounds = <span class="literal">YES</span>;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">if</span> (indexPath.row % <span class="number">2</span> == <span class="number">1</span>) &#123;</span><br><span class="line">    cell.pic.image = [<span class="built_in">UIImage</span> imageNamed:<span class="string">@&quot;pic&quot;</span>];</span><br><span class="line">  &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">    cell.pic.image = <span class="literal">nil</span>;</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">return</span> cell;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>源码：<a target="_blank" rel="noopener" href="https://github.com/gewill/test-projects/tree/master/test%20auto%20height%20cell">https://github.com/gewill/test-projects/tree/master/test%20auto%20height%20cell</a></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/7/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/9/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/7/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><span class="space">&hellip;</span><a class="page-number" href="/page/7/">7</a><span class="page-number current">8</span><a class="page-number" href="/page/9/">9</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/9/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>

@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">189</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">192</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">189</span>
+          <span class="site-state-item-count">192</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,268 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/12/Add-LXGW-WenKai-Font-to-hexo-theme-next/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/12/Add-LXGW-WenKai-Font-to-hexo-theme-next/" class="post-title-link" itemprop="url">Hexo NexT 添加霞鹜文楷字体</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-12-12 21:26:05" itemprop="dateCreated datePublished" datetime="2022-12-12T21:26:05+08:00">2022-12-12</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>添加 <code>source/_data/head.njk</code></p>
+<figure class="highlight html"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="tag">&lt;<span class="name">link</span> <span class="attr">rel</span>=<span class="string">&quot;stylesheet&quot;</span> <span class="attr">href</span>=<span class="string">&quot;https://cdn.jsdelivr.net/npm/lxgw-wenkai-webfont@1.6.0/style.css&quot;</span> /&gt;</span></span><br></pre></td></tr></table></figure>
+
+<p>修改 <code>_config.next.yml</code></p>
+<figure class="highlight yaml"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br></pre></td><td class="code"><pre><span class="line"><span class="attr">custom_file_path:</span></span><br><span class="line">  <span class="attr">head:</span> <span class="string">source/_data/head.njk</span></span><br><span class="line"></span><br><span class="line"><span class="attr">font:</span></span><br><span class="line">  <span class="attr">enable:</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Uri of fonts host, e.g. https://fonts.googleapis.com (Default).</span></span><br><span class="line">  <span class="attr">host:</span> <span class="string">https://fonts.googleapis.com</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font options:</span></span><br><span class="line">  <span class="comment"># `external: true` will load this font family from `host` above.</span></span><br><span class="line">  <span class="comment"># `family: Times New Roman`. Without any quotes.</span></span><br><span class="line">  <span class="comment"># `size: x.x`. Use `em` as unit. Default: 1 (16px)</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Global font settings used for all elements inside &lt;body&gt;.</span></span><br><span class="line">  <span class="attr">global:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">&quot;LXGW WenKai&quot;</span></span><br><span class="line">    <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for site title (.site-title).</span></span><br><span class="line">  <span class="attr">title:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span></span><br><span class="line">    <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for headlines (&lt;h1&gt; to &lt;h6&gt;).</span></span><br><span class="line">  <span class="attr">headings:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span></span><br><span class="line">    <span class="attr">size:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for posts (.post-body).</span></span><br><span class="line">  <span class="attr">posts:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">true</span></span><br><span class="line">    <span class="attr">family:</span></span><br><span class="line"></span><br><span class="line">  <span class="comment"># Font settings for &lt;code&gt; and code blocks.</span></span><br><span class="line">  <span class="attr">codes:</span></span><br><span class="line">    <span class="attr">external:</span> <span class="literal">false</span></span><br><span class="line">    <span class="attr">family:</span> <span class="string">&quot;LXGW WenKai Mono, Source Code Pro&quot;</span></span><br></pre></td></tr></table></figure>
+
+<p>完成✅</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/28/introducing-iPerfman-en/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/11/28/introducing-iPerfman-en/" class="post-title-link" itemprop="url">Introducing iPerfman</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-11-28 13:14:18" itemprop="dateCreated datePublished" datetime="2022-11-28T13:14:18+08:00">2022-11-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-12-17 21:29:03" itemprop="dateModified" datetime="2023-12-17T21:29:03+08:00">2023-12-17</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="Introducing"><a href="#Introducing" class="headerlink" title="Introducing"></a>Introducing</h1><p><img src="https://gewill.org/assets/iPerfman-iPhone-screenshot2.jpg" alt="iPerfman-iPhone-screenshot"></p>
+<p><img src="https://gewill.org/assets/iPerfman-iPad-screenshot1.jpg" alt="iPerfman-iPad-screenshot"></p>
+<p><img src="https://gewill.org/assets/iPerfman-mac-screenshot1.jpg" alt="iPerfman-mac-screenshot"></p>
+<p><img src="https://gewill.org/assets/iPerfman-tv-screenshot2.jpg" alt="iPerfman-tv-screenshot"></p>
+<p>iPerfman is an iPerf3 tool that supports all apple platforms: iOS, iPadOS, macOS, and tvOS.</p>
+<p>The iperf series of tools perform active measurements to determine the maximum achievable bandwidth on IP networks.</p>
+<p>Beautiful speedometer and speed chart.</p>
+<p>You can test the LAN network speed to find the best WIFI router location.</p>
+<p>You can test more complex networks by manually setting test parameters, for example to test the performance of UDP mode, and use the bandwidth-limiting functionality to simulate a bandwidth-constrained network environment.</p>
+<p>iPerfman supports both Chinese and English, and you can choose your preferred language in the settings for ease of use.</p>
+<p>Overall, iPerfman is a powerful network speed measurement tool that helps you evaluate network performance and provides you with a better network experience.</p>
+<p><a target="_blank" rel="noopener" href="https://apps.apple.com/app/iperfman/id6444657542">Download <strong>iPerfman Pro</strong> on the App Store</a></p>
+<p><a target="_blank" rel="noopener" href="https://apps.apple.com/app/iperfman/id6447375831">Download <strong>iPerfman</strong> on the App Store</a></p>
+<p>If you have any questions or suggestions, you can contact them through <a href="mailto:531sunlight@gmail.com">Email</a>.</p>
+<h1 id="Privacy-policy"><a href="#Privacy-policy" class="headerlink" title="Privacy policy"></a>Privacy policy</h1><p>This App does not collect or upload any private information.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/11/28/introducing-iPerfman-zh_CN/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/11/28/introducing-iPerfman-zh_CN/" class="post-title-link" itemprop="url">iPerfman介绍</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-11-28 13:14:18" itemprop="dateCreated datePublished" datetime="2022-11-28T13:14:18+08:00">2022-11-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h1 id="介绍"><a href="#介绍" class="headerlink" title="介绍"></a>介绍</h1><p><img src="https://gewill.org/assets/iPerfman-iPhone-screenshot2.jpg" alt="iPerfman-iPhone-screenshot"></p>
+<p><img src="https://gewill.org/assets/iPerfman-iPad-screenshot1.jpg" alt="iPerfman-iPad-screenshot"></p>
+<p><img src="https://gewill.org/assets/iPerfman-mac-screenshot1.jpg" alt="iPerfman-mac-screenshot"></p>
+<p><img src="https://gewill.org/assets/iPerfman-tv-screenshot2.jpg" alt="iPerfman-tv-screenshot"></p>
+<p>iPerfman 是一个 iPerf3工具，支持所有苹果平台：iOS、iPadOS、macOS和tvOS。</p>
+<p>iPerf 系列工具执行测量 IP 网络上可实现的最大带宽。</p>
+<p>具有漂亮速度仪和速度图表。</p>
+<p>您可以测试局域网网络速度以找到最佳的WIFI路由器位置。</p>
+<p>您可以通过手动设置测试参数来测试更多复杂的网络，例如可以测试 UDP 模式的性能，并使用带宽限制功能来模拟具有带宽限制的网络环境。</p>
+<p>iPerfman 支持中文和英文两种语言，您可以在设置中选择您喜欢的语言，便于使用。</p>
+<p>总之，iPerfman 是一款强大的网络测速工具，可以帮助您评估网络性能，为您提供更优质的网络体验。</p>
+<p><a target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/iperfman/id6444657542">App Store下载 <strong>iPerfman Pro</strong></a></p>
+<p><a target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/iperfman/id6447375831">App Store下载 <strong>iPerfman</strong></a></p>
+<p>有任何疑问或者建议，可以通过 <a href="mailto:531sunlight@gmail.com">Email</a> 联系。</p>
+<h1 id="隐私政策"><a href="#隐私政策" class="headerlink" title="隐私政策"></a>隐私政策</h1><p>本App不进行任何隐私信息收集或上传。</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -842,353 +1104,8 @@
 
 
 
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/11/14/Update-Hackintosh-to-Big-Sur-with-Open-Core/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/11/14/Update-Hackintosh-to-Big-Sur-with-Open-Core/" class="post-title-link" itemprop="url">使用 Open Core 黑苹果升级至 Big Sur</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-11-14 14:59:53" itemprop="dateCreated datePublished" datetime="2020-11-14T14:59:53+08:00">2020-11-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="机器配置"><a href="#机器配置" class="headerlink" title="机器配置"></a>机器配置</h2><p>主板：<a target="_blank" rel="noopener" href="https://www.msi.com/Motherboard/MPG-Z390-GAMING-PRO-CARBON-AC">微星 MSI MPG Z390 GAMING PRO CARBON AC</a></p>
-<p>CPU：<a target="_blank" rel="noopener" href="https://ark.intel.com/content/www/us/en/ark/products/186605/intel-core-i9-9900k-processor-16m-cache-up-to-5-00-ghz.html">Intel i9 9900K</a></p>
-<p>内存：科赋 DDR4 3200  16G*4</p>
-<p>显卡：<a target="_blank" rel="noopener" href="https://www.asus.com/us/Graphics-Cards/AREZ-STRIX-RXVEGA64-O8G-GAMING/">华硕 ASUS AREZ-STRIX-RXVEGA64-O8G-GAMING</a></p>
-<p>电源：<a target="_blank" rel="noopener" href="https://www.evga.com/products/product.aspx?pn=120-GP-0750-X1">EVGA SuperNOVA 750 G+</a></p>
-<p>散热：<a target="_blank" rel="noopener" href="http://www.coolermaster.com/cooling/cpu-liquid-cooler/masterliquid-ml240r-rgb/">MASTERLIQUID ML240R RGB</a></p>
-<p>固态：三星 970 EVO 500G</p>
-<p>板载声卡：ALC S1220A</p>
-<p>板载有线网卡：Intel I219V7</p>
-<p>无线网卡和蓝牙：BCM94360CD</p>
-<p>显示器：戴尔 P2715Q 4K显示器</p>
-<p>机箱：<a target="_blank" rel="noopener" href="http://www.phanteks.com/Enthoo-Evolv-ATX-TemperedGlass.html">追风者 PK-515ETG</a></p>
-<h2 id="具体步骤"><a href="#具体步骤" class="headerlink" title="具体步骤"></a>具体步骤</h2><ol>
-<li>替换Clover为Open Core v0.6.2，感谢 <a target="_blank" rel="noopener" href="https://github.com/pOH7">pOH7</a>&#x2F;<strong><a target="_blank" rel="noopener" href="https://github.com/pOH7/hackintosh-z390-h-9700k">hackintosh-z390-h-9700kuzh</a></strong> 的EFI。</li>
-<li>下载并升级Big Sur，重启几次后，无法进入Big Sur的安装界面。</li>
-<li>升级Open Core v0.6.3，感谢 <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=QK9Kmvmnp0A">Ryzentosh Big Sur Updating OpenCore From 0.6.2 to 0.6.3</a><ol>
-<li>打开<a target="_blank" rel="noopener" href="https://opencore.slowgeek.com/">OpenCore Sanity Checker</a> ，拖进<code>config.plist</code>，根据建议修改。</li>
-<li>下载<a target="_blank" rel="noopener" href="https://github.com/acidanthera/OpenCorePkg">OpenCorePkg</a>、 <a target="_blank" rel="noopener" href="https://github.com/acidanthera/WhateverGreen">WhateverGreen</a>、<a target="_blank" rel="noopener" href="https://github.com/acidanthera/VirtualSMC">VirtualSMC</a>、<a target="_blank" rel="noopener" href="https://github.com/acidanthera/Lilu">Lilu</a> 并替换。其中OpenCore只需要替换<code>EFI/OC/OpenCore.efi</code> 和 <code>EFI/BOOT/BOOTx64.efi</code>。</li>
-</ol>
-</li>
-<li>顺利进入Big Sur的安装界面，升级成功🎉</li>
-<li>EFI下载地址： [Big Sur Open Core 0.6.3 EFI 20201114.zip](<a target="_blank" rel="noopener" href="https://github.com/gewill/Hackintosh-Installation-with-MSI-Z390-and-i9-9900K/blob/master/Big">https://github.com/gewill/Hackintosh-Installation-with-MSI-Z390-and-i9-9900K/blob/master/Big</a> Sur Open Core 0.6.3 EFI 20201114.zip)</li>
-</ol>
-<p><img src="https://gewill.org/assets/Hackintosh-Big-Sur.jpg" alt="Hackintosh-Big-Sur"></p>
-<h2 id="已知问题"><a href="#已知问题" class="headerlink" title="已知问题"></a>已知问题</h2><ol>
-<li>USB 2.0 不可用，需USB定制。</li>
-<li><del>硬件加速不可用</del>，BIOS集成显卡打开即可硬件加速。</li>
-</ol>
-<p><img src="https://gewill.org/assets/Hardware-Acceleration-On-Big-Sur.png" alt="Hardware-Acceleration-On-Big-Sur"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2020/07/27/triggers-a-runtime-error-in-swift-standard-library/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2020/07/27/triggers-a-runtime-error-in-swift-standard-library/" class="post-title-link" itemprop="url">在Swift标准库中触发运行时错误</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2020-07-27 22:06:26" itemprop="dateCreated datePublished" datetime="2020-07-27T22:06:26+08:00">2020-07-27</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-12-15 00:19:12" itemprop="dateModified" datetime="2023-12-15T00:19:12+08:00">2023-12-15</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h1 id="Array-swift"><a href="#Array-swift" class="headerlink" title="Array.swift"></a>Array.swift</h1><p>Using a negative number or an index equal to or greater than <code>count</code> triggers a runtime error.</p>
-<p>使用负数或大于等于<code>count</code>的索引会触发运行时错误。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">print</span>(emptyDoubles[<span class="number">0</span>])</span><br></pre></td></tr></table></figure>
-
-<h1 id="ClosedRange-swift"><a href="#ClosedRange-swift" class="headerlink" title="ClosedRange.swift"></a>ClosedRange.swift</h1><p>An equivalent range must be representable as a closed range.  For example, passing an empty range as <code>other</code> triggers a runtime error,  because an empty range cannot be represented by a closed range instance.</p>
-<p>等效范围必须可以表示为闭合范围。例如，将空范围作为 <code>other</code> 传递会触发运行时错误，因为空范围不能由封闭范围实例表示。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> emptyRange <span class="operator">=</span> <span class="number">0</span><span class="operator">..&lt;</span><span class="number">0</span></span><br><span class="line"><span class="type">ClosedRange</span>(emptyRange)</span><br></pre></td></tr></table></figure>
-
-<h1 id="Dictionary-swift"><a href="#Dictionary-swift" class="headerlink" title="Dictionary.swift"></a>Dictionary.swift</h1><p>Passing a sequence with duplicate keys to this initializer results in a runtime error. If your sequence might have duplicate keys, use the <code>Dictionary(_:uniquingKeysWith:)</code> initializer instead.</p>
-<p>向此构造器传递具有重复键的序列会导致运行时错误。如果序列可能有重复的键，则使用<code>Dictionary(_:uniquingKeysWith:)</code> 初始化。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> digitWords <span class="operator">=</span> [<span class="string">&quot;one&quot;</span>, <span class="string">&quot;two&quot;</span>, <span class="string">&quot;three&quot;</span>, <span class="string">&quot;four&quot;</span>, <span class="string">&quot;five&quot;</span>]</span><br><span class="line"><span class="keyword">let</span> wordToValue <span class="operator">=</span> <span class="type">Dictionary</span>(uniqueKeysWithValues: <span class="built_in">zip</span>(digitWords, <span class="number">1</span> <span class="operator">...</span> <span class="number">5</span>))</span><br><span class="line"><span class="keyword">let</span> wordToValueAndRemoveDuplicateKeys <span class="operator">=</span> <span class="type">Dictionary</span>(<span class="built_in">zip</span>([<span class="string">&quot;one&quot;</span>, <span class="string">&quot;one&quot;</span>, <span class="string">&quot;three&quot;</span>, <span class="string">&quot;four&quot;</span>, <span class="string">&quot;five&quot;</span>], <span class="number">1</span> <span class="operator">...</span> <span class="number">5</span>)) &#123; <span class="built_in">max</span>(<span class="variable">$0</span>, <span class="variable">$1</span>) &#125;</span><br></pre></td></tr></table></figure>
-
-<h1 id="DictionaryCasting-swift"><a href="#DictionaryCasting-swift" class="headerlink" title="DictionaryCasting.swift"></a>DictionaryCasting.swift</h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> dic: [<span class="type">String</span>: <span class="keyword">Any</span>] <span class="operator">=</span> [<span class="string">&quot;name&quot;</span>: <span class="string">&quot;li&quot;</span>, <span class="string">&quot;age&quot;</span>: <span class="number">18</span>]</span><br><span class="line">dic <span class="keyword">as!</span> [<span class="type">String</span>: <span class="type">String</span>]</span><br></pre></td></tr></table></figure>
-
-<h1 id="Integers-swift"><a href="#Integers-swift" class="headerlink" title="Integers.swift"></a>Integers.swift</h1><p>When the additive inverse of a value is unrepresentable in a conforming type, the operation should either trap or return an exceptional value. For example, using the negation operator (prefix <code>-</code>) with <code>Int.min</code> results in a runtime error.</p>
-<p>当一个值的负值在一个符合类型中不可表示时，操作应该捕获或返回一个异常值。例如，将否定运算符(前缀<code>-</code>)与 <code>Int.min</code>一起使用会导致运行时错误。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> x <span class="operator">=</span> <span class="type">Int</span>.min</span><br><span class="line"><span class="keyword">let</span> y <span class="operator">=</span> <span class="operator">-</span>x</span><br><span class="line"><span class="comment">// Overflow error</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> z <span class="operator">=</span> <span class="operator">-</span><span class="type">Int8</span>.min</span><br><span class="line"><span class="comment">// Overflow error</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> y <span class="operator">=</span> <span class="type">Int8</span>.min</span><br><span class="line">y.negate()</span><br><span class="line"><span class="comment">// Overflow error</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> z <span class="operator">=</span> <span class="type">UInt32</span>(<span class="operator">-</span><span class="number">500</span>)</span><br><span class="line"><span class="comment">// Error</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Optional-swift"><a href="#Optional-swift" class="headerlink" title="Optional.swift"></a>Optional.swift</h1><p>In debug builds (<code>-Onone</code>), the <code>unsafelyUnwrapped</code> property has the same behavior as using the postfix <code>!</code> operator and triggers a runtime error if the instance is <code>nil</code>.</p>
-<p>在调试版本(<code>-Onone</code>)中，<code>unsafelyUnwrapped</code>属性的行为与使用后缀的行为相同<code>!</code>如果实例为<code> nil</code> ，则触发运行时错误。<strong>谨慎使用</strong>。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> optionalInt: <span class="type">Int</span>? <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">optionalInt.unsafelyUnwrapped</span><br><span class="line">optionalInt<span class="operator">!</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Policy-swift"><a href="#Policy-swift" class="headerlink" title="Policy.swift"></a>Policy.swift</h1><p>If you have prior knowledge that an <code>AnyObject</code> instance has a particular type, you can use the unconditional downcast operator (<code>as!</code>). Performing an invalid cast triggers a runtime error.</p>
-<p>如果您事先知道<code>AnyObject</code>实例具有特定的类型，则可以使用无条件向下转换运算符(<code>as</code>)。 执行无效强制转换会触发运行时错误。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> message <span class="operator">=</span> s <span class="keyword">as!</span> <span class="type">String</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;Successful cast to String: <span class="subst">\(message)</span>&quot;</span>)</span><br><span class="line"><span class="comment">// Prints &quot;Successful cast to String: This is a bridged string.&quot;</span></span><br><span class="line"><span class="keyword">let</span> badCase <span class="operator">=</span> v <span class="keyword">as!</span> <span class="type">String</span></span><br><span class="line"><span class="comment">// Runtime error</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="Range-swift"><a href="#Range-swift" class="headerlink" title="Range.swift"></a>Range.swift</h1><p>An equivalent range must be representable as an instance of Range<Bound>. For example, passing a closed range with an upper bound of <code>Int.max</code> triggers a runtime error, because the resulting half-open range would require an upper bound of <code>Int.max + 1</code>, which is not representable as</p>
-<p>范围边界值越界会触发运行时错误，如设置最大值为<code>Int.max</code>时。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line"><span class="type">Range</span>(<span class="number">0</span> <span class="operator">...</span> <span class="type">Int</span>.max)</span><br></pre></td></tr></table></figure>
-
-
-
-<p>Always use the slice’s <code>startIndex</code> property instead of assuming that its indices start at a particular value. Attempting to access an element by using an index outside the bounds of the slice’s indices may result in a runtime error, even if that index is valid for the original collection.</p>
-<p>始终使用 slice 的<code>startIndex</code>属性，而不是假设它的索引以特定的值开始。试图通过在slice索引的边界之外使用索引来访问元素可能会导致运行时错误，即使该索引对原始集合有效。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">let</span> streets <span class="operator">=</span> [<span class="string">&quot;Adams&quot;</span>, <span class="string">&quot;Bryant&quot;</span>, <span class="string">&quot;Channing&quot;</span>, <span class="string">&quot;Douglas&quot;</span>, <span class="string">&quot;Evarts&quot;</span>]</span><br><span class="line"><span class="keyword">let</span> streetsSlice <span class="operator">=</span> streets[<span class="number">2</span><span class="operator">...</span>]</span><br><span class="line"><span class="built_in">print</span>(streetsSlice)</span><br><span class="line"><span class="comment">// [&quot;Channing&quot;, &quot;Douglas&quot;, &quot;Evarts&quot;]</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(streetsSlice.startIndex)</span><br><span class="line"><span class="comment">// 2</span></span><br><span class="line"><span class="built_in">print</span>(streetsSlice[<span class="number">2</span>])</span><br><span class="line"><span class="comment">// &quot;Channing&quot;</span></span><br><span class="line"><span class="built_in">print</span>(streetsSlice[<span class="number">0</span>])</span><br><span class="line"><span class="comment">// error: Index out of bounds</span></span><br></pre></td></tr></table></figure>
-
-<h1 id="RangeReplaceableCollection-swift"><a href="#RangeReplaceableCollection-swift" class="headerlink" title="RangeReplaceableCollection.swift"></a>RangeReplaceableCollection.swift</h1><p>Attempting to remove more elements than exist in the collection triggers a runtime error.</p>
-<p>尝试移除集合中存在的元素数目多于存在的元素会触发运行时错误。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> array <span class="operator">=</span> <span class="type">Array</span>(<span class="number">0</span> <span class="operator">..&lt;</span> <span class="number">5</span>)</span><br><span class="line">array.removeFirst(<span class="number">6</span>)</span><br><span class="line">array.removeLast(<span class="number">6</span>)</span><br></pre></td></tr></table></figure>
-
-<h1 id="SetCasting-swift"><a href="#SetCasting-swift" class="headerlink" title="SetCasting.swift"></a>SetCasting.swift</h1><p> We can’t just delegate to _setDownCastConditional here because we rely on  <code>as!</code> to generate nice runtime errors when the downcast fails.</p>
-<p>Set 向下强制转换失败时，会产生运行时错误。</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">var</span> s: <span class="type">Set</span>&lt;<span class="type">AnyHashable</span>&gt; <span class="operator">=</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="string">&quot;3&quot;</span>]</span><br><span class="line">s <span class="keyword">as!</span> <span class="type">Set</span>&lt;<span class="type">Int</span>&gt;</span><br></pre></td></tr></table></figure>
-
-<h1 id="StaticString-swift"><a href="#StaticString-swift" class="headerlink" title="StaticString.swift"></a>StaticString.swift</h1><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// * a pointer to a null-terminated sequence of UTF-8 code units:</span></span><br><span class="line"><span class="keyword">let</span> emoji: <span class="type">StaticString</span> <span class="operator">=</span> <span class="string">&quot;<span class="subst">\u&#123;1F600&#125;</span>&quot;</span></span><br><span class="line">emoji.hasPointerRepresentation <span class="comment">// -&gt; true</span></span><br><span class="line">emoji.isASCII <span class="comment">// -&gt; false</span></span><br><span class="line"><span class="comment">// emoji.unicodeScalar // -&gt; Fatal error!</span></span><br><span class="line">emoji.utf8CodeUnitCount <span class="comment">// -&gt; 4</span></span><br><span class="line">emoji.utf8Start[<span class="number">0</span>] <span class="comment">// -&gt; 0xF0</span></span><br><span class="line">emoji.utf8Start[<span class="number">1</span>] <span class="comment">// -&gt; 0x9F</span></span><br><span class="line">emoji.utf8Start[<span class="number">2</span>] <span class="comment">// -&gt; 0x98</span></span><br><span class="line">emoji.utf8Start[<span class="number">3</span>] <span class="comment">// -&gt; 0x80</span></span><br><span class="line">emoji.utf8Start[<span class="number">4</span>] <span class="comment">// -&gt; 0x00</span></span><br></pre></td></tr></table></figure>
-
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// * a single Unicode scalar value, under very limited circumstances:</span></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">MyStaticScalar</span>: <span class="title class_">ExpressibleByUnicodeScalarLiteral</span> &#123;</span><br><span class="line">    <span class="keyword">typealias</span> <span class="type">UnicodeScalarLiteralType</span> <span class="operator">=</span> <span class="type">StaticString</span></span><br><span class="line">    <span class="keyword">let</span> value: <span class="type">StaticString</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">unicodeScalarLiteral</span> <span class="params">value</span>: <span class="type">StaticString</span>) &#123;</span><br><span class="line">        <span class="keyword">self</span>.value <span class="operator">=</span> value</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">let</span> emoji: <span class="type">StaticString</span> <span class="operator">=</span> <span class="type">MyStaticScalar</span>(<span class="string">&quot;<span class="subst">\u&#123;1F600&#125;</span>&quot;</span>).value</span><br><span class="line">emoji.hasPointerRepresentation <span class="comment">// -&gt; false</span></span><br><span class="line">emoji.isASCII <span class="comment">// -&gt; false</span></span><br><span class="line">emoji.unicodeScalar.value <span class="comment">// -&gt; 0x1F600</span></span><br><span class="line">emoji.utf8CodeUnitCount <span class="comment">// -&gt; Fatal error!</span></span><br><span class="line">emoji.utf8Start <span class="comment">// -&gt; Fatal error!</span></span><br></pre></td></tr></table></figure>
-
-<p><code>hasPointerRepresentation</code> 一个布尔值，表示静态字符串是否存储指向以 null 结尾的 UTF-8代码单元序列的指针。</p>
-<ul>
-<li>true：这时访问<code>unicodeScalar</code>会触发运行时错误；</li>
-<li>false：静态字符串存储单个 Unicode 标量值。这时访问<code>utf8</code>开头的属性会触发运行时错误；</li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2019/11/18/Data-Structures-and-Algorithms-in-Swift-Notes-2/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2019/11/18/Data-Structures-and-Algorithms-in-Swift-Notes-2/" class="post-title-link" itemprop="url">Swift数据结构和算法（二）</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2019-11-18 14:44:13" itemprop="dateCreated datePublished" datetime="2019-11-18T14:44:13+08:00">2019-11-18</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="第三部分：树"><a href="#第三部分：树" class="headerlink" title="第三部分：树"></a>第三部分：树</h2><h3 id="第十章：树"><a href="#第十章：树" class="headerlink" title="第十章：树"></a>第十章：树</h3><p>树在数据结构中相当重要。它用于解决软件开发中的许多反复出现的挑战：</p>
-<ul>
-<li><p>表示层次关系。</p>
-</li>
-<li><p>管理排序的数据。</p>
-</li>
-<li><p>促进快速查找操作。</p>
-</li>
-</ul>
-<p>相关术语</p>
-<ul>
-<li>节点（Node）</li>
-<li>父子（Parent and child）</li>
-<li>根（Root）</li>
-<li>叶子（Leaf）</li>
-</ul>
-<h4 id="实现"><a href="#实现" class="headerlink" title="实现"></a>实现</h4><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">public</span> <span class="keyword">class</span> <span class="title class_">TreeNode</span>&lt;<span class="title class_">T</span>&gt; &#123;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">var</span> value: <span class="type">T</span></span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">var</span> children: [<span class="type">TreeNode</span>] <span class="operator">=</span> []</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">init</span>(<span class="keyword">_</span> <span class="params">value</span>: <span class="type">T</span>) &#123;</span><br><span class="line">    <span class="keyword">self</span>.value <span class="operator">=</span> value</span><br><span class="line">  &#125;</span><br><span class="line">  </span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">func</span> <span class="title function_">add</span>(<span class="keyword">_</span> <span class="params">child</span>: <span class="type">TreeNode</span>) &#123;</span><br><span class="line">    children.append(child)</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="遍历算法"><a href="#遍历算法" class="headerlink" title="遍历算法"></a>遍历算法</h4><p>遍历线性的集合（如：数组和链表）是非常直接的。因为有直接的首尾。</p>
-<p>但是遍历树就复杂了。是左边优先，还是深度优先，要看具体解决的问题。</p>
-<h5 id="深度优先遍历（Depth-ﬁrst-traversal）"><a href="#深度优先遍历（Depth-ﬁrst-traversal）" class="headerlink" title="深度优先遍历（Depth-ﬁrst traversal）"></a>深度优先遍历（Depth-ﬁrst traversal）</h5><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extension</span> <span class="title class_">TreeNode</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">func</span> <span class="title function_">forEachDepthFirst</span>(<span class="params">visit</span>: (<span class="type">TreeNode</span>) -&gt; <span class="type">Void</span>) &#123;</span><br><span class="line">    visit(<span class="keyword">self</span>)</span><br><span class="line">    children.forEach &#123;</span><br><span class="line">      <span class="variable">$0</span>.forEachDepthFirst(visit: visit)</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="层级优先遍历（Level-order-traversal）"><a href="#层级优先遍历（Level-order-traversal）" class="headerlink" title="层级优先遍历（Level-order traversal）"></a>层级优先遍历（Level-order traversal）</h5><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extension</span> <span class="title class_">TreeNode</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">func</span> <span class="title function_">forEachLevelOrder</span>(<span class="params">visit</span>: (<span class="type">TreeNode</span>) -&gt; <span class="type">Void</span>) &#123;</span><br><span class="line">    visit(<span class="keyword">self</span>)</span><br><span class="line">    <span class="keyword">var</span> queue <span class="operator">=</span> <span class="type">Queue</span>&lt;<span class="type">TreeNode</span>&gt;()</span><br><span class="line">    children.forEach &#123; queue.enqueue(<span class="variable">$0</span>) &#125;</span><br><span class="line">    <span class="keyword">while</span> <span class="keyword">let</span> node <span class="operator">=</span> queue.dequeue() &#123;</span><br><span class="line">      visit(node)</span><br><span class="line">      node.children.forEach &#123; queue.enqueue(<span class="variable">$0</span>) &#125;</span><br><span class="line">    &#125;</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h5 id="搜索"><a href="#搜索" class="headerlink" title="搜索"></a>搜索</h5><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">extension</span> <span class="title class_">TreeNode</span> <span class="title class_">where</span> <span class="title class_">T</span>: <span class="title class_">Equatable</span> &#123;</span><br><span class="line">  <span class="keyword">public</span> <span class="keyword">func</span> <span class="title function_">search</span>(<span class="keyword">_</span> <span class="params">value</span>: <span class="type">T</span>) -&gt; <span class="type">TreeNode</span>? &#123;</span><br><span class="line">    <span class="keyword">var</span> result: <span class="type">TreeNode</span>?</span><br><span class="line">    forEachDepthFirst &#123; node <span class="keyword">in</span></span><br><span class="line">      <span class="keyword">if</span> node.value <span class="operator">==</span> value &#123;</span><br><span class="line">        result <span class="operator">=</span> node</span><br><span class="line">      &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">return</span> result</span><br><span class="line">  &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h4 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h4><ol>
-<li>树与链接列表具有一些相似之处，但是，链接列表节点只能链接到另一个节点，而树节点可以链接到无限多个节点。</li>
-<li>熟悉树的术语，例如父，子，叶子和根。 这些术语中有许多是其他程序员常用的语言，将用于帮助解释其他树形结构。</li>
-<li>遍历（例如深度优先遍历和层级遍历）不是特定于常规树的。 它们也可以在其他树上工作，尽管根据树的结构，它们的实现会略有不同。</li>
-</ol>
-<h3 id="第十一章：树挑战"><a href="#第十一章：树挑战" class="headerlink" title="第十一章：树挑战"></a>第十一章：树挑战</h3><p>打印所有的值，按照他们层级的顺序。同意层级应该打印在一行</p>
-<p>例如：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">15 </span><br><span class="line">1 17 20</span><br><span class="line">1 5 0 2 5 7</span><br></pre></td></tr></table></figure>
-
-<p>实现：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">func</span> <span class="title function_">printEachLevel</span>&lt;<span class="type">T</span>&gt;(<span class="params">for</span> <span class="params">tree</span>: <span class="type">TreeNode</span>&lt;<span class="type">T</span>&gt;) &#123;</span><br><span class="line">    <span class="keyword">var</span> queue <span class="operator">=</span> <span class="type">Queue</span>&lt;<span class="type">TreeNode</span>&lt;<span class="type">T</span>&gt;&gt;()</span><br><span class="line"></span><br><span class="line">    <span class="comment">/// 加入每层的节点计数，当打印完时，换行</span></span><br><span class="line">    <span class="keyword">var</span> nodesLeftInCurrentLevel <span class="operator">=</span> <span class="number">0</span></span><br><span class="line"></span><br><span class="line">    queue.enqueue(tree)</span><br><span class="line">    <span class="keyword">while</span> <span class="operator">!</span>queue.isEmpty &#123;</span><br><span class="line">        nodesLeftInCurrentLevel <span class="operator">=</span> queue.count</span><br><span class="line">        <span class="keyword">while</span> nodesLeftInCurrentLevel <span class="operator">&gt;</span> <span class="number">0</span> &#123;</span><br><span class="line">            <span class="keyword">guard</span> <span class="keyword">let</span> node <span class="operator">=</span> queue.dequeue() <span class="keyword">else</span> &#123; <span class="keyword">break</span> &#125;</span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;<span class="subst">\(node.value)</span> &quot;</span>, terminator: <span class="string">&quot;&quot;</span>)</span><br><span class="line">            node.children.forEach &#123; queue.enqueue(<span class="variable">$0</span>) &#125;</span><br><span class="line">            nodesLeftInCurrentLevel <span class="operator">-=</span> <span class="number">1</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="built_in">print</span>()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
   <nav class="pagination">
-    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/19/">19</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/4/"><i class="fa fa-angle-right"></i></a>
+    <a class="extend prev" rel="prev" title="Previous page" aria-label="Previous page" href="/page/2/"><i class="fa fa-angle-left"></i></a><a class="page-number" href="/">1</a><a class="page-number" href="/page/2/">2</a><span class="page-number current">3</span><a class="page-number" href="/page/4/">4</a><span class="space">&hellip;</span><a class="page-number" href="/page/20/">20</a><a class="extend next" rel="next" title="Next page" aria-label="Next page" href="/page/4/"><i class="fa fa-angle-right"></i></a>
   </nav>
 
 </div>
