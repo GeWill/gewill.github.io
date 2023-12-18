@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">192</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">193</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">192</span>
+          <span class="site-state-item-count">193</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,101 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/06/28/CS193P-1-Logistics-iOS-8-Overview/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/06/28/CS193P-1-Logistics-iOS-8-Overview/" class="post-title-link" itemprop="url">CS193P 1.Logistics, iOS 8 Overview</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-06-28 15:28:11" itemprop="dateCreated datePublished" datetime="2015-06-28T15:28:11+08:00">2015-06-28</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>iTunes U 课程地址：<a target="_blank" rel="noopener" href="https://itunes.apple.com/us/course/developing-ios-8-apps-swift/id961180099">iTunes U&#x2F;Developing iOS 8 Apps Swift</a></p>
+<p>CS193P 课程地址：<a target="_blank" rel="noopener" href="http://web.stanford.edu/class/cs193p/cgi-bin/drupal/">CS193P iPhone Application Development</a></p>
+<p>字幕下载：<a target="_blank" rel="noopener" href="https://github.com/x140yu/Developing_iOS_8_Apps_With_Swift">https://github.com/x140yu/Developing_iOS_8_Apps_With_Swift</a></p>
+<p>课程不用多介绍，下面直接进入笔记：</p>
+<p>iOS 仍是一个 Unix 系统，添加了很多移动方面的模块和优化。</p>
+<p>Cocoa Touch 是本课的重点，如涉及 Media 等主题需要自行找资料深入学习。</p>
+<p><strong>自己动手写代码，绝不复制粘贴别人的代码。</strong></p>
+<p>接下来是 DEMO：Calculator </p>
+<p>蓝线是自动布局时的好帮手。</p>
+<p>Storyboard 是正方形，自动布局就是实现对真实屏幕比例添加挤压效果或规则，已完成适配。</p>
+<p>Trailing Margin （尾部到边框）<br>Leading Margin （头部到边框）<br>Top （顶部）</p>
+<p>Outline mode （大纲模式）</p>
+<p>? 表示 Optional，有两种情况：</p>
+<ul>
+<li>nil ： 值缺失</li>
+<li>有值</li>
+</ul>
+<p>源码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">//  ViewController.swift</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var display: UILabel!</span><br><span class="line">    </span><br><span class="line">    var userIsInTheMiddleOfTypingANumber: Bool = false</span><br><span class="line"></span><br><span class="line">    @IBAction func appendDigit(sender: UIButton) &#123;</span><br><span class="line">        let digit = sender.currentTitle!</span><br><span class="line">        if userIsInTheMiddleOfTypingANumber&#123;</span><br><span class="line">              display.text = display.text! + digit</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            display.text = digit</span><br><span class="line">            userIsInTheMiddleOfTypingANumber = true</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        print(&quot;digit = \(digit)&quot;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1092,109 +1187,6 @@
           <p>一个简单地计算器，可以加减乘除，除法还有问题，待解决。</p>
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  Simple Calculator</span><br><span class="line">//</span><br><span class="line">//  Created by Will on 5/24/15.</span><br><span class="line">//  Copyright (c) 2015 gewill.org. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    @IBOutlet weak var text1: UITextField!</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var text2: UITextField!</span><br><span class="line">    @IBOutlet weak var result: UITextField!</span><br><span class="line">    </span><br><span class="line">    @IBAction func BeZero(sender: AnyObject) &#123;</span><br><span class="line">        self.result.text = &quot;0&quot;</span><br><span class="line">        self.text1.text = &quot; &quot;</span><br><span class="line">        self.text2.text = &quot; &quot;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func plus(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum:Double = Double(num1!) + Double(num2!)</span><br><span class="line">        println(resultNum)</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func minus(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum = num1! - num2!</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func multiply(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum = num1! * num2!</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func division(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum = num1! / num2!</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        // Do any additional setup after loading the view, typically from a nib.</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    override func didReceiveMemoryWarning() &#123;</span><br><span class="line">        super.didReceiveMemoryWarning()</span><br><span class="line">        // Dispose of any resources that can be recreated.</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
 <p><img src="http://i.imgur.com/96q8Eay.png" alt="Imgur"><br><img src="http://i.imgur.com/7kHLTc4.png" alt="Imgur"></p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/05/22/how-to-be-an-excellent-designer/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/05/22/how-to-be-an-excellent-designer/" class="post-title-link" itemprop="url">如何成为一名优秀的设计师</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-05-22 23:08:28" itemprop="dateCreated datePublished" datetime="2015-05-22T23:08:28+08:00">2015-05-22</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>如何成为一名优秀的设计师：罗子雄<br>@TEDx Chongqing</p>
-<iframe height=395 width=700 src="http://player.youku.com/embed/XOTU4NzE4NTQ4" frameborder=0 allowfullscreen></iframe>
-
-<p>##入门</p>
-<ul>
-<li>看：<a target="_blank" rel="noopener" href="https://www.behance.net/">Bēhance</a>、<a target="_blank" rel="noopener" href="https://www.pinterest.com/">Pinterest</a>、<a target="_blank" rel="noopener" href="https://500px.com/">500px</a>、<a target="_blank" rel="noopener" href="http://www.thefwa.com/">FWA</a>、<a target="_blank" rel="noopener" href="https://www.artstation.com/">ArtStation</a>、<a target="_blank" rel="noopener" href="https://dribbble.com/">dribbble</a></li>
-<li>做</li>
-<li>基础实例教程</li>
-<li>教育机构：<a target="_blank" rel="noopener" href="https://www.gnomon.edu/">GNOMON</a>、<a target="_blank" rel="noopener" href="http://www.digitaltutors.com/">digital-tutors</a>、<a target="_blank" rel="noopener" href="http://www.aboutcg.com/">ABOUTCG</a></li>
-<li>有问题，问 Google</li>
-<li>大问题拆分小问题</li>
-<li>想：为什么</li>
-</ul>
-<p>##提高</p>
-<ul>
-<li><p>看 v2.0</p>
-</li>
-<li><p>做 v2.0：模仿、参赛</p>
-<ul>
-<li>借鉴</li>
-<li>改进</li>
-<li>组合</li>
-</ul>
-</li>
-<li><p>想 v2.0</p>
-</li>
-</ul>
-<p>虽然目录已经整理很好，但是为了多说话，我就讲讲的感受。 最近接触 iOS 开发需要做 logo 和 UI 设计，才开始接触设计方面，发现是一门创造美的过程。罗子雄说的方法很平白，也易于操作。但于我这般没有自律和执行力的人，报班学习最好，定闹钟次之，</p>
 
       
     </div>

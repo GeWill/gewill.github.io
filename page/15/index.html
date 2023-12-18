@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">192</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">193</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">192</span>
+          <span class="site-state-item-count">193</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,117 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/07/class-dump-and-Clutch/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/08/07/class-dump-and-Clutch/" class="post-title-link" itemprop="url">class-dump & Clutch 分析 APP 内部实现</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-08-07 13:28:02" itemprop="dateCreated datePublished" datetime="2015-08-07T13:28:02+08:00">2015-08-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p><a target="_blank" rel="noopener" href="http://limboy.me/ios/2014/12/31/learning-ios.html">自学 iOS 开发的一些经验</a>，是一篇充实有料常看常新的开发文章，提到了 “class-dump 从 Mach-O 文件生成 OC 头文件，有时想看看某个 App 大概是如何组织的会比较方便”。刚好最近项目想学习一下别人的APP，尝试了7-8个小时终于成功了，记录一下过程。最主要是介绍 Clutch 的文章太少，其输出路径被卡壳。</p>
+<p>##<a target="_blank" rel="noopener" href="http://www.cnblogs.com/y279336671/p/3593530.html">class-dump 安装</a></p>
+<ol>
+<li>下载地址 <a target="_blank" rel="noopener" href="http://stevenygard.com/projects/class-dump/">http://stevenygard.com/projects/class-dump/</a></li>
+<li>终端中输入open &#x2F;usr&#x2F;bin</li>
+<li>将解压出来的class-dump放入刚打开的目录。     </li>
+<li>更改class-dump权限     sudo chmod 777 &#x2F;usr&#x2F;bin&#x2F;class-dump</li>
+</ol>
+<p>##class-dump 用法</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">class-dump Name.app &gt; class-dump.md  </span><br><span class="line">class-dump -H Name.app -o folderName  </span><br></pre></td></tr></table></figure>
+
+<p>第一行表示输出为一个文件方便搜索查找，第二行表示输出所以 class 到 folderName 文件夹。</p>
+<h2 id="解密工具-Clutch"><a href="#解密工具-Clutch" class="headerlink" title="解密工具 Clutch"></a>解密工具 Clutch</h2><p>由于 App Store 对 ipa 文件进行了加密，就有了下面的解密过程。</p>
+<p><a target="_blank" rel="noopener" href="https://github.com/KJCracks/Clutch">Clutch</a> on GitHub:</p>
+<blockquote>
+<p>Introducing Clutch, the fastest and most advanced dumping utility for the iPhone, iPod Touch, and iPad.</p>
+</blockquote>
+<blockquote>
+<p>Works with all devices, iOS versions, architecture types, with most binaries.</p>
+</blockquote>
+<blockquote>
+<p>This product is meant only for educational purposes and security research.</p>
+</blockquote>
+<blockquote>
+<p>Compiling: Use Xcode with iOSOpenDev installed</p>
+</blockquote>
+<p>可以直接去 Releases 下载编译好的版本，复制到 &#x2F;usr&#x2F;bin</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">scp ~/Downloads/Clutch root@192.168.0.X:/usr/bin</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+<p>参看：<a target="_blank" rel="noopener" href="http://itony.me/200.html">iOS 使用Class-dump分析App内部实现：</a>：</p>
+<blockquote>
+<p>Openssh，然后电脑端使用ssh连接真机（默认密码是alpine），输入命令Clutch后会看到一个App列表，找到sing在列表中的序号是3，执行命令Clutch 3，这时它就真的开始运行了，运行后的结果是将原Appstore App转换为ipa文件；最重要的是，它被解密了~</p>
+</blockquote>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">Clutch </span><br><span class="line"></span><br><span class="line">Clutch -d 3</span><br></pre></td></tr></table></figure>
+<p>但是在 Clutch 2.0 版目录改为：&#x2F;var&#x2F;mobile&#x2F;Documents&#x2F;Dumped&#x2F; 或 User&#x2F;Documents&#x2F;Dumped&#x2F;，导出 ipa 即可开始 class-dump。</p>
+<p><img src="http://i.imgur.com/JUAWRRV.png" alt="Clutch 2.0 Dumped folder"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1129,115 +1240,6 @@
 <p>BLDemo01 L13 课开始集成了 Reveal，很直观看懂层次关系</p>
 </blockquote>
 <h2 id="源码保存在我的-GitHub-GeekBand-iOS-Demo"><a href="#源码保存在我的-GitHub-GeekBand-iOS-Demo" class="headerlink" title="源码保存在我的 GitHub: GeekBand-iOS-Demo"></a>源码保存在我的 GitHub: <a target="_blank" rel="noopener" href="https://github.com/gewill/GeekBand-iOS-Demo/tree/master/iOS%20APP%20Development">GeekBand-iOS-Demo</a></h2>
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/28/iOS-Programming-4ed-6/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/07/28/iOS-Programming-4ed-6/" class="post-title-link" itemprop="url">《iOS 编程》6. 视图控制器</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-07-28 16:27:23" itemprop="dateCreated datePublished" datetime="2015-07-28T16:27:23+08:00">2015-07-28</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="6-5-添加本地通知"><a href="#6-5-添加本地通知" class="headerlink" title="6.5 添加本地通知"></a>6.5 添加本地通知</h2><p>书中没有提到申请通知权限，方法如下</p>
-<p><a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/24203066/ask-user-for-permission-to-show-alert-when-firing-local-notification">add this code, it will show a alert view to ask user for permission.</a></p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">if ([UIApplication instancesRespondToSelector:@selector(registerUserNotificationSettings:)]) &#123;</span><br><span class="line">    [[UIApplication sharedApplication] registerUserNotificationSettings:[UIUserNotificationSettings settingsForTypes:UIUserNotificationTypeAlert|UIUserNotificationTypeSound|UIUserNotificationTypeBadge</span><br><span class="line">                                                                                                          categories:nil]];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">    </span><br></pre></td></tr></table></figure>
-
-<h2 id="6-7-与视图控制器及其视图进行交互"><a href="#6-7-与视图控制器及其视图进行交互" class="headerlink" title="6.7 与视图控制器及其视图进行交互"></a>6.7 与视图控制器及其视图进行交互</h2><p><strong>视图控制器的生命周期方法（lifecycle method）：</strong></p>
-<ul>
-<li><p>application:didFinishLaunchingWithOptions:在该方法中设置和初始化应用窗口的根视图控制器。该方法只会在应用启动完毕后调用一次。</p>
-</li>
-<li><p>initWithNibName:bundle:该方法是UIViewController的指定初始化方法，创建视图控制器时，就会调用该方法。请注意，某些情况下，需要在同一个应用中创建多个相同的UIViewController子类对象，每次创建一个该类的对象时，都会调用一次该类的initWithNibName:bundle:方法。</p>
-</li>
-<li><p>loadView:可以覆盖该方法，使用代码方式设置视图控制器的view属性。</p>
-</li>
-<li><p>viewDidLoad可以覆盖该方法，设置使用NIB文件创建的视图对象。该方法会在视图控制器加载完视图后被调用。</p>
-</li>
-<li><p>viewWillAppear:可以覆盖该方法，设置使用NIB文件创建的视图对象。该方法和</p>
-</li>
-<li><p>viewDidAppear:会在每次视图控制器的view显示在屏幕上时被调用；相反，</p>
-</li>
-<li><p>viewWillDisappear:和viewDidDisappear:方法会在每次视图控制器的view从屏幕上消失时被调用。</p>
-</li>
-</ul>
-<h2 id="6-9-中级练习：控制逻辑"><a href="#6-9-中级练习：控制逻辑" class="headerlink" title="6.9 中级练习：控制逻辑"></a>6.9 中级练习：控制逻辑</h2><p>查文档不懂，这是个大问题，有待提高看文档具体怎么组织的能力。<a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/6688160/how-to-programmatically-add-a-uisegmentedcontrol-to-a-container-view">Stack Overflow</a> 的答案运行崩溃，没有理解原理，<code>mainSegmentControl:</code> 方法没有声明。最后还是去 <a target="_blank" rel="noopener" href="http://forums.bignerdranch.com/viewtopic.php?f=487&t=9844">BNR论坛</a> 找到了答案。</p>
-<blockquote>
-<p>熟悉文档浏览 UIColor，其实也是不很精通颜色，但是还是大部分看懂了，也了解了目录结构和对应文本的样式。</p>
-</blockquote>
-<p>GWHypnosisViewController.m </p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- (void)viewDidLoad &#123;</span><br><span class="line">    [super viewDidLoad];</span><br><span class="line">    // Do any additional setup after loading the view.</span><br><span class="line">    NSLog(@&quot;GWHypnosisViewController loaded its view.&quot;);</span><br><span class="line"></span><br><span class="line">    // 初始化UISegmentedControl，设置大小和颜色</span><br><span class="line">    UISegmentedControl *segmentedControl = [[UISegmentedControl alloc] initWithItems:@[@&quot;Red&quot;, @&quot;Green&quot;, @&quot;Blue&quot;]];</span><br><span class="line">    segmentedControl.frame = CGRectMake(0, 0, 250, 50);</span><br><span class="line">    segmentedControl.tintColor = [UIColor blackColor];</span><br><span class="line">    </span><br><span class="line">    // 注册UISegmentedControl</span><br><span class="line">    [segmentedControl addTarget:self.view</span><br><span class="line">                         action:@selector(mainSegmentControl:)</span><br><span class="line">               forControlEvents: UIControlEventValueChanged];</span><br><span class="line">    // 添加到视图</span><br><span class="line">    [self.view addSubview:segmentedControl];</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>GWHypnosisView.h</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">- (void)mainSegmentControl:(UISegmentedControl *)segment;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>GWHypnosisView.m</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br></pre></td><td class="code"><pre><span class="line">// mainSegmentControl: 方法用来接受 UISegmentedControl 发的消息</span><br><span class="line">- (void)mainSegmentControl:(UISegmentedControl *)segment</span><br><span class="line">&#123;</span><br><span class="line">    </span><br><span class="line">    if(segment.selectedSegmentIndex == 0)</span><br><span class="line">    &#123;</span><br><span class="line">        // action for the first button (Current or Default)</span><br><span class="line">        self.circleColor = [UIColor redColor];</span><br><span class="line">    &#125;</span><br><span class="line">    else if(segment.selectedSegmentIndex == 1)</span><br><span class="line">    &#123;</span><br><span class="line">        // action for the second button</span><br><span class="line">        self.circleColor = [UIColor greenColor];</span><br><span class="line">    &#125;</span><br><span class="line">    else if(segment.selectedSegmentIndex == 2)</span><br><span class="line">    &#123;</span><br><span class="line">        // action for the third button</span><br><span class="line">        self.circleColor = [UIColor blueColor];</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<h2 id="项目代码保存在我的-GitHub-iOSProgramming4edSolutions"><a href="#项目代码保存在我的-GitHub-iOSProgramming4edSolutions" class="headerlink" title="项目代码保存在我的 GitHub: iOSProgramming4edSolutions"></a>项目代码保存在我的 GitHub: <a target="_blank" rel="noopener" href="https://github.com/gewill/iOSProgramming4edSolutions">iOSProgramming4edSolutions</a></h2>
       
     </div>
 
