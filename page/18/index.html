@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">193</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">194</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">193</span>
+          <span class="site-state-item-count">194</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,100 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/07/CS193P-2-More-Xcode-and-Swift-MVC/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/07/07/CS193P-2-More-Xcode-and-Swift-MVC/" class="post-title-link" itemprop="url">CS193P 2. More Xcode and Swift, MVC</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-07-07 17:22:20" itemprop="dateCreated datePublished" datetime="2015-07-07T17:22:20+08:00">2015-07-07</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>继续 DEMO: Calculator </p>
+<p>Swift 能类型推断</p>
+<p>自动布局：</p>
+<ul>
+<li>Pin: Spacing to nearest neighbor, Equal Widths, Equal Heights</li>
+<li>Resolve Auto Layout Issues: Clear Constraints</li>
+</ul>
+<p>87果然是个神奇的数字，我之前没有对齐就开始 Pin，始终无法得到“Add 87 Constraints”，自然没有得到自动对齐的理想布局。</p>
+<p>代码如下：</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  Calculator</span><br><span class="line">//</span><br><span class="line">//  Created by Will Ge on 6/28/15.</span><br><span class="line">//  Copyright © 2015 gewill.org. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    @IBOutlet weak var display: UILabel!</span><br><span class="line">    </span><br><span class="line">    var userIsInTheMiddleOfTypingANumber: Bool = false</span><br><span class="line"></span><br><span class="line">    @IBAction func appendDigit(sender: UIButton) &#123;</span><br><span class="line">        let digit = sender.currentTitle!</span><br><span class="line">        if userIsInTheMiddleOfTypingANumber&#123;</span><br><span class="line">              display.text = display.text! + digit</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            display.text = digit</span><br><span class="line">            userIsInTheMiddleOfTypingANumber = true</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        print(&quot;digit = \(digit)&quot;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    var operandStack = Array&lt;Double&gt;()</span><br><span class="line">    </span><br><span class="line">    @IBAction func enter() &#123;</span><br><span class="line">        userIsInTheMiddleOfTypingANumber = false</span><br><span class="line">        operandStack.append(displayValue)</span><br><span class="line">        print(&quot;operandStack = \(operandStack)&quot;)</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    @IBAction func operate(sender: UIButton) &#123;</span><br><span class="line">        let operation = sender.currentTitle!</span><br><span class="line">        if userIsInTheMiddleOfTypingANumber &#123;</span><br><span class="line">            enter()</span><br><span class="line">        &#125;</span><br><span class="line">        switch operation &#123;</span><br><span class="line">        case &quot;×&quot;: performOperation &#123; $0 * $1 &#125;</span><br><span class="line">        case &quot;÷&quot;: performOperation &#123; $1 / $1 &#125;</span><br><span class="line">        case &quot;+&quot;: performOperation &#123; $0 + $1 &#125;</span><br><span class="line">        case &quot;−&quot;: performOperation &#123; $1 - $0 &#125;</span><br><span class="line">        case &quot;√&quot;: performOperation1 &#123; sqrt($0) &#125;</span><br><span class="line">        default: break</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func performOperation(operation: (Double, Double) -&gt;Double) &#123;</span><br><span class="line">        if operandStack.count &gt;= 2 &#123;</span><br><span class="line">            displayValue = operation(operandStack.removeLast(), operandStack.removeLast())</span><br><span class="line">            enter()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func performOperation1(operation: Double -&gt;Double) &#123;</span><br><span class="line">        if operandStack.count &gt;= 2 &#123;</span><br><span class="line">            displayValue = operation(operandStack.removeLast())</span><br><span class="line">            enter()</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    var displayValue: Double&#123;</span><br><span class="line">        get &#123;</span><br><span class="line">            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue</span><br><span class="line">        &#125;</span><br><span class="line">        set &#123;</span><br><span class="line">            display.text = &quot;\(newValue)&quot;</span><br><span class="line">            userIsInTheMiddleOfTypingANumber = false</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+<p>MVC:</p>
+<ul>
+<li>各个模块之间的含义</li>
+<li>模块之间的通信有无</li>
+<li>模块之间的控制关系</li>
+</ul>
+<p><img src="http://i.imgur.com/i8HTac7.png" alt="MVC"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1109,84 +1203,6 @@
 <p>今天按照视频指导：<a target="_blank" rel="noopener" href="http://www.jikexueyuan.com/course/339.html">制作汤姆猫小游戏</a>，完成以下 DEMO。</p>
 <p>其中发现我写代码中遇到很多小问题，google 就有答案的。</p>
 <figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ViewController.m</span></span><br><span class="line"><span class="comment">//  Tomcat Game DEMO</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by Will on 5/24/15.</span></span><br><span class="line"><span class="comment">//  Copyright (c) 2015 gewill.org. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="meta">#import <span class="string">&quot;ViewController.h&quot;</span></span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@interface</span> <span class="title">ViewController</span> ()</span></span><br><span class="line"><span class="keyword">@property</span> (<span class="keyword">weak</span>, <span class="keyword">nonatomic</span>) <span class="keyword">IBOutlet</span> <span class="built_in">UIImageView</span> *tomImageView;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br><span class="line"><span class="class"><span class="keyword">@implementation</span> <span class="title">ViewController</span></span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (<span class="keyword">IBAction</span>)touchHeadOnHead:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;knockout&quot;</span> imageCount:<span class="number">81</span>];</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchEat:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;eat&quot;</span> imageCount:<span class="number">40</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchPie:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;pie&quot;</span> imageCount:<span class="number">24</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchScratch:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;scratch&quot;</span> imageCount:<span class="number">56</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)TouchDrink:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;drink&quot;</span> imageCount:<span class="number">81</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchCymbal:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;symbal&quot;</span> imageCount:<span class="number">13</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchStomach:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;stomach&quot;</span> imageCount:<span class="number">34</span>];</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchFootLeft:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;footLeft&quot;</span> imageCount:<span class="number">30</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchFootRight:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;footRight&quot;</span> imageCount:<span class="number">30</span>];</span><br><span class="line">&#125;</span><br><span class="line">- (<span class="keyword">IBAction</span>)touchAngry:(<span class="built_in">UIButton</span> *)sender &#123;</span><br><span class="line">    [<span class="keyword">self</span> tomAnimateWith:<span class="string">@&quot;angry&quot;</span> imageCount:<span class="number">26</span>];</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="meta">#<span class="keyword">pragma</span> mark - 动画执行方法</span></span><br><span class="line">- (<span class="type">void</span>)tomAnimateWith:(<span class="built_in">NSString</span> *)fileName imageCount:(<span class="built_in">NSInteger</span>)imageCount&#123;</span><br><span class="line">    <span class="comment">// 0. 判断是否正在执行动画</span></span><br><span class="line">    <span class="keyword">if</span> (<span class="keyword">self</span>.tomImageView.isAnimating) &#123;</span><br><span class="line">        <span class="keyword">return</span>;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="comment">// 1. 创建图片数组</span></span><br><span class="line">    <span class="built_in">NSMutableArray</span> *tomImages = [<span class="built_in">NSMutableArray</span> array];</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">for</span> (<span class="type">int</span> i = <span class="number">0</span>; i &lt; imageCount; i++) &#123;</span><br><span class="line">        <span class="built_in">NSString</span> *imageName = [<span class="built_in">NSString</span> stringWithFormat:<span class="string">@&quot;%@_%02d.jpg&quot;</span>, fileName, i];</span><br><span class="line">        <span class="built_in">NSString</span> *path =[[<span class="built_in">NSBundle</span> mainBundle] pathForResource:imageName ofType:<span class="literal">nil</span>];</span><br><span class="line">        <span class="built_in">UIImage</span> *image = [<span class="built_in">UIImage</span> imageWithContentsOfFile:path];</span><br><span class="line">        [tomImages addObject:image ];</span><br><span class="line">    &#125;</span><br><span class="line">   </span><br><span class="line">    <span class="comment">// 2. 设置动画过程</span></span><br><span class="line">    [<span class="keyword">self</span>.tomImageView setAnimationImages:tomImages];</span><br><span class="line">    [<span class="keyword">self</span>.tomImageView setAnimationDuration:<span class="keyword">self</span>.tomImageView.animationImages.count * <span class="number">0.1</span>];</span><br><span class="line">    [<span class="keyword">self</span>.tomImageView setAnimationRepeatCount:<span class="number">1</span>];</span><br><span class="line">    [<span class="keyword">self</span>.tomImageView startAnimating];</span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)viewDidLoad &#123;</span><br><span class="line">    [<span class="variable language_">super</span> viewDidLoad];</span><br><span class="line">    <span class="comment">// Do any additional setup after loading the view, typically from a nib.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">- (<span class="type">void</span>)didReceiveMemoryWarning &#123;</span><br><span class="line">    [<span class="variable language_">super</span> didReceiveMemoryWarning];</span><br><span class="line">    <span class="comment">// Dispose of any resources that can be recreated.</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">@end</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/05/24/Simple-Calculator/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/05/24/Simple-Calculator/" class="post-title-link" itemprop="url">Simple Calculator</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-05-24 10:23:41" itemprop="dateCreated datePublished" datetime="2015-05-24T10:23:41+08:00">2015-05-24</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>一个简单地计算器，可以加减乘除，除法还有问题，待解决。</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  Simple Calculator</span><br><span class="line">//</span><br><span class="line">//  Created by Will on 5/24/15.</span><br><span class="line">//  Copyright (c) 2015 gewill.org. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    @IBOutlet weak var text1: UITextField!</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var text2: UITextField!</span><br><span class="line">    @IBOutlet weak var result: UITextField!</span><br><span class="line">    </span><br><span class="line">    @IBAction func BeZero(sender: AnyObject) &#123;</span><br><span class="line">        self.result.text = &quot;0&quot;</span><br><span class="line">        self.text1.text = &quot; &quot;</span><br><span class="line">        self.text2.text = &quot; &quot;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func plus(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum:Double = Double(num1!) + Double(num2!)</span><br><span class="line">        println(resultNum)</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func minus(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum = num1! - num2!</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func multiply(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum = num1! * num2!</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    @IBAction func division(sender: AnyObject) &#123;</span><br><span class="line">        // 三目运算符简洁，但是没有 if 逻辑清晰。</span><br><span class="line">        var num1 = self.text1.text.isEmpty ? 0 : self.text1.text.toInt()</span><br><span class="line">        var num2 = self.text2.text.isEmpty ? 0 : self.text2.text.toInt()</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">        var resultNum = num1! / num2!</span><br><span class="line">        </span><br><span class="line">        self.result.text = &quot;\(resultNum)&quot;</span><br><span class="line">        </span><br><span class="line">        self.text1.resignFirstResponder()</span><br><span class="line">        self.text2.resignFirstResponder()</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    override func viewDidLoad() &#123;</span><br><span class="line">        super.viewDidLoad()</span><br><span class="line">        // Do any additional setup after loading the view, typically from a nib.</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    override func didReceiveMemoryWarning() &#123;</span><br><span class="line">        super.didReceiveMemoryWarning()</span><br><span class="line">        // Dispose of any resources that can be recreated.</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="http://i.imgur.com/96q8Eay.png" alt="Imgur"><br><img src="http://i.imgur.com/7kHLTc4.png" alt="Imgur"></p>
 
       
     </div>

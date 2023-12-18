@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">193</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">194</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">193</span>
+          <span class="site-state-item-count">194</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,96 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2022/12/14/Custom-USB-for-hackintosh-by-USBToolBox/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2022/12/14/Custom-USB-for-hackintosh-by-USBToolBox/" class="post-title-link" itemprop="url">黑苹果用USBToolBox定制USB</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2022-12-14 20:04:20" itemprop="dateCreated datePublished" datetime="2022-12-14T20:04:20+08:00">2022-12-14</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>参考<a target="_blank" rel="noopener" href="https://space.bilibili.com/16323318">大头蔡Cass</a>的教程<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1m3411b7JP">【黑苹果】全新的定制USB教程</a> ，<a target="_blank" rel="noopener" href="https://www.bilibili.com/video/BV1yv4y1X7Jq/">「黑苹果」USB定制补充内容，该选择哪种USB定制方式？</a> 感谢🙏。</p>
+</blockquote>
+<h1 id="Windows下步骤"><a href="#Windows下步骤" class="headerlink" title="Windows下步骤"></a>Windows下步骤</h1><h2 id="运行USBToolBox"><a href="#运行USBToolBox" class="headerlink" title="运行USBToolBox"></a>运行USBToolBox</h2><p>下载地址：<a target="_blank" rel="noopener" href="https://github.com/USBToolBox/tool">https://github.com/USBToolBox/tool</a> ，<a target="_blank" rel="noopener" href="https://github.com/USBToolBox/kext">https://github.com/USBToolBox/kext</a> 。</p>
+<p> <img src="https://gewill.org/assets/Custom-USB-for-hackintosh-by-USBToolBox/USBToolBox-main.png" alt="USBToolBox-main"></p>
+<p>D：插拔USB2和USB3等设备</p>
+<p> <img src="https://gewill.org/assets/Custom-USB-for-hackintosh-by-USBToolBox/USBToolBox-Port-Discovery.png" alt="USBToolBox-Port-Discovery"></p>
+<p>S：生成<code>UTBMap.kext</code></p>
+<h2 id="修改UTBMap-kext"><a href="#修改UTBMap-kext" class="headerlink" title="修改UTBMap.kext"></a>修改<code>UTBMap.kext</code></h2><p>如果超过15个需要删除多余的，主要这里填写<code>ports</code>的最大值。</p>
+<p><img src="https://gewill.org/assets/Custom-USB-for-hackintosh-by-USBToolBox/UTBMap.png" alt="UTBMap"> </p>
+<p>生成<code>UTBMap.kext</code>和下载<code>USBToolBox.kext</code>导入EFI，启动macOS</p>
+<h1 id="macOS下步骤"><a href="#macOS下步骤" class="headerlink" title="macOS下步骤"></a>macOS下步骤</h1><h2 id="Hackintool生成USBPorts-kext"><a href="#Hackintool生成USBPorts-kext" class="headerlink" title="Hackintool生成USBPorts.kext"></a>Hackintool生成<code>USBPorts.kext</code></h2><p>对应HS设置USB2，SS设置USB，导出<code>USBPorts.kext</code>。</p>
+<p> <strong>特别需要主要的是<code>Name</code>中数字后缀，不是<code>port</code>。</strong><img src="https://gewill.org/assets/Custom-USB-for-hackintosh-by-USBToolBox/Hackintool.png" alt="Hackintool"></p>
+<h2 id="USBPorts-kext导入EFI"><a href="#USBPorts-kext导入EFI" class="headerlink" title="USBPorts.kext导入EFI"></a><code>USBPorts.kext</code>导入EFI</h2><p>使用OCAuxiliaryTools，生成的<code>USBPorts.kext</code>导入EFI，并关闭<code>UTBMap.kext</code>和<code>USBToolBox.kext</code>，重启验证。</p>
+<p><img src="https://gewill.org/assets/Custom-USB-for-hackintosh-by-USBToolBox/OCAuxiliaryTools.png" alt="OCAuxiliaryTools"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -969,100 +1059,6 @@
 <p>裱纸是装裱壁纸的意思。提供许多高质量壁纸。</p>
 <p>Mountpaper is meaning of mount wallpaper. Offer a lot of high quality wallpapers.</p>
 <p>下载地址 Download on：<a target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/mountpaper/id1603270231">App Store</a></p>
-<p>有任何疑问或者建议，可以通过 <a href="mailto:531sunlight@gmail.com">Email</a> 联系。</p>
-<p>If you have any questions or suggestions, you can contact them through <a href="mailto:531sunlight@gmail.com">Email</a>.</p>
-<h1 id="隐私政策Privacy-policy"><a href="#隐私政策Privacy-policy" class="headerlink" title="隐私政策Privacy policy"></a>隐私政策Privacy policy</h1><p>本App不进行任何隐私信息收集或上传。</p>
-<p>This App does not collect or upload any private information.</p>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2021/11/16/introducing-SwiftyModel/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2021/11/16/introducing-SwiftyModel/" class="post-title-link" itemprop="url">SwiftyModel介绍</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2021-11-16 18:21:00" itemprop="dateCreated datePublished" datetime="2021-11-16T18:21:00+08:00">2021-11-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p><img src="https://gewill.org/assets/SwiftyModel-mac-preview.jpg" alt="SwiftyModel-mac-preview"></p>
-<h1 id="介绍Introducing"><a href="#介绍Introducing" class="headerlink" title="介绍Introducing"></a>介绍Introducing</h1><p>使用 SwiftyJSON 生成在 Swift 语言中支持 SwiftyJSON 的 Model（模型）。</p>
-<p>一键复制和分享代码。</p>
-<p>Use SwiftyJSON to generate models that support SwiftyJSON in Swift Language.</p>
-<p>One-click to copy or share code.</p>
-<p>例如输入以下JSON：</p>
-<p>For example, enter the following JSON:</p>
-<figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line"><span class="punctuation">&#123;</span></span><br><span class="line">  <span class="attr">&quot;id&quot;</span> <span class="punctuation">:</span> <span class="number">1</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;name&quot;</span> <span class="punctuation">:</span> <span class="string">&quot;Jacky&quot;</span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;notifications&quot;</span> <span class="punctuation">:</span> <span class="literal"><span class="keyword">false</span></span><span class="punctuation">,</span></span><br><span class="line">  <span class="attr">&quot;pets&quot;</span> <span class="punctuation">:</span> <span class="punctuation">[</span></span><br><span class="line">    <span class="string">&quot;cat&quot;</span><span class="punctuation">,</span></span><br><span class="line">    <span class="string">&quot;dog&quot;</span></span><br><span class="line">  <span class="punctuation">]</span></span><br><span class="line"><span class="punctuation">&#125;</span></span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>输出Swift Model：</p>
-<p>Output Swift Model:</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> Foundation</span><br><span class="line"><span class="keyword">import</span> SwiftyJSON</span><br><span class="line"></span><br><span class="line"><span class="keyword">struct</span> <span class="title class_">NewModel</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> id: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">let</span> name: <span class="type">String</span></span><br><span class="line">    <span class="keyword">let</span> notifications: <span class="type">Bool</span></span><br><span class="line">    <span class="keyword">let</span> pets: [<span class="type">String</span>]</span><br><span class="line"></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">json</span>: <span class="type">JSON</span>) &#123;</span><br><span class="line">        id <span class="operator">=</span> json[<span class="string">&quot;id&quot;</span>].intValue</span><br><span class="line">        name <span class="operator">=</span> json[<span class="string">&quot;name&quot;</span>].stringValue</span><br><span class="line">        notifications <span class="operator">=</span> json[<span class="string">&quot;notifications&quot;</span>].boolValue</span><br><span class="line">        pets <span class="operator">=</span> json[<span class="string">&quot;pets&quot;</span>].arrayValue.map &#123; <span class="variable">$0</span>.stringValue &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<p>下载地址：<a target="_blank" rel="noopener" href="https://apps.apple.com/us/app/swiftymodel/id1594180242">App Store</a></p>
-<p><a target="_blank" rel="noopener" href="https://apps.apple.com/cn/app/swiftymodel/id1594180242">App Store下载</a><br><a target="_blank" rel="noopener" href="https://apps.apple.com/app/swiftymodel/id1594180242">Download on the App Store</a></p>
 <p>有任何疑问或者建议，可以通过 <a href="mailto:531sunlight@gmail.com">Email</a> 联系。</p>
 <p>If you have any questions or suggestions, you can contact them through <a href="mailto:531sunlight@gmail.com">Email</a>.</p>
 <h1 id="隐私政策Privacy-policy"><a href="#隐私政策Privacy-policy" class="headerlink" title="隐私政策Privacy policy"></a>隐私政策Privacy policy</h1><p>本App不进行任何隐私信息收集或上传。</p>
