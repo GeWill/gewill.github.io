@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">194</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">11</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">195</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">13</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">194</span>
+          <span class="site-state-item-count">195</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -183,7 +183,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">11</span>
+        <span class="site-state-item-count">13</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -214,6 +214,92 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2017/02/05/PaintCode-Dynamic-Bezier-Shapes/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2017/02/05/PaintCode-Dynamic-Bezier-Shapes/" class="post-title-link" itemprop="url">PaintCode-Dynamic-Bezier-Shapes</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2017-02-05 12:30:38" itemprop="dateCreated datePublished" datetime="2017-02-05T12:30:38+08:00">2017-02-05</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>官方教程地址：<a target="_blank" rel="noopener" href="https://www.paintcodeapp.com/examples">https://www.paintcodeapp.com/examples</a></p>
+<p>PaintCode能够画出各种自定义的曲线图形（再也不怕设计师的各种曲线和细节实现不了），而且很方便的集成到iOS项目中，支持Swift和Objective-C。尤其是 Dynamic Shapes 支持简单约束，可以保持大小变化时图形规则变化。</p>
+<h2 id="软件截图："><a href="#软件截图：" class="headerlink" title="软件截图："></a>软件截图：</h2><p>操作很简单，和Sketch习惯差不多。</p>
+<p><img src="https://github.com/gewill/PaintCode-Dynamic-Bezier-Shapes-Demo/raw/master/Screen%20Shot/Screen%20Shot%202017-02-05%20at%2012.14.33.png" alt="Screen Shot 2017-02-05 at 12.14.33"></p>
+<h2 id="自定义视图代码："><a href="#自定义视图代码：" class="headerlink" title="自定义视图代码："></a>自定义视图代码：</h2><p>实现一个带有箭头的圆形边框的图片视图</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ButtonView</span>: <span class="title class_">UIView</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">var</span> image: <span class="type">UIImage</span>? &#123;</span><br><span class="line">        <span class="keyword">didSet</span> &#123;</span><br><span class="line">            <span class="keyword">if</span> imageView <span class="operator">==</span> <span class="literal">nil</span> &#123;</span><br><span class="line">                imageView <span class="operator">=</span> <span class="type">UIImageView</span>()</span><br><span class="line">                imageView<span class="operator">?</span>.backgroundColor <span class="operator">=</span> .clear</span><br><span class="line">                imageView<span class="operator">?</span>.layer.masksToBounds <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line">                <span class="keyword">self</span>.insertSubview(imageView<span class="operator">!</span>, at: <span class="number">0</span>)</span><br><span class="line">            &#125;</span><br><span class="line">            imageView<span class="operator">?</span>.image <span class="operator">=</span> image</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">private</span> <span class="keyword">var</span> imageView: <span class="type">UIImageView</span>?</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">draw</span>(<span class="keyword">_</span> <span class="params">rect</span>: <span class="type">CGRect</span>) &#123;</span><br><span class="line">		<span class="comment">// 重点代码，一行即可完成</span></span><br><span class="line">        <span class="type">JLXStyleKit</span>.drawBubbleButton(frame: <span class="keyword">self</span>.bounds)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">layoutSubviews</span>() &#123;</span><br><span class="line">        <span class="keyword">super</span>.layoutSubviews()</span><br><span class="line"></span><br><span class="line">        imageView<span class="operator">?</span>.frame <span class="operator">=</span> <span class="type">CGRect</span>(x: <span class="keyword">self</span>.bounds.width <span class="operator">*</span> <span class="number">0.5</span> <span class="operator">/</span> <span class="number">38.0</span>, y: <span class="keyword">self</span>.bounds.width <span class="operator">*</span> <span class="number">0.5</span> <span class="operator">/</span> <span class="number">38.0</span>, width: <span class="keyword">self</span>.bounds.width <span class="operator">*</span> <span class="number">37</span> <span class="operator">/</span> <span class="number">38.0</span>, height: <span class="keyword">self</span>.bounds.width <span class="operator">*</span> <span class="number">37</span> <span class="operator">/</span> <span class="number">38.0</span>)</span><br><span class="line">        imageView<span class="operator">?</span>.layer.cornerRadius <span class="operator">=</span> bounds.width <span class="operator">/</span> <span class="number">2.0</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+
+
+<h2 id="运行截图："><a href="#运行截图：" class="headerlink" title="运行截图："></a>运行截图：</h2><p><img src="https://github.com/gewill/PaintCode-Dynamic-Bezier-Shapes-Demo/raw/master/Screen%20Shot/Simulator%20Screen%20Shot%20Feb%205,%202017,%2012.16.37.png" alt="Simulator Screen Shot Feb 5, 2017, 12.16.37"></p>
+<h2 id="Demo-地址"><a href="#Demo-地址" class="headerlink" title="Demo 地址"></a>Demo 地址</h2><p><a target="_blank" rel="noopener" href="https://github.com/gewill/PaintCode-Dynamic-Bezier-Shapes-Demo">https://github.com/gewill/PaintCode-Dynamic-Bezier-Shapes-Demo</a></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1252,90 +1338,6 @@
 <blockquote>
 <p>The view controller has obtained its view. See the discussion earlier in this chapter of how a view controller gets its view. Recall that this does not mean that the view is in the interface or even that it has been given its correct size.</p>
 </blockquote>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2016/03/16/Core-Animation-Essentials-Notes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2016/03/16/Core-Animation-Essentials-Notes/" class="post-title-link" itemprop="url">Core Animation Essentials - Notes</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2016-03-16 18:13:31" itemprop="dateCreated datePublished" datetime="2016-03-16T18:13:31+08:00">2016-03-16</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>Core Animation Essentials (WWDC 2011 - Session 421): </p>
-<p><a target="_blank" rel="noopener" href="https://developer.apple.com/videos/play/wwdc2011/421/">https://developer.apple.com/videos/play/wwdc2011/421/</a></p>
-<p>Animations Explained:</p>
-<p><a target="_blank" rel="noopener" href="https://www.objc.io/issues/12-animations/animations-explained/#a-basic-animation">https://www.objc.io/issues/12-animations/animations-explained/#a-basic-animation</a></p>
-<p>According above two documents，write code again by myself. </p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br><span class="line">85</span><br><span class="line">86</span><br><span class="line">87</span><br><span class="line">88</span><br><span class="line">89</span><br><span class="line">90</span><br><span class="line">91</span><br><span class="line">92</span><br><span class="line">93</span><br><span class="line">94</span><br><span class="line">95</span><br><span class="line">96</span><br><span class="line">97</span><br><span class="line">98</span><br><span class="line">99</span><br><span class="line">100</span><br><span class="line">101</span><br><span class="line">102</span><br><span class="line">103</span><br><span class="line">104</span><br><span class="line">105</span><br><span class="line">106</span><br><span class="line">107</span><br><span class="line">108</span><br><span class="line">109</span><br><span class="line">110</span><br><span class="line">111</span><br><span class="line">112</span><br><span class="line">113</span><br><span class="line">114</span><br><span class="line">115</span><br><span class="line">116</span><br><span class="line">117</span><br><span class="line">118</span><br><span class="line">119</span><br><span class="line">120</span><br><span class="line">121</span><br><span class="line">122</span><br><span class="line">123</span><br><span class="line">124</span><br><span class="line">125</span><br><span class="line">126</span><br><span class="line">127</span><br><span class="line">128</span><br><span class="line">129</span><br><span class="line">130</span><br><span class="line">131</span><br><span class="line">132</span><br><span class="line">133</span><br><span class="line">134</span><br><span class="line">135</span><br><span class="line">136</span><br><span class="line">137</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"><span class="keyword">import</span> QuartzCore</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ViewController</span>: <span class="title class_">UIViewController</span> &#123;</span><br><span class="line">    <span class="keyword">let</span> layer <span class="operator">=</span> <span class="type">CALayer</span>()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">viewDidLoad</span>() &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line"></span><br><span class="line">        <span class="keyword">self</span>.addImageLayer()</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">addImageLayer</span>() &#123;</span><br><span class="line"></span><br><span class="line">        layer.bounds <span class="operator">=</span> <span class="type">CGRect</span>(x: <span class="number">0</span>, y: <span class="number">0</span>, width: <span class="number">25</span>, height: <span class="number">25</span>)</span><br><span class="line">        layer.position <span class="operator">=</span> <span class="type">CGPoint</span>(x: <span class="number">100</span>, y: <span class="number">100</span>)</span><br><span class="line">        <span class="keyword">let</span> image <span class="operator">=</span> <span class="type">UIImage</span>(named: <span class="string">&quot;yanFei&quot;</span>)<span class="operator">!</span></span><br><span class="line">        layer.contents <span class="operator">=</span> image.<span class="type">CGImage</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">self</span>.view.layer.addSublayer(layer)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">stopButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">firstButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line">        layer.opacity <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">secendButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line">        <span class="comment">// Just disable current run loop transaction</span></span><br><span class="line"><span class="comment">//        CATransaction.setDisableActions(true)</span></span><br><span class="line"></span><br><span class="line">        <span class="type">CATransaction</span>.setAnimationDuration(<span class="number">2</span>)</span><br><span class="line">        layer.opacity <span class="operator">=</span> <span class="number">1</span></span><br><span class="line">        layer.position <span class="operator">=</span> <span class="type">CGPoint</span>(x: <span class="number">100</span>, y: <span class="number">400</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">thirdButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line">        <span class="type">CATransaction</span>.setAnimationDuration(<span class="number">5</span>)</span><br><span class="line">        layer.position <span class="operator">=</span> <span class="type">CGPoint</span>(x: <span class="number">0</span>, y: <span class="type">UIScreen</span>.mainScreen().bounds.height)</span><br><span class="line">        layer.opacity <span class="operator">=</span> <span class="number">0</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">fourthButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line"></span><br><span class="line">        layer.position <span class="operator">=</span> <span class="type">CGPoint</span>(x: layer.position.x, y: <span class="number">400</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> drop <span class="operator">=</span> <span class="type">CABasicAnimation</span>(keyPath: <span class="string">&quot;position.y&quot;</span>)</span><br><span class="line">        drop.fromValue <span class="operator">=</span> <span class="number">30</span></span><br><span class="line">        drop.toValue <span class="operator">=</span> <span class="number">400</span></span><br><span class="line">        drop.duration <span class="operator">=</span> <span class="number">5</span></span><br><span class="line">        drop.delegate <span class="operator">=</span> <span class="keyword">self</span></span><br><span class="line"><span class="comment">//        drop.beginTime = CACurrentMediaTime() + 0.5</span></span><br><span class="line">        layer.addAnimation(drop, forKey: <span class="literal">nil</span>)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">fivethButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> shake <span class="operator">=</span> <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">&quot;position.x&quot;</span>)</span><br><span class="line">        <span class="comment">// values or path</span></span><br><span class="line">        shake.values <span class="operator">=</span> [<span class="number">0</span>, <span class="number">10</span>, <span class="operator">-</span><span class="number">10</span>, <span class="number">10</span>, <span class="number">0</span>]</span><br><span class="line">        shake.keyTimes <span class="operator">=</span> [<span class="number">0</span>, <span class="number">1</span> <span class="operator">/</span> <span class="number">6.0</span>, <span class="number">3</span> <span class="operator">/</span> <span class="number">6.0</span>, <span class="number">5</span> <span class="operator">/</span> <span class="number">6.0</span>, <span class="number">1</span>]</span><br><span class="line">        shake.duration <span class="operator">=</span> <span class="number">0.4</span></span><br><span class="line"></span><br><span class="line">        shake.additive <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line">        </span><br><span class="line">        shake.delegate <span class="operator">=</span> <span class="keyword">self</span></span><br><span class="line"></span><br><span class="line">        layer.addAnimation(shake, forKey: <span class="string">&quot;shake&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">sixthButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> boundingRect <span class="operator">=</span> <span class="type">CGRect</span>(x: <span class="operator">-</span><span class="number">50</span>, y: <span class="operator">-</span><span class="number">50</span>, width: <span class="number">100</span>, height: <span class="number">100</span>)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> orbit <span class="operator">=</span> <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">&quot;position&quot;</span>)</span><br><span class="line">        orbit.path <span class="operator">=</span> <span class="type">CGPathCreateWithEllipseInRect</span>(boundingRect, <span class="literal">nil</span>)</span><br><span class="line">        orbit.duration <span class="operator">=</span> <span class="number">4</span></span><br><span class="line">        orbit.additive <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line">        orbit.repeatCount <span class="operator">=</span> <span class="type">Float</span>.infinity</span><br><span class="line">        orbit.calculationMode <span class="operator">=</span> kCAAnimationPaced</span><br><span class="line">        orbit.rotationMode <span class="operator">=</span> kCAAnimationRotateAuto</span><br><span class="line"></span><br><span class="line">        layer.addAnimation(orbit, forKey: <span class="string">&quot;orbit&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">seventhButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line"></span><br><span class="line">        layer.position <span class="operator">=</span> <span class="type">CGPoint</span>(x: <span class="number">300</span>, y: layer.position.y)</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> timing <span class="operator">=</span> <span class="type">CABasicAnimation</span>(keyPath: <span class="string">&quot;position.x&quot;</span>)</span><br><span class="line">        timing.fromValue <span class="operator">=</span> <span class="number">30</span></span><br><span class="line">        timing.toValue <span class="operator">=</span> <span class="number">300</span></span><br><span class="line">        timing.duration <span class="operator">=</span> <span class="number">2</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//        timing.timingFunction = CAMediaTimingFunction(name: kCAMediaTimingFunctionLinear)</span></span><br><span class="line">        timing.timingFunction <span class="operator">=</span> <span class="type">CAMediaTimingFunction</span>(controlPoints: <span class="number">0.5</span>, <span class="number">0</span>, <span class="number">0.9</span>, <span class="number">0.7</span>)</span><br><span class="line">        layer.addAnimation(timing, forKey: <span class="string">&quot;timing&quot;</span>)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">eighthButtonClick</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> zPosistion <span class="operator">=</span> <span class="type">CABasicAnimation</span>(keyPath: <span class="string">&quot;zPosition&quot;</span>)</span><br><span class="line">        zPosistion.fromValue <span class="operator">=</span> <span class="operator">-</span><span class="number">1</span></span><br><span class="line">        zPosistion.toValue <span class="operator">=</span> <span class="number">1</span></span><br><span class="line">        zPosistion.duration <span class="operator">=</span> <span class="number">1.2</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> rotation <span class="operator">=</span> <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">&quot;transform.rotation&quot;</span>)</span><br><span class="line">        rotation.values <span class="operator">=</span> [<span class="number">0</span>, <span class="number">0.14</span>, <span class="number">0</span>]</span><br><span class="line">        rotation.duration <span class="operator">=</span> <span class="number">1.2</span></span><br><span class="line">        rotation.timingFunctions <span class="operator">=</span> [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut),</span><br><span class="line">            <span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut)]</span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> position <span class="operator">=</span> <span class="type">CAKeyframeAnimation</span>(keyPath: <span class="string">&quot;position&quot;</span>)</span><br><span class="line">        position.values <span class="operator">=</span> [<span class="type">NSValue</span>(CGPoint: <span class="type">CGPointZero</span>), <span class="type">NSValue</span>(CGPoint: <span class="type">CGPoint</span>(x: <span class="number">110</span>, y: <span class="operator">-</span><span class="number">20</span>)), <span class="type">NSValue</span>(CGPoint: <span class="type">CGPointZero</span>)]</span><br><span class="line">        position.timingFunctions <span class="operator">=</span> [<span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut),</span><br><span class="line">            <span class="type">CAMediaTimingFunction</span>(name: kCAMediaTimingFunctionEaseInEaseOut)]</span><br><span class="line">        position.duration <span class="operator">=</span> <span class="number">1.2</span></span><br><span class="line">        position.additive <span class="operator">=</span> <span class="literal">true</span></span><br><span class="line"></span><br><span class="line">        <span class="keyword">let</span> group <span class="operator">=</span> <span class="type">CAAnimationGroup</span>()</span><br><span class="line">        group.animations <span class="operator">=</span> [zPosistion, rotation, position]</span><br><span class="line">        group.duration <span class="operator">=</span> <span class="number">1.2</span></span><br><span class="line">        group.beginTime <span class="operator">=</span> <span class="type">CACurrentMediaTime</span>() <span class="operator">+</span> <span class="number">0.5</span></span><br><span class="line"></span><br><span class="line">        layer.addAnimation(group, forKey: <span class="literal">nil</span>)</span><br><span class="line"></span><br><span class="line">        layer.zPosition <span class="operator">=</span> <span class="number">1</span></span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">extension</span> <span class="title class_">ViewController</span> &#123;</span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">animationDidStart</span>(<span class="params">anim</span>: <span class="type">CAAnimation</span>) &#123;</span><br><span class="line">        <span class="built_in">print</span>(anim)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">animationDidStop</span>(<span class="params">anim</span>: <span class="type">CAAnimation</span>, <span class="params">finished</span> <span class="params">flag</span>: <span class="type">Bool</span>) &#123;</span><br><span class="line">        <span class="built_in">print</span>(anim)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-
-<p>Demo link:<br><a target="_blank" rel="noopener" href="https://github.com/gewill/test-projects/tree/master/test%20Core%20Animation">https://github.com/gewill/test-projects/tree/master/test%20Core%20Animation</a></p>
 
       
     </div>
