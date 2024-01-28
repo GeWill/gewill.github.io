@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">195</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">13</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">196</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">195</span>
+          <span class="site-state-item-count">196</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -183,7 +183,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">13</span>
+        <span class="site-state-item-count">16</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -214,6 +214,111 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/23/iOS-Programming-4ed-2/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/07/23/iOS-Programming-4ed-2/" class="post-title-link" itemprop="url">《iOS 编程》2. Objective-C</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-07-23 15:44:27" itemprop="dateCreated datePublished" datetime="2015-07-23T15:44:27+08:00">2015-07-23</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <blockquote>
+<p>网站加了一个 <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo-filter-auto-spacing">hexo-filter-auto-spacing</a> 插件，中英文之间自动加空格😊</p>
+</blockquote>
+<h2 id="2-1-类和对象"><a href="#2-1-类和对象" class="headerlink" title="2.1 类和对象"></a>2.1 类和对象</h2><ul>
+<li><p>类和对象。对象通过实例变量保存属性的值。</p>
+</li>
+<li><p>类有方法，类似函数，调用对象的方法一般叫发消息。</p>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[ partyInstance addAttendee: somePerson</span><br><span class="line">                   withDish: deviledEggs]</span><br></pre></td></tr></table></figure></li>
+<li><p>方法的唯一性取决方法名。</p>
+</li>
+<li><p>实例变量的存取方法：get 和 set</p>
+</li>
+<li><p>发消息的三种语法：</p>
+<ul>
+<li>发消息[]：调用方法</li>
+<li>点语法.：存取实例变量</li>
+<li>下标语法[]：访问数组</li>
+</ul>
+</li>
+<li><p>类方法和实例方法区别：</p>
+<ul>
+<li>类方法通常用来创建对象，或者获取类的全局变量</li>
+<li>实例变量则是用来操作类的对象（对象就是类的实例），如存取方法</li>
+</ul>
+</li>
+<li><p>类方法的初始化</p>
+<p>必须选一个指定初始化方法，其他初始化方法可以调用指定初始化方法，形成一个初始化方法链<br><img src="http://ww2.sinaimg.cn/large/5369602ejw1eudiggqtaej20go08adgf.jpg" alt="初始化方法链"></p>
+</li>
+</ul>
+<h2 id="2-5-NSArray与-NSMultableArray"><a href="#2-5-NSArray与-NSMultableArray" class="headerlink" title="2.5 NSArray与 NSMultableArray"></a>2.5 NSArray与 NSMultableArray</h2><p>数组对象只能保存指向 Objective-C 对象的指针，不能保存基本类型和 C 结构加入数组对象。当然包装成 Objective-C 对象，就可以了，如 NSNumber、NSValue 和 NSDate。nil 包装成 NSNull 才能加入数组。</p>
+<h2 id="项目代码保存在我的-GitHub-iOSProgramming4edSolutions"><a href="#项目代码保存在我的-GitHub-iOSProgramming4edSolutions" class="headerlink" title="项目代码保存在我的 GitHub: iOSProgramming4edSolutions"></a>项目代码保存在我的 GitHub: <a target="_blank" rel="noopener" href="https://github.com/gewill/iOSProgramming4edSolutions">iOSProgramming4edSolutions</a></h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1132,95 +1237,6 @@
 <li>常用的方法和函数</li>
 </ul>
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/11/CS193P-3-Applying-MVC/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/07/11/CS193P-3-Applying-MVC/" class="post-title-link" itemprop="url">CS193P 3. Applying MVC</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-07-11 16:17:07" itemprop="dateCreated datePublished" datetime="2015-07-11T16:17:07+08:00">2015-07-11</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>看英文视频加中文字幕，效率也是蛮低的，下个星期六博览网的 iOS 极客班就开学了，希望能够认真高效投入更多时间去学习，一定要学好，找到开发的工作，圆毕业三年的一个梦。</p>
-<p>Swift 学习还算顺利，MVC 模式也有所熟悉，就是独自开发和想法实现有困难，暂时停留在看懂和自己写一遍的水平。</p>
-<p>还有就是玩手机，刷微博啥的超级浪费时间，因为这个不费脑，玩的也高兴，能够一天不吃饭，也不困，也停不下来。<br><strong>但是学习或看书，就很费神，容易犯困，这个一定要克服，实在困了就休息10分钟，再继续。</strong></p>
-<p>New Calculator Demo</p>
-<ul>
-<li>Applying MVC to the Calculator </li>
-<li>enum</li>
-<li>Simple initializer</li>
-<li>Returning an Optional</li>
-<li>Dicionary</li>
-<li>Tuples</li>
-</ul>
-<p>源码如下，待修改：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br><span class="line">75</span><br><span class="line">76</span><br><span class="line">77</span><br><span class="line">78</span><br><span class="line">79</span><br><span class="line">80</span><br><span class="line">81</span><br><span class="line">82</span><br><span class="line">83</span><br><span class="line">84</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  CalculatorBrain.swift</span><br><span class="line">//  Calculator</span><br><span class="line">//</span><br><span class="line">//  Created by Will Ge on 7/11/15.</span><br><span class="line">//  Copyright © 2015 gewill.org. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import Foundation</span><br><span class="line"></span><br><span class="line">class CauculatorBrain</span><br><span class="line">&#123;</span><br><span class="line">    // 定义一个枚举类型，来分类表示输入的：运算数、一元运算和二元运算</span><br><span class="line">    enum Op &#123;</span><br><span class="line">        case Operand(Double)</span><br><span class="line">        case UnaryOperation(String, Double -&gt; Double)</span><br><span class="line">        case BinaryOperation(String, (Double, Double) -&gt; Double)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 定义一个数组来储存所有输入</span><br><span class="line">    var opStack = [Op]()</span><br><span class="line">    </span><br><span class="line">    // 定义已知运算符</span><br><span class="line">    var knownOps = [String:Op]()</span><br><span class="line">    </span><br><span class="line">    // 初始化已知运算符</span><br><span class="line">    init() &#123;</span><br><span class="line">        knownOps[&quot;+&quot;] = Op.BinaryOperation(&quot;+&quot;, +)</span><br><span class="line">        knownOps[&quot;−&quot;] = Op.BinaryOperation(&quot;−&quot;) &#123;$1 - $0&#125;</span><br><span class="line">        knownOps[&quot;×&quot;] = Op.BinaryOperation(&quot;×&quot;, *)</span><br><span class="line">        knownOps[&quot;÷&quot;] = Op.BinaryOperation(&quot;÷&quot;) &#123;$1 / $0&#125;</span><br><span class="line">        knownOps[&quot;√&quot;] = Op.UnaryOperation(&quot;√&quot;, sqrt)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 定义一个函数，把输入递归取出</span><br><span class="line">    func evaluate(ops: [Op]) -&gt; (result: Double?, remainingOps:[Op]) &#123;</span><br><span class="line">        if !ops.isEmpty &#123;</span><br><span class="line">            var remainingOps = ops</span><br><span class="line">            let op = remainingOps.removeLast()</span><br><span class="line">            switch op &#123;</span><br><span class="line">            case.Operand(let operand):</span><br><span class="line">                return (operand, remainingOps)</span><br><span class="line">            case .UnaryOperation(_, let operation):</span><br><span class="line">                let operandEvaluation = evaluate(remainingOps)</span><br><span class="line">                if let operand = operandEvaluation.result &#123;</span><br><span class="line">                    return (operation(operand), operandEvaluation.remainingOps)</span><br><span class="line">                &#125;</span><br><span class="line">            case .BinaryOperation(_, let operation):</span><br><span class="line">                let op1Evaluation = evaluate(remainingOps)</span><br><span class="line">                if let operand1 = op1Evaluation.result &#123;</span><br><span class="line">                    let op2Evaluation = evaluate(remainingOps)</span><br><span class="line">                    if let operand2 = op2Evaluation.result &#123;</span><br><span class="line">                        return (operation(operand1, operand2), op2Evaluation.remainingOps)</span><br><span class="line">                    &#125;</span><br><span class="line"></span><br><span class="line">                    </span><br><span class="line">                &#125;</span><br><span class="line">                </span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">        return (nil, ops)</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    func evaluate() -&gt; Double? &#123;</span><br><span class="line">        let (result, remainder) = evaluate(opStack)</span><br><span class="line">        print(&quot;\(opStack) = \(result) with \(remainder) left over&quot;)</span><br><span class="line">        return result</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 运算数</span><br><span class="line">    func pushOperand(operand: Double) -&gt; Double? &#123;</span><br><span class="line">        opStack.append(Op.Operand(operand))</span><br><span class="line">        return evaluate()</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    // 运算符</span><br><span class="line">    func performOperation(symbol: String) -&gt; Double? &#123;</span><br><span class="line">        if let operation = knownOps[symbol] &#123;</span><br><span class="line">            opStack.append(operation)</span><br><span class="line">        &#125;</span><br><span class="line">        return evaluate()</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br></pre></td><td class="code"><pre><span class="line">//</span><br><span class="line">//  ViewController.swift</span><br><span class="line">//  Calculator</span><br><span class="line">//</span><br><span class="line">//  Created by Will Ge on 6/28/15.</span><br><span class="line">//  Copyright © 2015 gewill.org. All rights reserved.</span><br><span class="line">//</span><br><span class="line"></span><br><span class="line">import UIKit</span><br><span class="line"></span><br><span class="line">class ViewController: UIViewController &#123;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    @IBOutlet weak var history: UILabel!</span><br><span class="line">    </span><br><span class="line">    @IBOutlet weak var display: UILabel!</span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    var userIsInTheMiddleOfTypingANumber: Bool = false</span><br><span class="line">    </span><br><span class="line">    var brain = CauculatorBrain()</span><br><span class="line"></span><br><span class="line">    @IBAction func appendDigit(sender: UIButton) &#123;</span><br><span class="line">        let digit = sender.currentTitle!</span><br><span class="line">        if userIsInTheMiddleOfTypingANumber&#123;</span><br><span class="line">              display.text = display.text! + digit</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            display.text = digit</span><br><span class="line">            userIsInTheMiddleOfTypingANumber = true</span><br><span class="line">        &#125;</span><br><span class="line">    </span><br><span class="line">        print(&quot;digit = \(digit)&quot;)</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    </span><br><span class="line">    @IBAction func enter() &#123;</span><br><span class="line">        userIsInTheMiddleOfTypingANumber = false</span><br><span class="line">        if let result = brain.pushOperand(displayValue) &#123;</span><br><span class="line">            displayValue = result</span><br><span class="line">        &#125; else &#123;</span><br><span class="line">            displayValue = 0</span><br><span class="line">        &#125;</span><br><span class="line">        print(&quot;pushOperand = \(displayValue)&quot;)</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line">    @IBAction func operate(sender: UIButton) &#123;</span><br><span class="line">        </span><br><span class="line">        if userIsInTheMiddleOfTypingANumber &#123;</span><br><span class="line">            enter()</span><br><span class="line">        &#125;</span><br><span class="line">        if let operation = sender.currentTitle &#123;</span><br><span class="line">            print(&quot;\(operation)&quot;)</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">    </span><br><span class="line"></span><br><span class="line">    </span><br><span class="line">    var displayValue: Double&#123;</span><br><span class="line">        get &#123;</span><br><span class="line">            return NSNumberFormatter().numberFromString(display.text!)!.doubleValue</span><br><span class="line">        &#125;</span><br><span class="line">        set &#123;</span><br><span class="line">            display.text = &quot;\(newValue)&quot;</span><br><span class="line">            userIsInTheMiddleOfTypingANumber = false</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
       
     </div>
 
