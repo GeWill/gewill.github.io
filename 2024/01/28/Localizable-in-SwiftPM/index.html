@@ -20,15 +20,15 @@
 
 <script class="next-config" data-name="main" type="application/json">{"hostname":"example.com","root":"/","images":"/images","scheme":"Pisces","darkmode":true,"version":"8.17.1","exturl":false,"sidebar":{"position":"left","display":"post","padding":18,"offset":12},"copycode":{"enable":true,"style":"mac"},"bookmark":{"enable":false,"color":"#222","save":"auto"},"mediumzoom":false,"lazyload":false,"pangu":false,"comments":{"style":"tabs","active":null,"storage":true,"lazyload":false,"nav":null},"stickytabs":false,"motion":{"enable":true,"async":false,"transition":{"menu_item":"fadeInDown","post_block":"fadeIn","post_header":"fadeInDown","post_body":"fadeInDown","coll_header":"fadeInLeft","sidebar":"fadeInUp"}},"prism":false,"i18n":{"placeholder":"Searching...","empty":"We didn't find any results for the search: ${query}","hits_time":"${hits} results found in ${time} ms","hits":"${hits} results found"},"path":"/search.json","localsearch":{"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false}}</script><script src="/js/config.js"></script>
 
-    <meta name="description" content="示例代码🔗https:&#x2F;&#x2F;github.com&#x2F;gewill&#x2F;BlogCodes&#x2F;tree&#x2F;main&#x2F;Localizable%20in%20SwiftPM 在处理SwiftPM中Localizable时，尝试了集中方案。先说结论Rswift preferredLanguage方案最佳。  方案一：Local在SwiftUI中使用local可行，但是在SwiftPM会被宿主应用中覆写。 12345">
+    <meta name="description" content="示例代码🔗https:&#x2F;&#x2F;github.com&#x2F;gewill&#x2F;BlogCodes&#x2F;tree&#x2F;main&#x2F;Localizable%20in%20SwiftPM 在处理SwiftPM中Localizable时，尝试了集中方案。先说结论Rswift preferredLanguage方案最佳。 方案一：Local在SwiftUI中使用local可行，但是在SwiftPM会被宿主应用中覆写。 123456">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SwiftPM中的Localizable">
 <meta property="og:url" content="http://example.com/2024/01/28/Localizable-in-SwiftPM/index.html">
 <meta property="og:site_name" content="Will&#39;s Blog">
-<meta property="og:description" content="示例代码🔗https:&#x2F;&#x2F;github.com&#x2F;gewill&#x2F;BlogCodes&#x2F;tree&#x2F;main&#x2F;Localizable%20in%20SwiftPM 在处理SwiftPM中Localizable时，尝试了集中方案。先说结论Rswift preferredLanguage方案最佳。  方案一：Local在SwiftUI中使用local可行，但是在SwiftPM会被宿主应用中覆写。 12345">
+<meta property="og:description" content="示例代码🔗https:&#x2F;&#x2F;github.com&#x2F;gewill&#x2F;BlogCodes&#x2F;tree&#x2F;main&#x2F;Localizable%20in%20SwiftPM 在处理SwiftPM中Localizable时，尝试了集中方案。先说结论Rswift preferredLanguage方案最佳。 方案一：Local在SwiftUI中使用local可行，但是在SwiftPM会被宿主应用中覆写。 123456">
 <meta property="og:locale" content="en_US">
 <meta property="article:published_time" content="2024-01-28T07:11:04.000Z">
-<meta property="article:modified_time" content="2024-01-28T08:33:28.566Z">
+<meta property="article:modified_time" content="2024-01-28T08:34:52.509Z">
 <meta property="article:author" content="Ge Will">
 <meta property="article:tag" content="Swift">
 <meta property="article:tag" content="SwiftUI">
@@ -263,7 +263,7 @@
       <span class="post-meta-item-text">Posted on</span>
       
 
-      <time title="Created: 2024-01-28 15:11:04 / Modified: 16:33:28" itemprop="dateCreated datePublished" datetime="2024-01-28T15:11:04+08:00">2024-01-28</time>
+      <time title="Created: 2024-01-28 15:11:04 / Modified: 16:34:52" itemprop="dateCreated datePublished" datetime="2024-01-28T15:11:04+08:00">2024-01-28</time>
     </span>
 
   
@@ -277,7 +277,6 @@
     
     <div class="post-body" itemprop="articleBody"><p>示例代码🔗<a target="_blank" rel="noopener" href="https://github.com/gewill/BlogCodes/tree/main/Localizable%20in%20SwiftPM">https://github.com/gewill/BlogCodes/tree/main/Localizable%20in%20SwiftPM</a></p>
 <p>在处理SwiftPM中Localizable时，尝试了集中方案。先说结论Rswift preferredLanguage方案最佳。</p>
-<p><video src="../assets/Localizable-in-SwiftPM/Localizable-in-SwiftPM.webm"></video></p>
 <h2 id="方案一：Local"><a href="#方案一：Local" class="headerlink" title="方案一：Local"></a>方案一：Local</h2><p>在SwiftUI中使用local可行，但是在SwiftPM会被宿主应用中覆写。</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// SwiftUI view			</span></span><br><span class="line">			<span class="type">Section</span> &#123;</span><br><span class="line">        <span class="type">Text</span>(<span class="string">&quot;Change locale&quot;</span>).font(.title)</span><br><span class="line">        <span class="type">Text</span>(<span class="string">&quot;Will be overwrite by host app!&quot;</span>).foregroundColor(.pink)</span><br><span class="line">        <span class="type">Button</span>(action: &#123;</span><br><span class="line">          viewModel.locale <span class="operator">=</span> <span class="type">Locale</span>(identifier: <span class="type">Language</span>.en.rawValue)</span><br><span class="line">        &#125;, label: &#123;</span><br><span class="line">          <span class="type">Text</span>(<span class="string">&quot;Change locale english&quot;</span>)</span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="type">Button</span>(action: &#123;</span><br><span class="line">          viewModel.locale <span class="operator">=</span> <span class="type">Locale</span>(identifier: <span class="type">Language</span>.zh_Hans.rawValue)</span><br><span class="line">        &#125;, label: &#123;</span><br><span class="line">          <span class="type">Text</span>(<span class="string">&quot;Change locale chinese simplified&quot;</span>)</span><br><span class="line">        &#125;)</span><br><span class="line">        <span class="type">Text</span>(<span class="type">LocalizedStringKey</span>(<span class="type">R</span>.string.localizable.hello_world.key.description))</span><br><span class="line">      &#125; header: &#123;</span><br><span class="line">        <span class="type">Text</span>(<span class="string">&quot;Change locale&quot;</span>)</span><br><span class="line">      &#125;</span><br><span class="line">    	.environment(\.locale, viewModel.locale)</span><br></pre></td></tr></table></figure>
 
