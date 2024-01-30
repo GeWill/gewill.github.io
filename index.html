@@ -259,7 +259,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-01-30 09:54:15" itemprop="dateModified" datetime="2024-01-30T09:54:15+08:00">2024-01-30</time>
+      <time title="Modified: 2024-01-30 11:32:39" itemprop="dateModified" datetime="2024-01-30T11:32:39+08:00">2024-01-30</time>
     </span>
 
   
@@ -288,7 +288,7 @@
 
 
 <h2 id="方案三：liamnichols-x2F-xcstrings-tool"><a href="#方案三：liamnichols-x2F-xcstrings-tool" class="headerlink" title="方案三：liamnichols &#x2F; xcstrings-tool"></a>方案三：<a target="_blank" rel="noopener" href="https://github.com/liamnichols/xcstrings-tool">liamnichols &#x2F; xcstrings-tool</a></h2><p>可用，但是仅支持 <code>iOS16+</code>。有个小坑SwiftPM集成时，官方教程的有错误，正确的git地址为：</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. Add the xcstrings-tool Package dependency</span></span><br><span class="line">.package(url: <span class="string">&quot;https://github.com/liamnichols/xcstrings-tool.git&quot;</span>, from: <span class="string">&quot;0.1.0&quot;</span>)</span><br></pre></td></tr></table></figure>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// 1. Add the xcstrings-tool Package dependency</span></span><br><span class="line">.package(url: <span class="string">&quot;https://github.com/liamnichols/xcstrings-tool.git&quot;</span>, from: <span class="string">&quot;0.1.0&quot;</span>)</span><br><span class="line"><span class="comment">// 2. Or use the repo is essentially a mirror of the main repository however the xcstrings-tool command line interface is a binary dependency that significantly simplifies your build graph and improves compile times.</span></span><br><span class="line">.package(url: <span class="string">&quot;https://github.com/liamnichols/xcstrings-tool-plugin.git&quot;</span>, from: <span class="string">&quot;0.1.0&quot;</span>)</span><br></pre></td></tr></table></figure>
 
 <p>具体参考官方的示例：<a target="_blank" rel="noopener" href="https://github.com/liamnichols/xcstrings-tool-demo">https://github.com/liamnichols/xcstrings-tool-demo</a></p>
 
