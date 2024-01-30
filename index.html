@@ -241,7 +241,7 @@
     </span>
       <header class="post-header">
         <h2 class="post-title" itemprop="name headline">
-          <a href="/2024/01/28/Localizable-in-SwiftPM/" class="post-title-link" itemprop="url">SwiftPM中的Localizable</a>
+          <a href="/2024/01/28/Localizable-in-SwiftPM/" class="post-title-link" itemprop="url">SwiftPM本地化方案探索</a>
         </h2>
 
         <div class="post-meta-container">
@@ -259,7 +259,7 @@
         <i class="far fa-calendar-check"></i>
       </span>
       <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2024-01-29 13:38:30" itemprop="dateModified" datetime="2024-01-29T13:38:30+08:00">2024-01-29</time>
+      <time title="Modified: 2024-01-30 09:54:15" itemprop="dateModified" datetime="2024-01-30T09:54:15+08:00">2024-01-30</time>
     </span>
 
   
@@ -273,7 +273,7 @@
     
     <div class="post-body" itemprop="articleBody">
           <p>示例代码🔗<a target="_blank" rel="noopener" href="https://github.com/gewill/BlogCodes/tree/main/Localizable%20in%20SwiftPM">https://github.com/gewill/BlogCodes/tree/main/Localizable%20in%20SwiftPM</a></p>
-<p>在处理SwiftPM中Localizable时，尝试了几种方案。先说结论Rswift preferredLanguage方案最佳。</p>
+<p>在处理SwiftPM中本地化时，尝试了几种方案。先说结论Rswift preferredLanguage方案最佳。</p>
 <h2 id="方案一：Local"><a href="#方案一：Local" class="headerlink" title="方案一：Local"></a>方案一：Local</h2><p>在SwiftUI中使用local可行，但是在SwiftPM会被宿主应用中覆写。不过也是小问题，只要命名规范，按照模块页面功能前缀来的话，一般也不会出现key重复的问题。</p>
 <p>这里也是用到了Rswift自动生成的<code>key</code>，避免复制粘贴字符串类型的<code>key</code>。</p>
 <figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// SwiftUI view			</span></span><br><span class="line"><span class="type">Section</span> &#123;</span><br><span class="line">  <span class="type">Text</span>(<span class="string">&quot;Change locale&quot;</span>).font(.title)</span><br><span class="line">  <span class="type">Text</span>(<span class="string">&quot;Will be overwrite by host app!&quot;</span>).foregroundColor(.pink)</span><br><span class="line">  <span class="type">Button</span>(action: &#123;</span><br><span class="line">    viewModel.locale <span class="operator">=</span> <span class="type">Locale</span>(identifier: <span class="type">Language</span>.en.rawValue)</span><br><span class="line">  &#125;, label: &#123;</span><br><span class="line">    <span class="type">Text</span>(<span class="string">&quot;Change locale english&quot;</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="type">Button</span>(action: &#123;</span><br><span class="line">    viewModel.locale <span class="operator">=</span> <span class="type">Locale</span>(identifier: <span class="type">Language</span>.zh_Hans.rawValue)</span><br><span class="line">  &#125;, label: &#123;</span><br><span class="line">    <span class="type">Text</span>(<span class="string">&quot;Change locale chinese simplified&quot;</span>)</span><br><span class="line">  &#125;)</span><br><span class="line">  <span class="type">Text</span>(<span class="type">LocalizedStringKey</span>(<span class="type">R</span>.string.localizable.hello_world.key.description))</span><br><span class="line">&#125; header: &#123;</span><br><span class="line">  <span class="type">Text</span>(<span class="string">&quot;Change locale&quot;</span>)</span><br><span class="line">&#125;</span><br><span class="line">.environment(\.locale, viewModel.locale)</span><br></pre></td></tr></table></figure>
