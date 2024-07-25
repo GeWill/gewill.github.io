@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">197</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">198</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">17</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">197</span>
+          <span class="site-state-item-count">198</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -183,7 +183,7 @@
       </div>
       <div class="site-state-item site-state-tags">
           <a href="/tags/">
-        <span class="site-state-item-count">16</span>
+        <span class="site-state-item-count">17</span>
         <span class="site-state-item-name">tags</span></a>
       </div>
   </nav>
@@ -214,6 +214,85 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2016/03/02/Swift-2-Deinitialization/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2016/03/02/Swift-2-Deinitialization/" class="post-title-link" itemprop="url">Swift Examples - Deinitialization</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2016-03-02 22:19:02" itemprop="dateCreated datePublished" datetime="2016-03-02T22:19:02+08:00">2016-03-02</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <p>The Swift Programming Language  Examples</p>
+<p>源码在 GitHub：<a target="_blank" rel="noopener" href="https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples">https://github.com/gewill/The-Swift-Programming-Language-2.1-Examples</a></p>
+<p>Playground -&gt;</p>
+<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// : Playground - noun: a place where people can play</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"></span><br><span class="line"><span class="comment">//: 析构过程（Deinitialization）</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//析构器只适用于类类型，当一个类的实例被释放之前，析构器会被立即调用。析构器用关键字deinit来标示，类似于构造器要用init来标示。</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//有点像 UIViewController 的 func ViewWillDisappear</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Bank</span> &#123;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">var</span> coinsInBank <span class="operator">=</span> <span class="number">10_000</span></span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">func</span> <span class="title function_">vendCoins</span>(<span class="params">var</span> <span class="params">numberOfCoinsToVend</span>: <span class="type">Int</span>) -&gt; <span class="type">Int</span> &#123;</span><br><span class="line">        numberOfCoinsToVend <span class="operator">=</span> <span class="built_in">min</span>(numberOfCoinsToVend, coinsInBank)</span><br><span class="line">        coinsInBank <span class="operator">-=</span> numberOfCoinsToVend</span><br><span class="line">        <span class="keyword">return</span> numberOfCoinsToVend</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">static</span> <span class="keyword">func</span> <span class="title function_">receiveCoins</span>(<span class="params">coins</span>: <span class="type">Int</span>) &#123;</span><br><span class="line">        coinsInBank <span class="operator">+=</span> coins</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">Player</span> &#123;</span><br><span class="line">    <span class="keyword">var</span> coinsInPurse: <span class="type">Int</span></span><br><span class="line">    <span class="keyword">init</span>(<span class="params">coins</span>: <span class="type">Int</span>) &#123;</span><br><span class="line">        coinsInPurse <span class="operator">=</span> <span class="type">Bank</span>.vendCoins(coins)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">winCoins</span>(<span class="params">coins</span>: <span class="type">Int</span>) &#123;</span><br><span class="line">        coinsInPurse <span class="operator">+=</span> <span class="type">Bank</span>.vendCoins(coins)</span><br><span class="line">    &#125;</span><br><span class="line">    <span class="keyword">deinit</span> &#123;</span><br><span class="line">        <span class="type">Bank</span>.receiveCoins(coinsInPurse)</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line"><span class="keyword">var</span> playerOne: <span class="type">Player</span>? <span class="operator">=</span> <span class="type">Player</span>(coins: <span class="number">100</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;A new player has joined the game with <span class="subst">\(playerOne<span class="operator">!</span>.coinsInPurse)</span> coins&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;There are now <span class="subst">\(Bank.coinsInBank)</span> coins left in the bank&quot;</span>)</span><br><span class="line"></span><br><span class="line">playerOne<span class="operator">?</span>.winCoins(<span class="number">300</span>)</span><br><span class="line"></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;The player has <span class="subst">\(playerOne<span class="operator">!</span>.coinsInPurse)</span> coins&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;There are now <span class="subst">\(Bank.coinsInBank)</span> coins left in the bank&quot;</span>)</span><br><span class="line"></span><br><span class="line">playerOne <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;The player has <span class="subst">\(playerOne<span class="operator">?</span>.coinsInPurse)</span> coins&quot;</span>)</span><br><span class="line"><span class="built_in">print</span>(<span class="string">&quot;There are now <span class="subst">\(Bank.coinsInBank)</span> coins left in the bank&quot;</span>)</span><br><span class="line"></span><br><span class="line"></span><br></pre></td></tr></table></figure>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -979,94 +1058,6 @@
     print(array) // [10, 2, 3, 4, 5]
     
 </code></pre>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/12/14/Array-Copy/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/12/14/Array-Copy/" class="post-title-link" itemprop="url">数组拷贝</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-12-14 18:11:22" itemprop="dateCreated datePublished" datetime="2015-12-14T18:11:22+08:00">2015-12-14</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>源于微信群里一个问题讨论，具体陈铭嘉博客总结的很详细：<a target="_blank" rel="noopener" href="http://www.jianshu.com/p/9a2952c792e6">http://www.jianshu.com/p/9a2952c792e6</a>。</p>
-<p>我主要是实践验证一下文章中的代码，其中Swift中的内存指针参看：<a target="_blank" rel="noopener" href="http://onevcat.com/2015/01/swift-pointer/">http://onevcat.com/2015/01/swift-pointer/</a>。</p>
-<h2 id="Objective-C-部分："><a href="#Objective-C-部分：" class="headerlink" title="Objective-C 部分："></a>Objective-C 部分：</h2><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//第一层理解:</span></span><br><span class="line"><span class="comment">//如果对一个不可变容器复制，copy是指针复制，即浅拷贝。</span></span><br><span class="line"><span class="comment">//如果对一个可变容器复制，copy是对象复制，即深拷贝。</span></span><br><span class="line"><span class="built_in">NSArray</span> *array = [<span class="built_in">NSArray</span> array];</span><br><span class="line"><span class="built_in">NSArray</span> *array2 = [array <span class="keyword">copy</span>];</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%p and %p&quot;</span>, array, array2);</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSMutableArray</span> *marray = [<span class="built_in">NSMutableArray</span> array];</span><br><span class="line"><span class="built_in">NSMutableArray</span> *marray2 = [marray <span class="keyword">copy</span>];</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%p and %p&quot;</span>, marray, marray2);</span><br><span class="line"></span><br><span class="line"><span class="comment">//  第二层理解:</span></span><br><span class="line"><span class="comment">//  如果是对可变容器copy,是对象复制,即深拷贝,但拷贝出的是一个不可变容器。</span></span><br><span class="line"><span class="comment">//  如果是对可变容器mutableCopy才符合正确地copy语义,也是对象复制,即深拷贝,这次拷贝出的是一个可变容器。</span></span><br><span class="line"><span class="built_in">NSMutableArray</span> *array3 = [<span class="built_in">NSMutableArray</span> array];</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%@&quot;</span>, [array3 <span class="keyword">class</span>]);</span><br><span class="line">[array3 addObject:<span class="string">@&quot;Panda&quot;</span>];</span><br><span class="line"></span><br><span class="line"><span class="built_in">NSMutableArray</span> *array4 = [array3 mutableCopy];</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%@&quot;</span>, [array4 <span class="keyword">class</span>]);</span><br><span class="line">[array4 addObject:<span class="string">@&quot;Lion&quot;</span>]; <span class="comment">//成功</span></span><br><span class="line"></span><br><span class="line"><span class="built_in">NSMutableArray</span> *array5 = [array3 <span class="keyword">copy</span>];</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;%@&quot;</span>, [array5 <span class="keyword">class</span>]);</span><br><span class="line"><span class="comment">//[array5 addObject:@&quot;Lion&quot;]; //报错</span></span><br><span class="line"></span><br><span class="line"><span class="comment">//  第三层理解:</span></span><br><span class="line"><span class="comment">//  上述的深拷贝其实还不是完全深拷贝,因为第二层的图可以发现mutableCopy的数组仍然共享同样的数组元素。</span></span><br><span class="line"><span class="comment">//  而完全深拷贝即是对数组元素同样的拷贝的真正深拷贝。</span></span><br><span class="line"><span class="built_in">NSMutableArray</span> *marray3 = [<span class="built_in">NSMutableArray</span> array];</span><br><span class="line">[marray3 addObject:<span class="string">@&quot;Panda&quot;</span>];</span><br><span class="line"><span class="built_in">NSMutableArray</span> *marray4 = [marray3 mutableCopy]; <span class="comment">//一般深拷贝</span></span><br><span class="line">[marray4 addObject:<span class="string">@&quot;Li&quot;</span>];</span><br><span class="line"><span class="built_in">NSMutableArray</span> *marray5 = [<span class="built_in">NSKeyedUnarchiver</span></span><br><span class="line">    unarchiveObjectWithData:</span><br><span class="line">        [<span class="built_in">NSKeyedArchiver</span> archivedDataWithRootObject:marray3]]; <span class="comment">//完全深拷贝</span></span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;数组第一个元素的指针 -&gt; 1:%p \n 2:%p \n 3:%p&quot;</span>, marray3[<span class="number">0</span>], marray4[<span class="number">0</span>], marray5[<span class="number">0</span>]);</span><br><span class="line"><span class="built_in">NSLog</span>(<span class="string">@&quot;数组的指针 -&gt; 1:%p \n 2:%p \n 3:%p&quot;</span>, marray3, marray4, marray5);</span><br></pre></td></tr></table></figure>
-<p>输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br></pre></td><td class="code"><pre><span class="line"> 0x7fd2e2501ff0 and 0x7fd2e2501ff0</span><br><span class="line"> 0x7fd2e2500710 and 0x7fd2e2501ff0</span><br><span class="line"> </span><br><span class="line"> </span><br><span class="line">__NSArrayM</span><br><span class="line">__NSArrayM</span><br><span class="line">__NSArrayI</span><br><span class="line"></span><br><span class="line"></span><br><span class="line"> 数组第一个元素的指针 -&gt; 1:0x10c0730a0 </span><br><span class="line"> 2:0x10c0730a0 </span><br><span class="line"> 3:0xa000061646e61505</span><br><span class="line"> 数组的指针 -&gt; 1:0x7fd2e260f7a0 </span><br><span class="line"> 2:0x7fd2e262c230 </span><br><span class="line"> 3:0x7fd2e260b6b0</span><br></pre></td></tr></table></figure>
-
-
-<h2 id="Swift-部分："><a href="#Swift-部分：" class="headerlink" title="Swift 部分："></a>Swift 部分：</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//copy array swift</span></span><br><span class="line"><span class="keyword">var</span> array1 <span class="operator">=</span> [<span class="number">1</span>, <span class="number">2</span>, <span class="number">3</span>, <span class="number">4</span>, <span class="number">5</span>]</span><br><span class="line">  <span class="keyword">var</span> array4 <span class="operator">=</span> array1</span><br><span class="line">  <span class="keyword">var</span> arrayPtr1 <span class="operator">=</span> <span class="type">UnsafeMutableBufferPointer</span>&lt;<span class="type">Int</span>&gt;(start: <span class="operator">&amp;</span>array1, count: array1.count)</span><br><span class="line">  <span class="keyword">var</span> arrayPtr4 <span class="operator">=</span> <span class="type">UnsafeMutableBufferPointer</span>&lt;<span class="type">Int</span>&gt;(start: <span class="operator">&amp;</span>array4, count: array4.count)</span><br><span class="line">  <span class="built_in">print</span>(array1)</span><br><span class="line">  <span class="built_in">print</span>(array4)</span><br><span class="line">  <span class="built_in">print</span>(arrayPtr1)</span><br><span class="line">  <span class="built_in">print</span>(arrayPtr4)</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">array1[<span class="number">0</span>] <span class="operator">=</span> <span class="number">10</span></span><br><span class="line">array1.append(<span class="number">20</span>)</span><br><span class="line">  <span class="built_in">print</span>(array1)</span><br><span class="line">  <span class="built_in">print</span>(array4)</span><br><span class="line">  <span class="keyword">var</span> arrayPtr7 <span class="operator">=</span> <span class="type">UnsafeMutableBufferPointer</span>&lt;<span class="type">Int</span>&gt;(start: <span class="operator">&amp;</span>array1, count: array1.count)</span><br><span class="line">  <span class="keyword">var</span> arrayPtr8 <span class="operator">=</span> <span class="type">UnsafeMutableBufferPointer</span>&lt;<span class="type">Int</span>&gt;(start: <span class="operator">&amp;</span>array4, count: array4.count)</span><br><span class="line">  <span class="built_in">print</span>(arrayPtr7)</span><br><span class="line">  <span class="built_in">print</span>(arrayPtr8)</span><br><span class="line">  </span><br></pre></td></tr></table></figure>
-
-<p>输出：</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">[1, 2, 3, 4, 5]</span><br><span class="line">[1, 2, 3, 4, 5]</span><br><span class="line">UnsafeMutableBufferPointer(start: 0x00007fb568da65f0, length: 5)</span><br><span class="line">UnsafeMutableBufferPointer(start: 0x00007fb568da65a0, length: 5)</span><br><span class="line">[10, 2, 3, 4, 5, 20]</span><br><span class="line">[1, 2, 3, 4, 5]</span><br><span class="line">UnsafeMutableBufferPointer(start: 0x00007fb568da65f0, length: 6)</span><br><span class="line">UnsafeMutableBufferPointer(start: 0x00007fb568da65a0, length: 5)</span><br></pre></td></tr></table></figure>
-
-
 
       
     </div>
