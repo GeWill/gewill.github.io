@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">196</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">197</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">196</span>
+          <span class="site-state-item-count">197</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,100 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/24/iOS-Programming-4ed-3/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/07/24/iOS-Programming-4ed-3/" class="post-title-link" itemprop="url">《iOS 编程》3. 通过 ARC 管理内存</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-07-24 12:00:00" itemprop="dateCreated datePublished" datetime="2015-07-24T12:00:00+08:00">2015-07-24</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="3-1-栈"><a href="#3-1-栈" class="headerlink" title="3.1 栈"></a>3.1 栈</h2><p>栈对应方法或函数的帧，堆则是包含大量 iOS 应用创建的对象</p>
+<h2 id="3-3-指针变量与对象所有权"><a href="#3-3-指针变量与对象所有权" class="headerlink" title="3.3 指针变量与对象所有权"></a>3.3 指针变量与对象所有权</h2><p>引用计数就是社保局，调查每个人有几份工作，一个正式工作，或兼职几份工作，或失业。失业，内存就会被释放，就会给你这个 free man 推荐新工作。</p>
+<p>那些情况会使对象失去拥有者：</p>
+<ul>
+<li>修改指针指向另一个变量（跳槽）</li>
+<li>设为 nil（辞职）</li>
+<li>对象拥有者被释放（公司倒闭）</li>
+<li>从 collection 对象中删除对象（裁员）</li>
+</ul>
+<p>当对象没有拥有者时，指针变量的内存就该被释放。</p>
+<h2 id="3-4-强引用与弱引用"><a href="#3-4-强引用与弱引用" class="headerlink" title="3.4 强引用与弱引用"></a>3.4 强引用与弱引用</h2><p><img src="http://ww2.sinaimg.cn/large/5369602ejw1eue4oorli3j20go08amxk.jpg" alt="解决强引用循环问题后的RandomItems"><br>大部分强引用循环可以确定一个父子关系，子对象改为弱引用即可。</p>
+<p>Xcode 的 Leaks 工具可以帮忙找出强引用循环问题。</p>
+<h2 id="3-5-属性"><a href="#3-5-属性" class="headerlink" title="3.5 属性"></a>3.5 属性</h2><p>声明属性，等于隐式地声明和创建相应名称的实例变量，声明一对存取方法。当然我们还可以自定义存取方法。</p>
+<p>属性的特性（attribute）:</p>
+<ul>
+<li>多线程：nonatomic&#x2F;atomic</li>
+<li>读写：readwrite&#x2F;readonly</li>
+<li>内存管理：strong&#x2F;weak&#x2F;copy&#x2F;unsafe_unretained</li>
+</ul>
+<h2 id="项目代码保存在我的-GitHub-iOSProgramming4edSolutions"><a href="#项目代码保存在我的-GitHub-iOSProgramming4edSolutions" class="headerlink" title="项目代码保存在我的 GitHub: iOSProgramming4edSolutions"></a>项目代码保存在我的 GitHub: <a target="_blank" rel="noopener" href="https://github.com/gewill/iOSProgramming4edSolutions">iOSProgramming4edSolutions</a></h2>
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1150,92 +1244,6 @@
 <figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">class MyClass &#123;    var date: NSDate &#123;        willSet &#123;        print(&quot;即将将日期从 \(date) 设定至 \(newValue)&quot;)        &#125;        didSet &#123;        print(&quot;已经将日期从 \(oldValue) 设定至 \(date)&quot;)        &#125;</span><br><span class="line">    &#125;    init() &#123;    date = NSDate()    &#125;</span><br><span class="line">&#125;</span><br><span class="line">let foo = MyClass()foo.date = foo.date.dateByAddingTimeInterval(10086)</span><br><span class="line">// 输出// 即将将日期从 2015-07-16 16:01:49 +0000 设定至 2015-07-16 18:49:55 +0000</span><br><span class="line">// 已经将日期从 2015-07-16 16:01:49 +0000 设定至 2015-07-16 18:49:55 +0000</span><br></pre></td></tr></table></figure>
 
 
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/15/CS193P-4-More-Swift-and-Foundation-Frameworks/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/07/15/CS193P-4-More-Swift-and-Foundation-Frameworks/" class="post-title-link" itemprop="url">CS193P 4. More Swift and Foundation Frameworks</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-07-15 14:41:43" itemprop="dateCreated datePublished" datetime="2015-07-15T14:41:43+08:00">2015-07-15</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <p>本节介绍了一些 Swift 和 Foundation Framework，基本是要求自己搜索学习完成的，最好是参考 Swift 教材系统看看。说实话老师一节课只是把大纲列一下，好多根本没有展开详细系统的讲，当然时间上也不允许。</p>
-<ul>
-<li>可选值和枚举</li>
-<li>数组、字典、区间</li>
-<li>数据类型</li>
-<li>方法</li>
-<li>属性</li>
-<li>初始化</li>
-<li>AnyObject</li>
-<li>常用的方法和函数</li>
-</ul>
 
       
     </div>

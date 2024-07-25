@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">196</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">197</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">196</span>
+          <span class="site-state-item-count">197</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,106 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/03/Reveal/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/08/03/Reveal/" class="post-title-link" itemprop="url">Reveal：实时查看调试 UI 布局</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-08-03 08:06:48" itemprop="dateCreated datePublished" datetime="2015-08-03T08:06:48+08:00">2015-08-03</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="Reveal-介绍"><a href="#Reveal-介绍" class="headerlink" title="Reveal 介绍"></a>Reveal 介绍</h2><p><img src="http://i.imgur.com/OKKIRbq.jpg" alt="Reveal"></p>
+<p>Reveal 最早是在唐巧的《iOS 开发进阶》看到的，当时不以为然。其实书中很多内容都不以为然，因为那时候还是入门阶段，自然看不懂的。主要缺乏交流，自悟容易自误。</p>
+<p>最近 GeekBand 的段松老师的课程，纯代码的 UI 布局，就遇到了极大的困惑：布局错了不知道在哪里，控件失踪了（跑到屏幕外的 frame）。搜索了一下，重新找到 Reveal 介绍的文章，试用了一下很强大。可以实时更改控件属性、大小位置等等，同步显示在真机或 Simulator 中。和 Sketch、Photoshop 的 Mirror 功能差不多，当然只是调试，实际更改还要在 Xcode 中完成。</p>
+<h2 id="Reveal-使用方法"><a href="#Reveal-使用方法" class="headerlink" title="Reveal 使用方法"></a>Reveal 使用方法</h2><p>Reveal 官方教程：</p>
+<ul>
+<li><p><a target="_blank" rel="noopener" href="http://support.revealapp.com/kb/getting-started/integrating-reveal-add-reveal-to-your-xcode-project">http://support.revealapp.com/kb/getting-started/integrating-reveal-add-reveal-to-your-xcode-project</a></p>
+</li>
+<li><p><a target="_blank" rel="noopener" href="http://support.revealapp.com/kb/getting-started/revealxcodereveal">集成Reveal：不修改您的Xcode工程并加载Reveal</a></p>
+</li>
+</ul>
+<p><strong>推荐越狱，只要简单配置一下，还可以查看手机安装的第三方 APP。</strong></p>
+<ul>
+<li>越狱后安装 Apple File Conduit “2” 和 OpenSSH</li>
+<li>导入 libReveal.dylib ：</li>
+</ul>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">scp /Applications/Reveal.app/Contents/SharedSupport/iOS-Libraries/libReveal.dylib root@192.168.0.X:/Library/MobileSubstrate/DynamicLibraries</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<ul>
+<li>导入 libReveal.plist，格式如下：</li>
+</ul>
+<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">&#123;</span><br><span class="line">Filter = &#123;</span><br><span class="line">Bundles = (</span><br><span class="line">&quot;com.apple.test&quot;,</span><br><span class="line">);</span><br><span class="line">&#125;;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"></span><br><span class="line">scp ~/Documents/libReveal.plist root@192.168.0.X:/Library/MobileSubstrate/DynamicLibraries</span><br><span class="line"></span><br></pre></td></tr></table></figure>
+<blockquote>
+<p>小技巧：网上下载的 Demo 直接改 Bundle ID：com.apple.test，即可开始 Reveal 了。</p>
+</blockquote>
+<h2 id="Debug-View-Hierarchy-in-Xcode"><a href="#Debug-View-Hierarchy-in-Xcode" class="headerlink" title="Debug View Hierarchy in Xcode"></a>Debug View Hierarchy in Xcode</h2><p>Xcode 的 <a target="_blank" rel="noopener" href="https://developer.apple.com/library/ios/recipes/xcode_help-debugger/using_view_debugger/using_view_debugger.html">Debug View Hierarchy</a> 只能看看，就弱爆了。而且极易造成 Xcode 崩溃。<br><img src="http://i.imgur.com/R7XAflX.jpg" alt="Debug View Hierarchy in Xcode"></p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1092,100 +1192,6 @@ pod &#39;AFNetworking&#39;, &#39;~&gt; 2.5&#39;
 <p>-阅读图片视频相关的文档<br>-objc.io 关于图片视频的小节<br>-找几个相关开源的项目</p>
 <p>Swift or Objective-C？虽然两门课都有，但是我还是❤️Swift，并不仅仅因为❤️Taylor。</p>
 
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/07/24/iOS-Programming-4ed-3/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/07/24/iOS-Programming-4ed-3/" class="post-title-link" itemprop="url">《iOS 编程》3. 通过 ARC 管理内存</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-07-24 12:00:00" itemprop="dateCreated datePublished" datetime="2015-07-24T12:00:00+08:00">2015-07-24</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="3-1-栈"><a href="#3-1-栈" class="headerlink" title="3.1 栈"></a>3.1 栈</h2><p>栈对应方法或函数的帧，堆则是包含大量 iOS 应用创建的对象</p>
-<h2 id="3-3-指针变量与对象所有权"><a href="#3-3-指针变量与对象所有权" class="headerlink" title="3.3 指针变量与对象所有权"></a>3.3 指针变量与对象所有权</h2><p>引用计数就是社保局，调查每个人有几份工作，一个正式工作，或兼职几份工作，或失业。失业，内存就会被释放，就会给你这个 free man 推荐新工作。</p>
-<p>那些情况会使对象失去拥有者：</p>
-<ul>
-<li>修改指针指向另一个变量（跳槽）</li>
-<li>设为 nil（辞职）</li>
-<li>对象拥有者被释放（公司倒闭）</li>
-<li>从 collection 对象中删除对象（裁员）</li>
-</ul>
-<p>当对象没有拥有者时，指针变量的内存就该被释放。</p>
-<h2 id="3-4-强引用与弱引用"><a href="#3-4-强引用与弱引用" class="headerlink" title="3.4 强引用与弱引用"></a>3.4 强引用与弱引用</h2><p><img src="http://ww2.sinaimg.cn/large/5369602ejw1eue4oorli3j20go08amxk.jpg" alt="解决强引用循环问题后的RandomItems"><br>大部分强引用循环可以确定一个父子关系，子对象改为弱引用即可。</p>
-<p>Xcode 的 Leaks 工具可以帮忙找出强引用循环问题。</p>
-<h2 id="3-5-属性"><a href="#3-5-属性" class="headerlink" title="3.5 属性"></a>3.5 属性</h2><p>声明属性，等于隐式地声明和创建相应名称的实例变量，声明一对存取方法。当然我们还可以自定义存取方法。</p>
-<p>属性的特性（attribute）:</p>
-<ul>
-<li>多线程：nonatomic&#x2F;atomic</li>
-<li>读写：readwrite&#x2F;readonly</li>
-<li>内存管理：strong&#x2F;weak&#x2F;copy&#x2F;unsafe_unretained</li>
-</ul>
-<h2 id="项目代码保存在我的-GitHub-iOSProgramming4edSolutions"><a href="#项目代码保存在我的-GitHub-iOSProgramming4edSolutions" class="headerlink" title="项目代码保存在我的 GitHub: iOSProgramming4edSolutions"></a>项目代码保存在我的 GitHub: <a target="_blank" rel="noopener" href="https://github.com/gewill/iOSProgramming4edSolutions">iOSProgramming4edSolutions</a></h2>
       
     </div>
 

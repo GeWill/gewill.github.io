@@ -107,7 +107,7 @@
 
 
 <nav class="site-nav">
-  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">196</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
+  <ul class="main-menu menu"><li class="menu-item menu-item-home"><a href="/" rel="section"><i class="fa fa-home fa-fw"></i>Home</a></li><li class="menu-item menu-item-archives"><a href="/archives/" rel="section"><i class="fa fa-archive fa-fw"></i>Archives<span class="badge">197</span></a></li><li class="menu-item menu-item-about"><a href="/about/" rel="section"><i class="fa fa-user fa-fw"></i>About</a></li><li class="menu-item menu-item-tags"><a href="/tags/" rel="section"><i class="fa fa-tags fa-fw"></i>Tags<span class="badge">16</span></a></li><li class="menu-item menu-item-categories"><a href="/categories/" rel="section"><i class="fa fa-th fa-fw"></i>Categories<span class="badge">1</span></a></li>
       <li class="menu-item menu-item-search">
         <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>Search
         </a>
@@ -172,7 +172,7 @@
   <nav class="site-state">
       <div class="site-state-item site-state-posts">
         <a href="/archives/">
-          <span class="site-state-item-count">196</span>
+          <span class="site-state-item-count">197</span>
           <span class="site-state-item-name">posts</span>
         </a>
       </div>
@@ -214,6 +214,90 @@
     </div>
 
     <div class="main-inner index posts-expand">
+
+    
+
+
+<div class="post-block">
+  
+  
+
+  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
+    <link itemprop="mainEntityOfPage" href="http://example.com/2015/09/04/Delete-the-extra-separator-of-UITableView-with-pain-style/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpeg">
+      <meta itemprop="name" content="Ge Will">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="Will's Blog">
+      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
+    </span>
+
+    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
+      <meta itemprop="name" content="undefined | Will's Blog">
+      <meta itemprop="description" content="">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          <a href="/2015/09/04/Delete-the-extra-separator-of-UITableView-with-pain-style/" class="post-title-link" itemprop="url">Delete the extra separator of UITableView with pain style</a>
+        </h2>
+
+        <div class="post-meta-container">
+          <div class="post-meta">
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar"></i>
+      </span>
+      <span class="post-meta-item-text">Posted on</span>
+
+      <time title="Created: 2015-09-04 18:24:36" itemprop="dateCreated datePublished" datetime="2015-09-04T18:24:36+08:00">2015-09-04</time>
+    </span>
+    <span class="post-meta-item">
+      <span class="post-meta-item-icon">
+        <i class="far fa-calendar-check"></i>
+      </span>
+      <span class="post-meta-item-text">Edited on</span>
+      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
+    </span>
+
+  
+</div>
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+          <h2 id="“Delete”-the-extra-separator-of-UITableView-with-pain-style"><a href="#“Delete”-the-extra-separator-of-UITableView-with-pain-style" class="headerlink" title="“Delete” the extra separator of UITableView with pain style"></a>“Delete” the extra separator of UITableView with pain style</h2><p><a target="_blank" rel="noopener" href="http://stackoverflow.com/questions/1369831/eliminate-extra-separators-below-uitableview-in-iphone-sdk">ios - Eliminate Extra separators below UITableView - in iphone sdk? - Stack Overflow</a></p>
+<h3 id="Solution-1"><a href="#Solution-1" class="headerlink" title="Solution 1"></a>Solution 1</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">// &quot;Delete&quot; the extra separator of UITableView and the last one Separator in ecah Section</span></span><br><span class="line">- (<span class="built_in">CGFloat</span>)tableView:(<span class="built_in">UITableView</span> *)tableView heightForFooterInSection:(<span class="built_in">NSInteger</span>)section &#123;</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">return</span> <span class="number">0.01</span>f;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://i.imgur.com/PYNMsFb.png" alt="height=0.01f"></p>
+<h3 id="Solution-2"><a href="#Solution-2" class="headerlink" title="Solution 2"></a>Solution 2</h3><figure class="highlight objc"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">- (<span class="type">void</span>)viewDidLoad &#123;</span><br><span class="line">	<span class="keyword">self</span>.tableView.tableFooterView = [[<span class="built_in">UIView</span> alloc] initWithFrame:<span class="built_in">CGRectZero</span>];</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+<p><img src="http://i.imgur.com/h4A0jWN.png" alt="CGRectZero"></p>
+<h2 id="Table-View-Style"><a href="#Table-View-Style" class="headerlink" title="Table View Style"></a>Table View Style</h2><p><strong>UITableViewStylePlain</strong></p>
+<p>A plain table view. Any section headers or footers are displayed as inline separators and float when the table view is scrolled.</p>
+<p><strong>UITableViewStyleGrouped</strong></p>
+<p>A table view whose sections present distinct groups of rows. The section headers and footers do not float.</p>
+
+      
+    </div>
+
+    
+    
+    
+
+    <footer class="post-footer">
+        <div class="post-eof"></div>
+      
+    </footer>
+  </article>
+</div>
+
+
+
 
     
 
@@ -1336,98 +1420,6 @@
 <li>学习曲线摆在那里，一点点进步。</li>
 <li><a target="_blank" rel="noopener" href="https://github.com/robovm/apple-ios-samples">apple-ios-samples</a></li>
 <li><a target="_blank" rel="noopener" href="https://github.com/Lax/iOS-Swift-Demos">iOS-Swift-Demos</a></li>
-</ul>
-
-      
-    </div>
-
-    
-    
-    
-
-    <footer class="post-footer">
-        <div class="post-eof"></div>
-      
-    </footer>
-  </article>
-</div>
-
-
-
-
-    
-
-
-<div class="post-block">
-  
-  
-
-  <article itemscope itemtype="http://schema.org/Article" class="post-content" lang="">
-    <link itemprop="mainEntityOfPage" href="http://example.com/2015/08/21/Swift-Tutorial-Core-Data-Notes/">
-
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="image" content="/images/avatar.jpeg">
-      <meta itemprop="name" content="Ge Will">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="Will's Blog">
-      <meta itemprop="description" content="The people who are crazy enough to think they can change the world, are the ones who DO.">
-    </span>
-
-    <span hidden itemprop="post" itemscope itemtype="http://schema.org/CreativeWork">
-      <meta itemprop="name" content="undefined | Will's Blog">
-      <meta itemprop="description" content="">
-    </span>
-      <header class="post-header">
-        <h2 class="post-title" itemprop="name headline">
-          <a href="/2015/08/21/Swift-Tutorial-Core-Data-Notes/" class="post-title-link" itemprop="url">Swift Tutorial - Core Data - Notes</a>
-        </h2>
-
-        <div class="post-meta-container">
-          <div class="post-meta">
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar"></i>
-      </span>
-      <span class="post-meta-item-text">Posted on</span>
-
-      <time title="Created: 2015-08-21 21:20:19" itemprop="dateCreated datePublished" datetime="2015-08-21T21:20:19+08:00">2015-08-21</time>
-    </span>
-    <span class="post-meta-item">
-      <span class="post-meta-item-icon">
-        <i class="far fa-calendar-check"></i>
-      </span>
-      <span class="post-meta-item-text">Edited on</span>
-      <time title="Modified: 2023-09-08 17:06:49" itemprop="dateModified" datetime="2023-09-08T17:06:49+08:00">2023-09-08</time>
-    </span>
-
-  
-</div>
-
-        </div>
-      </header>
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-          <h2 id="Swift-Tutorial-Core-Data"><a href="#Swift-Tutorial-Core-Data" class="headerlink" title="Swift Tutorial - Core Data"></a>Swift Tutorial - Core Data</h2><p>From <a target="_blank" rel="noopener" href="https://www.youtube.com/watch?v=3IDfgATVqHw">Swift Tutorial - Core Data</a> by rm2kdev</p>
-<iframe width="700" height="394" src="https://www.youtube.com/embed/3IDfgATVqHw?rel=0" frameborder="0" allowfullscreen></iframe>
-
-<p><a target="_blank" rel="noopener" href="https://github.com/gewill/test-projects/tree/master/test%20Core%20Data">Project on GitHub</a></p>
-<p>Add some comments into the project.</p>
-<figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br><span class="line">69</span><br><span class="line">70</span><br><span class="line">71</span><br><span class="line">72</span><br><span class="line">73</span><br><span class="line">74</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  ViewController.swift</span></span><br><span class="line"><span class="comment">//  test Core Data</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"><span class="comment">//  Created by Will Ge on 8/21/15.</span></span><br><span class="line"><span class="comment">//  Copyright (c) 2015 gewill.org. All rights reserved.</span></span><br><span class="line"><span class="comment">//</span></span><br><span class="line"></span><br><span class="line"><span class="keyword">import</span> UIKit</span><br><span class="line"><span class="keyword">import</span> CoreData</span><br><span class="line"></span><br><span class="line"><span class="keyword">class</span> <span class="title class_">ViewController</span>: <span class="title class_">UIViewController</span> &#123;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">viewDidLoad</span>() &#123;</span><br><span class="line">        <span class="keyword">super</span>.viewDidLoad()</span><br><span class="line">        <span class="comment">// Do any additional setup after loading the view, typically from a nib.</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="keyword">override</span> <span class="keyword">func</span> <span class="title function_">didReceiveMemoryWarning</span>() &#123;</span><br><span class="line">        <span class="keyword">super</span>.didReceiveMemoryWarning()</span><br><span class="line">        <span class="comment">// Dispose of any resources that can be recreated.</span></span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="keyword">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> textUserName: <span class="type">UITextField</span>!</span><br><span class="line">    <span class="keyword">@IBOutlet</span> <span class="keyword">weak</span> <span class="keyword">var</span> textPassword: <span class="type">UITextField</span>!</span><br><span class="line">    </span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">saveButton</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// Cora Data already settled done in AppDelegate.swift</span></span><br><span class="line">        <span class="comment">// get the ManagedObjectContext</span></span><br><span class="line">        <span class="keyword">var</span> appDel <span class="operator">=</span> <span class="type">UIApplication</span> .sharedApplication().delegate <span class="keyword">as!</span> <span class="type">AppDelegate</span></span><br><span class="line">        <span class="keyword">var</span> context: <span class="type">NSManagedObjectContext</span> <span class="operator">=</span> appDel.managedObjectContext<span class="operator">!</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// get the ManagedObject</span></span><br><span class="line">        <span class="keyword">var</span> newUser <span class="operator">=</span> <span class="type">NSEntityDescription</span>.insertNewObjectForEntityForName(<span class="string">&quot;Users&quot;</span>, inManagedObjectContext: context) <span class="keyword">as!</span> <span class="type">NSManagedObject</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// set value for key</span></span><br><span class="line">        newUser.setValue(<span class="string">&quot;&quot;</span> <span class="operator">+</span> textUserName.text, forKey: <span class="string">&quot;username&quot;</span>)</span><br><span class="line">        newUser.setValue(<span class="string">&quot;&quot;</span> <span class="operator">+</span> textPassword.text, forKey: <span class="string">&quot;password&quot;</span>)</span><br><span class="line">        </span><br><span class="line">        <span class="comment">// save</span></span><br><span class="line">        context.save(<span class="literal">nil</span>)</span><br><span class="line">        <span class="built_in">print</span>(<span class="string">&quot;New username: <span class="subst">\(textPassword.text)</span> and password: <span class="subst">\(textPassword.text)</span> saved successfully.<span class="subst">\n</span>&quot;</span>)</span><br><span class="line">        </span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">  </span><br><span class="line">    <span class="keyword">@IBAction</span> <span class="keyword">func</span> <span class="title function_">loadButton</span>(<span class="params">sender</span>: <span class="type">AnyObject</span>) &#123;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">var</span> appDel <span class="operator">=</span> <span class="type">UIApplication</span> .sharedApplication().delegate <span class="keyword">as!</span> <span class="type">AppDelegate</span></span><br><span class="line">        <span class="keyword">var</span> context: <span class="type">NSManagedObjectContext</span> <span class="operator">=</span> appDel.managedObjectContext<span class="operator">!</span></span><br><span class="line">        </span><br><span class="line">        <span class="comment">// add FetchRequest and add Predicate/ SortDescriptor etc.</span></span><br><span class="line">        <span class="keyword">var</span> request <span class="operator">=</span> <span class="type">NSFetchRequest</span>(entityName: <span class="string">&quot;Users&quot;</span>)</span><br><span class="line">        request.returnsObjectsAsFaults <span class="operator">=</span> <span class="literal">false</span></span><br><span class="line">        request.predicate <span class="operator">=</span> <span class="type">NSPredicate</span>(format: <span class="string">&quot;username = %@&quot;</span>, <span class="string">&quot;&quot;</span> <span class="operator">+</span> textUserName.text)</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">var</span> requests: <span class="type">NSArray</span> <span class="operator">=</span> context.executeFetchRequest(request, error: <span class="literal">nil</span>)<span class="operator">!</span></span><br><span class="line">        </span><br><span class="line">        <span class="keyword">if</span> (requests.count <span class="operator">&gt;</span> <span class="number">0</span>) &#123;</span><br><span class="line">            </span><br><span class="line">            <span class="keyword">var</span> res <span class="operator">=</span> requests[<span class="number">0</span>] <span class="keyword">as!</span> <span class="type">NSManagedObject</span></span><br><span class="line">            textUserName.text <span class="operator">=</span> res.valueForKeyPath(<span class="string">&quot;username&quot;</span>) <span class="keyword">as!</span> <span class="type">String</span></span><br><span class="line">            textPassword.text <span class="operator">=</span> res.valueForKeyPath(<span class="string">&quot;password&quot;</span>) <span class="keyword">as!</span> <span class="type">String</span></span><br><span class="line">            </span><br><span class="line">        &#125; <span class="keyword">else</span> &#123;</span><br><span class="line">            </span><br><span class="line">            <span class="built_in">print</span>(<span class="string">&quot;0 Results Returned... Poterial Error.<span class="subst">\n</span>&quot;</span>)</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-<p><img src="http://ww4.sinaimg.cn/large/5369602egw1evalz3mz5lj21kg0tqagy.jpg" alt="test_Core_Data.xcdatamodeld settings"></p>
-<h2 id="Discovry-Core-Data-stack"><a href="#Discovry-Core-Data-stack" class="headerlink" title="Discovry - Core Data stack"></a>Discovry - Core Data stack</h2><figure class="highlight swift"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br><span class="line">51</span><br><span class="line">52</span><br><span class="line">53</span><br><span class="line">54</span><br><span class="line">55</span><br><span class="line">56</span><br><span class="line">57</span><br><span class="line">58</span><br><span class="line">59</span><br><span class="line">60</span><br><span class="line">61</span><br><span class="line">62</span><br><span class="line">63</span><br><span class="line">64</span><br><span class="line">65</span><br><span class="line">66</span><br><span class="line">67</span><br><span class="line">68</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment">//  AppDelegate.swift</span></span><br><span class="line"></span><br><span class="line"></span><br><span class="line">    <span class="comment">// MARK: - Core Data stack</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">lazy</span> <span class="keyword">var</span> applicationDocumentsDirectory: <span class="type">NSURL</span> <span class="operator">=</span> &#123;</span><br><span class="line">        <span class="comment">// The directory the application uses to store the Core Data store file. This code uses a directory named &quot;org.gewill.test_Core_Data&quot; in the application&#x27;s documents Application Support directory.</span></span><br><span class="line">        <span class="keyword">let</span> urls <span class="operator">=</span> <span class="type">NSFileManager</span>.defaultManager().<span class="type">URLsForDirectory</span>(.<span class="type">DocumentDirectory</span>, inDomains: .<span class="type">UserDomainMask</span>)</span><br><span class="line">        <span class="keyword">return</span> urls[urls.count<span class="operator">-</span><span class="number">1</span>] <span class="keyword">as!</span> <span class="type">NSURL</span></span><br><span class="line">    &#125;()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">lazy</span> <span class="keyword">var</span> managedObjectModel: <span class="type">NSManagedObjectModel</span> <span class="operator">=</span> &#123;</span><br><span class="line">        <span class="comment">// The managed object model for the application. This property is not optional. It is a fatal error for the application not to be able to find and load its model.</span></span><br><span class="line">        <span class="keyword">let</span> modelURL <span class="operator">=</span> <span class="type">NSBundle</span>.mainBundle().<span class="type">URLForResource</span>(<span class="string">&quot;test_Core_Data&quot;</span>, withExtension: <span class="string">&quot;momd&quot;</span>)<span class="operator">!</span></span><br><span class="line">        <span class="keyword">return</span> <span class="type">NSManagedObjectModel</span>(contentsOfURL: modelURL)<span class="operator">!</span></span><br><span class="line">    &#125;()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">lazy</span> <span class="keyword">var</span> persistentStoreCoordinator: <span class="type">NSPersistentStoreCoordinator</span>? <span class="operator">=</span> &#123;</span><br><span class="line">        <span class="comment">// The persistent store coordinator for the application. This implementation creates and return a coordinator, having added the store for the application to it. This property is optional since there are legitimate error conditions that could cause the creation of the store to fail.</span></span><br><span class="line">        <span class="comment">// Create the coordinator and store</span></span><br><span class="line">        <span class="keyword">var</span> coordinator: <span class="type">NSPersistentStoreCoordinator</span>? <span class="operator">=</span> <span class="type">NSPersistentStoreCoordinator</span>(managedObjectModel: <span class="keyword">self</span>.managedObjectModel)</span><br><span class="line">        <span class="keyword">let</span> url <span class="operator">=</span> <span class="keyword">self</span>.applicationDocumentsDirectory.<span class="type">URLByAppendingPathComponent</span>(<span class="string">&quot;test_Core_Data.sqlite&quot;</span>)</span><br><span class="line">        <span class="keyword">var</span> error: <span class="type">NSError</span>? <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">        <span class="keyword">var</span> failureReason <span class="operator">=</span> <span class="string">&quot;There was an error creating or loading the application&#x27;s saved data.&quot;</span></span><br><span class="line">        <span class="keyword">if</span> coordinator<span class="operator">!</span>.addPersistentStoreWithType(<span class="type">NSSQLiteStoreType</span>, configuration: <span class="literal">nil</span>, URL: url, options: <span class="literal">nil</span>, error: <span class="operator">&amp;</span>error) <span class="operator">==</span> <span class="literal">nil</span> &#123;</span><br><span class="line">            coordinator <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">            <span class="comment">// Report any error we got.</span></span><br><span class="line">            <span class="keyword">var</span> dict <span class="operator">=</span> [<span class="type">String</span>: <span class="type">AnyObject</span>]()</span><br><span class="line">            dict[<span class="type">NSLocalizedDescriptionKey</span>] <span class="operator">=</span> <span class="string">&quot;Failed to initialize the application&#x27;s saved data&quot;</span></span><br><span class="line">            dict[<span class="type">NSLocalizedFailureReasonErrorKey</span>] <span class="operator">=</span> failureReason</span><br><span class="line">            dict[<span class="type">NSUnderlyingErrorKey</span>] <span class="operator">=</span> error</span><br><span class="line">            error <span class="operator">=</span> <span class="type">NSError</span>(domain: <span class="string">&quot;YOUR_ERROR_DOMAIN&quot;</span>, code: <span class="number">9999</span>, userInfo: dict)</span><br><span class="line">            <span class="comment">// Replace this with code to handle the error appropriately.</span></span><br><span class="line">            <span class="comment">// abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.</span></span><br><span class="line">            <span class="type">NSLog</span>(<span class="string">&quot;Unresolved error <span class="subst">\(error)</span>, <span class="subst">\(error<span class="operator">!</span>.userInfo)</span>&quot;</span>)</span><br><span class="line">            abort()</span><br><span class="line">        &#125;</span><br><span class="line">        </span><br><span class="line">        <span class="keyword">return</span> coordinator</span><br><span class="line">    &#125;()</span><br><span class="line"></span><br><span class="line">    <span class="keyword">lazy</span> <span class="keyword">var</span> managedObjectContext: <span class="type">NSManagedObjectContext</span>? <span class="operator">=</span> &#123;</span><br><span class="line">        <span class="comment">// Returns the managed object context for the application (which is already bound to the persistent store coordinator for the application.) This property is optional since there are legitimate error conditions that could cause the creation of the context to fail.</span></span><br><span class="line">        <span class="keyword">let</span> coordinator <span class="operator">=</span> <span class="keyword">self</span>.persistentStoreCoordinator</span><br><span class="line">        <span class="keyword">if</span> coordinator <span class="operator">==</span> <span class="literal">nil</span> &#123;</span><br><span class="line">            <span class="keyword">return</span> <span class="literal">nil</span></span><br><span class="line">        &#125;</span><br><span class="line">        <span class="keyword">var</span> managedObjectContext <span class="operator">=</span> <span class="type">NSManagedObjectContext</span>()</span><br><span class="line">        managedObjectContext.persistentStoreCoordinator <span class="operator">=</span> coordinator</span><br><span class="line">        <span class="keyword">return</span> managedObjectContext</span><br><span class="line">    &#125;()</span><br><span class="line"></span><br><span class="line">    <span class="comment">// MARK: - Core Data Saving support</span></span><br><span class="line"></span><br><span class="line">    <span class="keyword">func</span> <span class="title function_">saveContext</span> () &#123;</span><br><span class="line">        <span class="keyword">if</span> <span class="keyword">let</span> moc <span class="operator">=</span> <span class="keyword">self</span>.managedObjectContext &#123;</span><br><span class="line">            <span class="keyword">var</span> error: <span class="type">NSError</span>? <span class="operator">=</span> <span class="literal">nil</span></span><br><span class="line">            <span class="keyword">if</span> moc.hasChanges <span class="operator">&amp;&amp;</span> <span class="operator">!</span>moc.save(<span class="operator">&amp;</span>error) &#123;</span><br><span class="line">                <span class="comment">// Replace this implementation with code to handle the error appropriately.</span></span><br><span class="line">                <span class="comment">// abort() causes the application to generate a crash log and terminate. You should not use this function in a shipping application, although it may be useful during development.</span></span><br><span class="line">                <span class="type">NSLog</span>(<span class="string">&quot;Unresolved error <span class="subst">\(error)</span>, <span class="subst">\(error<span class="operator">!</span>.userInfo)</span>&quot;</span>)</span><br><span class="line">                abort()</span><br><span class="line">            &#125;</span><br><span class="line">        &#125;</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">&#125;</span><br><span class="line"></span><br></pre></td></tr></table></figure>
-
-<p>Debug:</p>
-<figure class="highlight plaintext"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">p applicationDocumentsDirectory</span><br><span class="line">(NSURL) $R0 = 0x00000001740a8b20 &quot;file:///var/mobile/Containers/Data/Application/601088B9-EB64-4E8D-9817-96E23D0D5D7E/Documents/&quot;</span><br></pre></td></tr></table></figure>
-
-<figure class="highlight shell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">ssh root@192.168.0.101</span><br><span class="line"><span class="meta prompt_">root# </span><span class="language-bash"><span class="built_in">cd</span> /var/mobile/Containers/Data/Application/601088B9-EB64-4E8D-9817-96E23D0D5D7E/Documents/</span></span><br><span class="line"><span class="meta prompt_">root# </span><span class="language-bash"><span class="built_in">ls</span> -la</span></span><br><span class="line">total 192</span><br><span class="line">drwxr-xr-x 2 mobile mobile    170 Aug 21 22:16 ./</span><br><span class="line">drwxr-xr-x 5 mobile mobile    204 Aug 21 22:16 ../</span><br><span class="line">-rw-r--r-- 1 mobile mobile  20480 Aug 21 22:16 test_Core_Data.sqlite</span><br><span class="line">-rw-r--r-- 1 mobile mobile  32768 Aug 21 22:24 test_Core_Data.sqlite-shm</span><br><span class="line">-rw-r--r-- 1 mobile mobile 140112 Aug 21 22:24 test_Core_Data.sqlite-wal</span><br></pre></td></tr></table></figure>
-
-<h3 id="Read-More"><a href="#Read-More" class="headerlink" title="Read More"></a>Read More</h3><ul>
-<li><a target="_blank" rel="noopener" href="http://www.wikiwand.com/en/LLDB_(debugger)">LLDB (debugger)</a></li>
 </ul>
 
       
